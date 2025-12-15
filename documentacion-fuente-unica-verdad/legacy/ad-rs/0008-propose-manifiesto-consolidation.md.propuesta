@@ -1,0 +1,51 @@
+# ADR 0008: Consolidación y limpieza de manifiestos de estructura
+
+**Estado:** Accepted
+**Fecha:** 2025-12-14
+**Autor:** jhoavera / automation
+**Approved By:** jhoavera
+**Approved At:** 2025-12-14T03:45:00Z
+
+## Contexto
+
+Se han detectado múltiples variantes del manifiesto de estructura (`config/structure_manifest*.yml`) y pequeñas divergencias frente al árbol físico `scripts/despliegue/TITAN-MSP-v13.0` y la extracción desde el SSOT (`documento-maestro-*.md`). Esto dificulta trazabilidad y genera redundancia y confusión.
+
+Resumen cuantitativo (auditoría local):
+- Unión total de rutas (MD ∪ plantilla ∪ manifiestos): **1306** paths únicos.
+- `documentacion-ssot` (MD) parseó **1050** paths.
+- Plantilla física `scripts/despliegue/TITAN-MSP-v13.0`: **1049** paths.
+- Manifiesto aplicado actual `config/estructura_manifiesto.yml`: **1048** paths.
+- Hay manifiestos auxiliares o propuestos (preview/proposed/with_0006/exact_from_template) con **1048–1304** paths según variante.
+
+Objetivo del ADR:
+- Definir un manifiesto canónico (single source of truth) y una política de mantenimiento, archivado y verificación.
+- Reducir la superficie de manifiestos a 1 canon (p. ej. `config/estructura_manifiesto.yml`) más backups/archivos de propuesta en `config/archive/manifests/`.
+- Añadir pruebas CI locales (sin push a nube) que verifiquen: `manifiesto canónico` cubre la `plantilla física` y que el `manifest` es consistente con el SSOT (MD) hasta donde el MD lo documenta.
+
+## Decisión Propuesta
+
+1. **Manifiesto canónico:** mantener `config/estructura_manifiesto.yml` como manifiesto canónico (aprobado) y usar `approvedBy`/`approvedAt` y `appliedOwners` metadata para trazabilidad.
+2. **Archivar variantes:** mover otras variantes (`*_proposed.yml`, `*_preview.yml`, `*_from_md.yml`, `*_with_0006.yml`, etc.) a `config/archive/manifests/` con prefijo `proposed-<date>.yml` o similar, manteniendo historial completo.
+3. **Proceso de cambios:**
+   - Toda propuesta de modificación al manifiesto (incluir/excluir rutas, owners, templates) debe tener un ADR (ej. 0006a/0006b...) aprobado y un CSV `reports/..._filled.csv` con owners antes de aplicar cambios.
+   - Tras aprobación, generar PR local (branch) con el diff del manifiesto canónico y pruebas que verifiquen la paridad con la plantilla y las entradas de MD pertinentes.
+4. **Pruebas automatizadas:** agregar test `scripts/despliegue/tests/test_manifest_covers_template.sh` (ver ADR 0007) y un test que asegure `MD_count <= manifest_count` y detalle de diferencias para revisión humana.
+5. **Política de archivos generados:** no sobrescribir `.md`; no borrar backups; cualquier eliminación de manifiestos solo con ADR y aprobación explícita.
+
+## Consecuencias
+
+- Positivo: claridad, trazabilidad y facilidad de auditoría.
+- Negativo: esfuerzo inicial para reconciliar y aprobar rutas no contenidas en el MD; mitigable por ADRs por categoría.
+
+## Propuesta de pasos (si se aprueba)
+
+1. Revisar `reports/manifiesto_full_audit.csv` y aceptar la política.
+2. Crear PR local con la consolidación (mover archivos a `config/archive/manifests/` y dejar solo el canónico) y pruebas actualizadas.
+3. Ejecutar pruebas locales: `test_create_manifest_apply_and_verify_local_tempdir.sh`, `test_manifest_count_and_coverage.sh` y `test_manifest_covers_template.sh`.
+4. Aplicar cambios al `config/estructura_manifiesto.yml` sólo tras aprobación de ADR y firmar `approvedBy` en el manifiesto.
+
+---
+
+Adjuntos:
+- `reports/manifiesto_full_audit.csv` (matriz completa de presencia de paths)
+- `reports/manifest_full_audit_summary.md` (resumen cuantitativo)

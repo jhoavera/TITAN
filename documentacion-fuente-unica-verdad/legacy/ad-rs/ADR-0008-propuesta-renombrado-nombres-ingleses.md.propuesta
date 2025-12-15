@@ -1,0 +1,34 @@
+---
+title: "ADR-0008: Propuesta de renombrado masivo de nombres en inglés a Español Técnico Empresarial"
+status: provisional
+created: 2025-12-15T00:00:00Z
+authors: [jhoavera]
+---
+
+# Resumen
+
+Propuesta para renombrar de forma controlada 43 elementos detectados con nomenclatura en inglés (carpetas y archivos) a su equivalente en Español Técnico Empresarial. Se incluye `reports/rename_matches_list.txt` con el listado completo de candidatos.
+
+# Alcance
+
+- Cambios propuestos: renombrados de tokens (ej: `reports` → `reportes`, `manifest` → `manifiesto`, `template` → `plantilla`, `readme` → `LEEME.md`).
+- No se modificará el contenido de archivos `.md` sin ADRs individuales y aprobación explícita.
+
+# Riesgos y mitigaciones
+
+- Riesgo: imports roto, referencias en scripts y manifiesto. Mitigación: respaldo completo y ejecución de `verificar-estructura-completa.sh --fix` y pruebas locales en cada lote.
+
+# Plan de ejecución propuesto
+
+1. Crear respaldo completo del repositorio y del `manifest`.
+2. Agrupar renombres en ADRs por lotes (máx 20 elementos por ADR).
+3. Para cada lote: generar `*.propuesta` y actualizar `reports/rename_proposals.csv` con mapping propuesto.
+4. Solicitar aprobación en ADR y asignar responsables técnicos para aplicar renombres en local.
+
+# Archivos asociados
+
+- `reports/rename_matches_list.txt` (listado de candidatos)
+- `reports/rename_proposals_tokenized.csv` (propuesta tokenizada en `api`)
+
+---
+*Fin de la propuesta* 

@@ -1,0 +1,36 @@
+# ADR-00xx: Propuesta de gobernanza para traducción de documentación (.md)
+
+Fecha: 2025-12-14
+
+Estado: propuesta
+
+Contexto
+-------
+El proyecto TITAN requiere homogeneizar nombres y documentación al Español Técnico Empresarial. Las modificaciones en archivos de documentación legible (.md) requieren control de gobernanza para evitar pérdida de contexto y garantizar revisión humana.
+
+Decisión propuesta
+------------------
+- Todas las modificaciones a archivos `.md` deben realizarse mediante un ADR aprobado.
+- Se aceptan archivos de *propuesta* con sufijo `.propuesta` que reflejen la versión traducida; estas no se consideran cambios hasta la aprobación del ADR.
+- El flujo de trabajo: generar `*.propuesta` → revisión automática y humana → ADR de aprobación → aplicar cambios y actualizar manifiestos.
+
+Implicaciones
+------------
+- Evita cambios automáticos no revisados en documentación crítica.
+- Permite pruebas y verificación local sin modificaciones irreversibles.
+
+Operational details
+-------------------
+- `scripts/herramientas/` generará propuestas `.propuesta` y reportes de cobertura.
+- Respaldo automático (`respaldo/`) antes de aplicar cualquier renombrado.
+- Se requiere al menos una revisión manual por el propietario del área y aprobación explícita del autor del ADR.
+
+Riesgos
+------
+- Retrasos si la aprobación no se coordina, pero se mitiga con `propuesta` para revisión paralela.
+
+Alternativas consideradas
+-------------------------
+- Cambios automáticos directos (rechazado por riesgo de pérdida de contexto y inconsistencias terminológicas).
+
+Propuesta: aprobar ADR-00xx para que el equipo continúe con la traducción controlada de `.md`.

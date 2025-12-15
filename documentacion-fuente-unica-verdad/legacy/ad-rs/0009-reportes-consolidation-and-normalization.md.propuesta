@@ -1,0 +1,58 @@
+# ADR 0009: Consolidación y normalización del directorio `reports/`
+
+**Estado:** Proposed
+**Fecha:** 2025-12-14
+**Autor:** jhoavera / automation
+
+## Contexto
+
+El directorio `reports/` contiene muchos artefactos (CSVs, logs, manifests, md, snapshots) generados durante el proceso de auditoría y reconciliación. La falta de estructura hace difícil encontrar la información crítica, auditar cambios y mantener trazabilidad.
+
+Además, los procesos previos generaron archivos históricos y duplicados que deben ser archivados en un lugar ordenado para evitar ruido y preservar evidencia.
+
+## Problema
+
+- Estructura plana con cientos de ficheros dificulta la revisión humana y automatizada.
+- Falta de clasificación por prioridad (críticos, auditoría, tests, owners, propuestas, generados).
+- Riesgo de perder información valiosa o de mezclar artefactos importantes con logs temporales.
+
+## Decisión Propuesta
+
+1. Normalizar la estructura de `reports/` moviendo archivos a subdirectorios por categoría:
+   - `reports/critical/` — artefactos imprescindibles (manifiesto canónico, resumen de auditoría, archivos firmados)
+   - `reports/audit/` — CSVs de auditoría y matrices (e.g., `manifiesto_full_audit.csv`)
+   - `reports/tests/` — logs y resultados de tests automatizados
+   - `reports/owners/` — archivos de asignación de owners y propuestas
+   - `reports/proposals/` — PR/ADR related proposals, candidates
+   - `reports/generated/` — archivos generados automáticamente (e.g., `generated_from_md.yml`)
+   - `reports/tmp/` — archivos temporales o de trabajo (rotar a archive pronto)
+   - `reports/archive/<YYYYMMDD-HHMMSS>/` — respaldo inmutable de los archivos movidos y de las versiones antiguas
+
+2. Implementar script `scripts/despliegue/utils/reorganize_reportes.py` que realice la reorganización en modo `--dry-run` y `--apply`.
+   - El script calculará checksums SHA256 de los archivos a mover y generará un `move_manifiesto.csv` en el archivo de `archive/` con la lista de movimientos y hashes.
+   - Por seguridad, el movimiento será realizado mediante copia+verificación y posterior archivado del original en `reports/archive/<ts>/`.
+
+3. Añadir `reports/README.md` que explique la nueva estructura y enlaces a artefactos clave.
+
+4. Automatizar pruebas locales post-move:
+   - Validar que no se hayan perdido archivos (todos los paths originales aparecen ahora en `reports/*` o en `reports/archive/<ts>/`).
+   - Ejecutar test de cobertura `scripts/despliegue/tests/test_manifest_count_and_coverage.sh` contra `config/archive/manifests/estructura_manifiesto_proposed_minimal_0006.yml` y el MD (`documento-maestro-parte-4.md`) para asegurar cobertura 100% de la parte 4.
+
+5. Mantener todo localmente; cualquier PR para modificar manifiesto o `.md` requiere ADR independiente y aprobación previa.
+
+## Consecuencias
+
+- Positivo: mayor claridad, facilidad de auditoría, reducción de ruido en revisiones.
+- Negativo: esfuerzo inicial para clasificar y pruebas de verificación; mitigado por el script con dry-run y backups completos.
+
+## Checklist de ejecución (si se aprueba)
+
+- [ ] Ejecutar `scripts/despliegue/utils/reorganize_reportes.py --dry-run` y revisar `reports/reorganize_proposal.md`.
+- [ ] Ejecutar `scripts/despliegue/utils/reorganize_reportes.py --apply` para realizar cambios (genera `reports/archive/<ts>/move_manifiesto.csv`).
+- [ ] Ejecutar pruebas locales: `test_create_manifest_apply_and_verify_local_tempdir.sh` y `test_manifest_count_and_coverage.sh`.
+- [ ] Revisar `reports/README.md` y confirmar que `reports/archive/` contiene backups completados.
+- [ ] Crear PR local con los cambios (branch: `pr/0008-consolidate-manifests`) y dejar listo para push cuando lo autorices.
+
+---
+
+Generado automáticamente para trazabilidad, pendiente de tu aprobación para proceder con la reorganización y archivado (todo local, sin push remoto).

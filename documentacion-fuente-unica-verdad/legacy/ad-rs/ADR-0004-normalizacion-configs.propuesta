@@ -1,0 +1,19 @@
+---
+title: ADR-0004 Normalización de configuraciones y uso de TypeScript `strict`
+status: propuesta
+date: 2025-12-15
+---
+
+Context:
+- Forzar `typescript` en modo `strict` y garantizar ausencia de `any`/`undefined` en código `api/`.
+
+Decision:
+- Añadir chequeos `npx tsc --noEmit` en `scripts/despliegue/verificar-estructura-completa.sh` y en pipeline local.
+- Identificar archivos TS con `any` y proponer correcciones en ADR separado por componente.
+
+Consequences:
+- Mejor calidad de código y menor riesgo en producción; requiere refactorizaciones puntuales para eliminar `any`.
+
+References:
+- api/tsconfig.json
+- scripts/despliegue/verificar-estructura-completa.sh

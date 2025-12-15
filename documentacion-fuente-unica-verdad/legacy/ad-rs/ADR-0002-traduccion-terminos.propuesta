@@ -1,0 +1,20 @@
+---
+title: ADR-0002 Traducción de términos técnicos y nombres de archivos
+status: propuesta
+date: 2025-12-15
+---
+
+Context:
+- Establecer reglas de traducción de nombres a español técnico empresarial y controlar excepciones mediante glosario.
+
+Decision:
+- Aplicar reglas de traducción automatizadas (scripts/herramientas/generate_translation_proposals.py)
+- Crear sidecars `.md.propuesta` para cualquier `.md` detectado; no modificar `.md` sin ADR aprobado.
+- Actualizar `documentacion-ssot/glosario_proyecto.yml` con entradas `AUTOMATIC_ADD - revisar` para términos sin traducción literal.
+
+Consequences:
+- Generación de reportes y ADRs para cambios en archivos `.md`.
+
+References:
+- documentacion-ssot/glosario_proyecto.yml
+- reports/translation_proposals_files.csv

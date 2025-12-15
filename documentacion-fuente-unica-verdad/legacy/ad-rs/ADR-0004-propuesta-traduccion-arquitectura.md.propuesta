@@ -1,0 +1,63 @@
+# ADR-0004 - Propuesta: Traducción y normalización de documentación
+
+Fecha: 2025-12-15T03:24:36Z
+Estado: propuesta
+Propuesto-por: sistemal-automatica
+
+Resumen:
+Se propone revisar y aplicar las traducciones y normalizaciones al Español Técnico Empresarial
+para el siguiente conjunto de archivos de documentación. No aplicar sin aprobación humana y ADR.
+
+Archivos propuestos:
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/diagramas-arquitectura.md.propuesta
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/escalabilidad.md.propuesta
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/flujos-sistema.md.propuesta
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/patrones-diseno.md.propuesta
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/seguridad-arquitectura.md.propuesta
+- respaldo/renombrados/skipped_resolution_20251214T213000Z/README.md.propuesta
+- respaldo/renombrados/skipped_resolution_20251214T213000Z/leeme.md.propuesta
+- rs/0001-changes/leeme.md.propuesta
+- rs/0001-estructura-manifiesto-ssot-pr_description.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/api/leeme.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/acronimos.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/api/autenticacion-api.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/api/ejemplos-api.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/api/errores-api.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/api/referencia-api.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/decisiones-arquitectonicas.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/diagramas-arquitectura.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/escalabilidad.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/flujos-sistema.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/patrones-diseno.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/arquitectura/seguridad-arquitectura.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/convenciones-codigo.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/diccionario-ingles-espanol.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-contribucion.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-desarrollo.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-despliegue.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-migracion.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-monitoreo.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-seguridad.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/guias/guia-solucion-problemas.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/operaciones/procedimientos-backup.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/operaciones/procedimientos-monitoreo.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/operaciones/procedimientos-operacion.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/operaciones/procedimientos-restauracion.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/terminologia-tecnica.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/verticales/barberia/configuracion.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/verticales/barberia/funcionalidades.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/verticales/barberia/mejores-practicas.md.propuesta
+- scripts/despliegue/pruebas/titan-msp-v-13-0/documentacion/verticales/configuracion.md.propuesta
+
+Razonamiento:
+- Consistencia terminológica: adaptar nombres a Español Técnico Empresarial.
+- Mantener .md sin modificar hasta que ADR sea aprobado.
+
+Acciones propuestas:
+1. Revisar cada `.md.propuesta` listada y confirmar la traducción sugerida.
+2. Generar ADRs específicos si se requiere cambio estructural mayor.
+
+Notas:
+- Se debe actualizar `documentacion-ssot/glosario_proyecto.yml` con términos en inglés que no se traduzcan.
+- Todas las operaciones serán locales y deben contar con respaldo previo.

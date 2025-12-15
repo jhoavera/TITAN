@@ -1,0 +1,63 @@
+# ADR-0001 - Propuesta: Traducción y normalización de documentación
+
+Fecha: 2025-12-15T03:24:36Z
+Estado: propuesta
+Propuesto-por: sistemal-automatica
+
+Resumen:
+Se propone revisar y aplicar las traducciones y normalizaciones al Español Técnico Empresarial
+para el siguiente conjunto de archivos de documentación. No aplicar sin aprobación humana y ADR.
+
+Archivos propuestos:
+- CODIGO-CONDUCTA.md.propuesta
+- api/src/api/documentacion/glosario.md.propuesta
+- api/src/api/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- documentacion/api/autenticacion-api.md.propuesta
+- documentacion/api/ejemplos-api.md.propuesta
+- documentacion/api/errores-api.md.propuesta
+- documentacion/api/referencia-api.md.propuesta
+- documentacion/arquitectura/decisiones-arquitectonicas.md.propuesta
+- documentacion/arquitectura/diagramas-arquitectura.md.propuesta
+- documentacion/arquitectura/escalabilidad.md.propuesta
+- documentacion/arquitectura/flujos-sistema.md.propuesta
+- documentacion/arquitectura/patrones-diseno.md.propuesta
+- documentacion/arquitectura/seguridad-arquitectura.md.propuesta
+- documentacion/glosario/acronimos.md.propuesta
+- documentacion/guias/guia-contribucion.md.propuesta
+- documentacion/guias/guia-desarrollo.md.propuesta
+- documentacion/guias/guia-despliegue.md.propuesta
+- documentacion/guias/guia-migracion.md.propuesta
+- documentacion/guias/guia-monitoreo.md.propuesta
+- documentacion/guias/guia-seguridad.md.propuesta
+- documentacion/verticales/barberia/configuracion.md.propuesta
+- documentacion/verticales/barberia/funcionalidades.md.propuesta
+- documentacion/verticales/barberia/mejores-practicas.md.propuesta
+- documentacion/verticales/restaurante/configuracion.md.propuesta
+- documentacion/verticales/restaurante/funcionalidades.md.propuesta
+- documentacion/verticales/restaurante/mejores-practicas.md.propuesta
+- documentacion/verticales/tienda/configuracion.md.propuesta
+- documentacion/verticales/tienda/funcionalidades.md.propuesta
+- documentacion/verticales/tienda/mejores-practicas.md.propuesta
+- documentacion-ssot/documento-maestro-parte-4.md.propuesta
+- documentacion-ssot/documento-maestro-ssot.md.propuesta
+- modelos/msp/LEEME-MODELOS.md.propuesta
+- pruebas/carga/resultados-carga.md.propuesta
+- pruebas/compatibilidad/dispositivos.md.propuesta
+- pruebas/compatibilidad/navegadores.md.propuesta
+- pruebas/seguridad/auditoria-codigo.md.propuesta
+- pruebas/seguridad/pruebas-penetracion.md.propuesta
+- pruebas/seguridad/reporte-seguridad.md.propuesta
+- reportes/leeme.md.propuesta
+- reportes/md-propuestas-review-bundle/README.md.propuesta
+
+Razonamiento:
+- Consistencia terminológica: adaptar nombres a Español Técnico Empresarial.
+- Mantener .md sin modificar hasta que ADR sea aprobado.
+
+Acciones propuestas:
+1. Revisar cada `.md.propuesta` listada y confirmar la traducción sugerida.
+2. Generar ADRs específicos si se requiere cambio estructural mayor.
+
+Notas:
+- Se debe actualizar `documentacion-ssot/glosario_proyecto.yml` con términos en inglés que no se traduzcan.
+- Todas las operaciones serán locales y deben contar con respaldo previo.

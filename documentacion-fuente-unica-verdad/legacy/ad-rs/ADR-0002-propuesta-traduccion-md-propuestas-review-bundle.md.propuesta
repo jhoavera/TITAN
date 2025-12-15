@@ -1,0 +1,63 @@
+# ADR-0002 - Propuesta: Traducción y normalización de documentación
+
+Fecha: 2025-12-15T03:24:36Z
+Estado: propuesta
+Propuesto-por: sistemal-automatica
+
+Resumen:
+Se propone revisar y aplicar las traducciones y normalizaciones al Español Técnico Empresarial
+para el siguiente conjunto de archivos de documentación. No aplicar sin aprobación humana y ADR.
+
+Archivos propuestos:
+- reportes/md-propuestas-review-bundle/documento-maestro-parte-4.md.propuesta
+- reportes/md-propuestas-review-bundle/documento-maestro-ssot.md.propuesta
+- reportes/md-propuestas-review-bundle/leeme.md.propuesta
+- reportes/md-propuestas-review-bundle/leeme.md.propuesta.checklist.md.propuesta
+- reportes/refactor-nomenclatura-summary.md.propuesta
+- reports/md-propuestas-review-bundle/PRs/0001-changes/README.md.propuesta
+- reports/md-propuestas-review-bundle/PRs/0001-structure-manifest-ssot-PR_DESCRIPTION.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0001-manifest-sync-propuesta.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0001-structure-manifest-ssot.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0003-tests-and-parser-fixes.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0005-promote-owners-to-manifest.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0006-propose-inclusions-template.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0006c-include-assets.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0007-propose-manifest-coverage-test-template.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0008-propose-manifest-consolidation.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/0009-reports-consolidation-and-normalization.md.propuesta
+- reports/md-propuestas-review-bundle/documentacion-ssot/ADRs/ADR_TEMPLATE.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/README.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_1049_validation.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_full_audit_summary.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_owner_assignment_applied.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_owner_assignment_proposal_aggressive.approved.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_sync_summary.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/manifest_vs_repo_discrepancy.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/archivo/20251214-191023/only_manifest_actions.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/critical/manifest_full_audit_summary.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/md-propuestas-review-bundle/README.md.propuesta.checklist.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/owners/manifest_owner_assignment_applied.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/owners/manifest_owner_assignment_proposal_aggressive.approved.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/structure_language_summary.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/temporal/manifest_1049_validation.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/temporal/manifest_sync_summary.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/temporal/manifest_vs_repo_discrepancy.md.propuesta
+- reports/md-propuestas-review-bundle/reportes/temporal/only_manifest_actions.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/CONTRIBUTING.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/api/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/interfaz-usuario/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/interfaz-usuario/administrador/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/pruebas/titan-msp-v-13-0/interfaz-usuario/cliente/README.md.propuesta
+
+Razonamiento:
+- Consistencia terminológica: adaptar nombres a Español Técnico Empresarial.
+- Mantener .md sin modificar hasta que ADR sea aprobado.
+
+Acciones propuestas:
+1. Revisar cada `.md.propuesta` listada y confirmar la traducción sugerida.
+2. Generar ADRs específicos si se requiere cambio estructural mayor.
+
+Notas:
+- Se debe actualizar `documentacion-ssot/glosario_proyecto.yml` con términos en inglés que no se traduzcan.
+- Todas las operaciones serán locales y deben contar con respaldo previo.

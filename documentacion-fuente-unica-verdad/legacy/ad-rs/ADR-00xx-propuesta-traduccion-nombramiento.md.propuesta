@@ -1,0 +1,46 @@
+---
+title: "ADR-00xx: Política de traducción y renombrado a Español Técnico Empresarial"
+date: 2025-12-15
+status: proposed
+author: jhoavera
+---
+
+Context
+-------
+Se propone una política de gobernanza para la traducción y renombrado de archivos y carpetas del repositorio al Español Técnico Empresarial. Se prohíbe aplicar cambios definitivos en archivos `.md` sin aprobación explícita mediante ADR.
+
+Decision
+--------
+- Todas las propuestas de renombrado serán generadas automáticamente y versionadas como `.propuesta` para archivos `.md`.
+- Los cambios definitivos en `.md` requerirán aprobación del responsable del proyecto y un commit con referencia al ADR.
+- Antes de aplicar cambios masivos se debe crear un respaldo completo de los elementos afectados.
+- Términos técnicos sin traducción se añadirán al glosario maestro `documentacion-ssot/glosario_proyecto.yml` marcados `AUTOMATIC_ADD - revisar`.
+- El proceso será 100% local; no se permitirán flujos CI en nube para estas acciones sin autorización expresa.
+
+Consequences
+------------
+- Se mantiene trazabilidad y control sobre cambios en documentación.
+- Se requiere revisión humana para las entradas del glosario marcadas como `AUTOMATIC_ADD`.
+
+Proposal
+--------
+Autorízase: (1) la creación de `.md.propuesta` para cada documento afectado, (2) la generación de reportes con propuestas de renombrado, y (3) la creación de backups automáticos previos a aplicar cambios definitivos.
+
+Status Update (2025-12-14T21:30Z)
+---------------------------------
+- Se analizaron 7 entradas marcadas `skipped` en `reports/rename_apply_actions.csv`.
+  - Resueltas automáticamente / consolidadas: 4 (README -> leeme fusionado; reportes README -> leeme fusionado; `vite.config.ts` duplicado eliminado; `backup` ya resolvió en `respaldo`).
+  - Requieren revisión humana y aprobación ADR: 3 (procedimientos-backup en scripts y pruebas; `configuracion/archive` vs `configuracion/archivo`).
+- Se añadió el término `Vite` al glosario con propuesta de conservación como nombre propio y descripción.
+
+Siguientes pasos propuestos
+--------------------------
+1. Aprobar ADR-00xx para permitir la conversión definitiva de `.md.propuesta` a `.md` y la consolidación de duplicados.
+2. Tras aprobación, aplicar los renombrados en bloque (scripts + manifiesto + repositorio) con respaldo y verificación local.
+
+---
+
+Proceso de Aprobación
+---------------------
+1. Revisión de `reports/renames_proposals.csv` y `reports/md-propuestas-review-bundle/`.
+2. Comentarios y correcciones. 3. Aprobación explícita mediante comentario en este ADR (aceptado/declinado).

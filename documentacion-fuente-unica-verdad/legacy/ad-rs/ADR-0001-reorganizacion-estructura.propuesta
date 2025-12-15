@@ -1,0 +1,21 @@
+---
+title: ADR-0001 Reorganización de la estructura de carpetas (propuesta)
+status: propuesta
+date: 2025-12-15
+---
+
+Context:
+- Propuesta para centralizar y reorganizar la estructura del workspace bajo `scripts/despliegue/titan-msp-v-13-0` siguiendo el documento maestro (documento-maestro-parte-4.md).
+
+Decision:
+- Generar y revisar un inventario completo (reports/workspace_inventory.csv).
+- Aplicar renombres por lotes seguros basados en `reports/translation_proposals_files.csv` y `reports/rename_proposals_batch_*.csv`.
+- No mover ni modificar `.md` hasta aprobación explícita (ver ADR-0002 para docs).
+
+Consequences:
+- Se crearán backups antes de aplicar cada lote y se ejecutará verificación y `npx tsc --noEmit` tras cada lote.
+- Se documentarán todos los movimientos en `reports/rename_apply_results_batch_*.csv`.
+
+References:
+- reports/workspace_inventory.csv
+- reports/translation_proposals_files.csv

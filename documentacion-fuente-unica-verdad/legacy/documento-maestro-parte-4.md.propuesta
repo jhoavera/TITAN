@@ -1,0 +1,14 @@
+# Propuesta de traducción / revisión documental (no aplicar sin ADR-0013 aprobado)
+
+---
+Resumen:
+- Archivo: `documentacion-ssot/documento-maestro-parte-4.md`
+- Detector inglés: revisar (ejecutar `scripts/despliegue/utils/find_english_content.py` si es necesario)
+- Propuesta: revisar terminología técnica para adaptarla a Español Técnico Empresarial; agregar
+
+Propuesta (resumen):
+- Ejecutar revisión manual por sección: 1) Introducción, 2) Ejemplos/Comandos, 3) Notas de instalación, 4) API/ejemplos.
+
+Notas:
+- No aplicar sin ADR-0013 aprobado.
+- Incluir pruebas (links, lint, verificación de enlaces absolutos) y pasos de reversión.

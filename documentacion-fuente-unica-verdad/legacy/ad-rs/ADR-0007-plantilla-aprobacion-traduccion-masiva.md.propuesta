@@ -1,0 +1,49 @@
+---
+title: "ADR-0007: Plantilla de aprobación para traducción/renombrado masivo a Español Técnico Empresarial"
+status: provisional
+created: 2025-12-15T00:00:00Z
+authors: [jhoavera]
+---
+
+# Resumen
+
+Propuesta para aprobar y coordinar una operación controlada de traducción y renombrado masivo de nombres de archivos y directorios a Español Técnico Empresarial. No se aplicarán cambios a archivos `.md` ni contenido documental sin la aprobación explícita indicada en este ADR.
+
+# Alcance
+
+- Listado de rutas afectadas (anexar `reports/rename_proposals.csv` o similar).
+- Actualización del `manifest` y `reports` relacionados.
+- Añadir términos no traducibles al `documentacion-ssot/glosario_proyecto.yml` con justificación.
+
+# Justificación
+
+Uniformidad del repositorio en Español Técnico Empresarial para uso corporativo, trazabilidad y consistencia terminológica.
+
+# Impacto
+
+- Riesgos: imports rotos, scripts, URLs internas, referencias en `.md` (por esto no se tocan `.md` sin aprobación).
+- Mitigación: respaldo completo, pruebas locales, verificación del `manifest` y ejecución del script `verificar-estructura-completa.sh`.
+
+# Plan de rollback
+
+- Restaurar respaldo tar.gz generado antes de la operación.
+- Revertir cambios en `config/structure_manifest.yml` y aplicar `repair_manifest_by_searching_fs.py` si fuera necesario.
+
+# Requisitos previos
+
+- Respaldo en `respaldo/renombrados/` y snapshot del `manifest`.
+- Revisión del `reports/rename_proposals.csv` y aceptación por responsables.
+
+# Checklist de aprobación
+
+- [ ] Respaldo verificado
+- [ ] Entrada en `glosario_proyecto.yml` con todas las palabras no traducibles
+- [ ] Aprobación de equipos dueños de código/infraestructura
+
+# Notas de implementación
+
+- Los cambios en `.md` serán propuestos como archivos `.md.propuesta` y sólo aplicados tras la aprobación de este ADR.
+- Se ejecutarán pruebas locales y `tsc --noEmit` tras los renombres para asegurar integridad de TypeScript.
+
+---
+*Fin de la plantilla ADR* 

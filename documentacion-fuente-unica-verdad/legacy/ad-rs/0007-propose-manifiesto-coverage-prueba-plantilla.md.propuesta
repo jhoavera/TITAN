@@ -1,0 +1,46 @@
+# ADR 0007: Añadir prueba de cobertura del manifiesto frente a la plantilla de proyecto
+
+**Status:** Proposed (Draft)
+**Date:** YYYY-MM-DD
+**Author:** PLACEHOLDER
+
+## Context
+
+Queremos garantizar que `config/structure_manifest*.yml` refleje con exactitud la plantilla del repositorio `scripts/despliegue/TITAN-MSP-v13.0`.
+
+## Proposal
+
+- Añadir una prueba en `scripts/despliegue/tests` llamada `test_manifest_covers_template.sh` que compruebe:
+  - Para cada archivo/directorio bajo `scripts/despliegue/TITAN-MSP-v13.0` exista una entrada equivalente en el manifiesto propuesto.
+  - Para cada ruta en el manifiesto, exista un archivo/directorio correspondiente en la plantilla (opcional si la política requiere que el manifiesto sea la única fuente de verdad).
+
+- Incluir la prueba en la suite de CI y marcarla como obligatorio para aceptar cambios en manifiesto/plantilla.
+
+## Rationale
+
+- Evitar divergencias silenciosas entre la plantilla física y el manifiesto.
+- Facilitar auditorías y aprovisionamiento reproducible.
+
+## Consequences
+
+- Positivo: mayor seguridad de coherencia.
+- Negativo: nuevos fallos en CI si no se armonizan manifiesto y plantilla (requiere ADRs para resolver).
+
+## Checklist (si se aprueba)
+
+- [ ] Añadir la prueba `tests/test_manifest_covers_template.sh` con modo `--non-interactive` y salida legible.
+- [ ] Documentar el requerimiento en `documentacion-ssot/ADRs/0007`.
+- [ ] Ejecutar la prueba localmente y corregir discrepancias mediante ADRs adicionales.
+
+---
+
+Ejemplo de prueba (extracto):
+
+```bash
+#!/usr/bin/env bash
+set -Eeuo pipefail
+md_manifest="config/estructura_manifiesto_proposed.yml"
+mapfile -t manifest_paths < <(python3 -c "import yaml,sys;print('\n'.join([e['path'] for e in yaml.safe_load(open('"$md_manifest"'))['entries']]))")
+mapfile -t template_paths < <(cd scripts/despliegue/TITAN-MSP-v13.0 && find . -mindepth 1 | sed 's|^./||' )
+# compare sets and exit non-zero if mismatch
+```

@@ -1,0 +1,16 @@
+{
+  "name": "titan-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node -r dotenv/config ./dist/infraestructura/servidor/bootstrap.js",
+    "pruebas": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "fastify": "^5.6.2",
+    "zod": "^4.2.0"
+  }
+}

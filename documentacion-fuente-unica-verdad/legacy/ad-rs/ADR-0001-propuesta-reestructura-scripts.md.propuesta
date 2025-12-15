@@ -1,0 +1,39 @@
+---
+title: ADR-0001 - Propuesta de reestructura y centralización de `scripts/` (TITAN-MSP-v13.0)
+status: propuesta
+date: 2025-12-15
+authors: [jhoavera]
+---
+
+Context
+-------
+
+El workspace contiene duplicidad de nombres (inglés/español) y scripts dispersos. Se propone centralizar la lógica operativa y de despliegue en `scripts/despliegue/titan-msp-v-13-0` y normalizar nombres a español técnico empresarial según la política del proyecto.
+
+Decision
+--------
+
+1. Realizar un análisis exhaustivo (inventario) y detección de duplicados: `scripts/herramientas/find_spanish_english_dups.py` generará reportes para revisión.
+2. Proponer fusión de carpetas/archivos cuando exista pareja inglés↔español en el mismo parent; preferir la versión en español como canonical.
+3. Crear ADRs adicionales para tipos de cambios que impliquen mover contenido contextual de SSOT o `.md`.
+4. No aplicar movimientos físicos hasta aprobación formal por PR que incluya respaldo y evidencia (backups / reportes / manifests).
+
+Consequences
+------------
+
+- Se preserva trazabilidad y evidencia antes de aplicar cambios físicos.
+- Se requerirá aprobación para cambios de `.md` o contenido SSOT.
+
+Checklist (para aplicar un lote)
+--------------------------------
+
+- [ ] Backup completo creado y verificado
+- [ ] Reporte CSV+MD con pares duplicados generado
+- [ ] ADR de cambios específicos añadido (si aplica)
+- [ ] PR con diffs y checklist creada y revisada
+- [ ] Verificación post-aplicación (`verificar-estructura-completa.sh`) pasa sin errores
+
+Notas
+-----
+
+Este documento es un borrador para discusión. No se moverá ningún contenido hasta que el ADR sea aprobado y la PR correspondiente sea revisada.

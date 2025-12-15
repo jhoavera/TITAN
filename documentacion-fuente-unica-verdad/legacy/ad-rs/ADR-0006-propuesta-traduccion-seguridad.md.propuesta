@@ -1,0 +1,25 @@
+# ADR-0006 - Propuesta: Traducción y normalización de documentación
+
+Fecha: 2025-12-15T03:24:36Z
+Estado: propuesta
+Propuesto-por: sistemal-automatica
+
+Resumen:
+Se propone revisar y aplicar las traducciones y normalizaciones al Español Técnico Empresarial
+para el siguiente conjunto de archivos de documentación. No aplicar sin aprobación humana y ADR.
+
+Archivos propuestos:
+- scripts/despliegue/titan-msp-v-13-0/pruebas/seguridad/pruebas-penetracion.md.propuesta
+- scripts/despliegue/titan-msp-v-13-0/pruebas/seguridad/reporte-seguridad.md.propuesta
+
+Razonamiento:
+- Consistencia terminológica: adaptar nombres a Español Técnico Empresarial.
+- Mantener .md sin modificar hasta que ADR sea aprobado.
+
+Acciones propuestas:
+1. Revisar cada `.md.propuesta` listada y confirmar la traducción sugerida.
+2. Generar ADRs específicos si se requiere cambio estructural mayor.
+
+Notas:
+- Se debe actualizar `documentacion-ssot/glosario_proyecto.yml` con términos en inglés que no se traduzcan.
+- Todas las operaciones serán locales y deben contar con respaldo previo.

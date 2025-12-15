@@ -1,0 +1,63 @@
+# ADR-0003 - Propuesta: Traducción y normalización de documentación
+
+Fecha: 2025-12-15T03:24:36Z
+Estado: propuesta
+Propuesto-por: sistemal-automatica
+
+Resumen:
+Se propone revisar y aplicar las traducciones y normalizaciones al Español Técnico Empresarial
+para el siguiente conjunto de archivos de documentación. No aplicar sin aprobación humana y ADR.
+
+Archivos propuestos:
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/CONTRIBUTING.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/api/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/documentacion/operaciones/procedimientos-backup.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/interfaz-usuario/administrador/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/interfaz-usuario/cliente/README.md.propuesta
+- reports/md-propuestas-review-bundle/scripts/despliegue/titan-msp-v-13-0/interfaz-usuario/empleado/README.md.propuesta
+- respaldo/renombrados/20251215T025950Z/documentacion/glosario.md.propuesta
+- respaldo/renombrados/20251215T025950Z/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- respaldo/renombrados/20251215T025950Z/respaldo/renombrados/20251215T025950Z/documentacion/glosario.md.propuesta
+- respaldo/renombrados/20251215T025950Z/respaldo/renombrados/20251215T025950Z/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- respaldo/renombrados/20251215T025950Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/README.md.propuesta
+- respaldo/renombrados/20251215T025950Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/leeme.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/configuracion.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/configuracion.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/configuracion.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/documentacion/glosario.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/respaldo/renombrados/20251215T025950Z/documentacion/glosario.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/respaldo/renombrados/20251215T025950Z/documentacion/operaciones/procedimientos-respaldo.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/README.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/leeme.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/configuracion.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/barberia/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/configuracion.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/restaurante/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/configuracion.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/funcionalidades.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/20251215T025950Z/scripts/despliegue/titan-msp-v-13-0/documentacion/verticales/tienda/mejores-practicas.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/README.md.propuesta
+- respaldo/renombrados/20251215T030623Z/respaldo/renombrados/skipped_resolution_20251214T213000Z/leeme.md.propuesta
+- respaldo/renombrados/20251215T030623Z/scripts/despliegue/titan-msp-v-13-0/documentacion/arquitectura/decisiones-arquitectonicas.md.propuesta
+
+Razonamiento:
+- Consistencia terminológica: adaptar nombres a Español Técnico Empresarial.
+- Mantener .md sin modificar hasta que ADR sea aprobado.
+
+Acciones propuestas:
+1. Revisar cada `.md.propuesta` listada y confirmar la traducción sugerida.
+2. Generar ADRs específicos si se requiere cambio estructural mayor.
+
+Notas:
+- Se debe actualizar `documentacion-ssot/glosario_proyecto.yml` con términos en inglés que no se traduzcan.
+- Todas las operaciones serán locales y deben contar con respaldo previo.

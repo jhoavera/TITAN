@@ -1,0 +1,18 @@
+---
+title: ADR-0003 Consolidación de documentación
+status: propuesta
+date: 2025-12-15
+---
+
+Context:
+- Consolidar documentación duplicada en `documentacion/` y usar SSOT (documentacion-ssot) como fuente de verdad.
+
+Decision:
+- Detectar duplicados con scripts/herramientas/scan_workspace.py y generar propuesta de fusión.
+- Mantener archivos originales hasta que ADR de fusión sea aprobado; generar `*.propuesta` sidecars para cada archivo propuesto.
+
+Consequences:
+- Evita pérdida de información y facilita trazabilidad de cambios.
+
+References:
+- reports/workspace_inventory.csv
