@@ -2,12 +2,14 @@ import { describe, it, expect } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 
-const indicePath = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs/adr-indice.md');
+const repoRoot = path.resolve(__dirname, '..', '..');
+const adrsDir = path.resolve(repoRoot, 'documentacion-fuente-unica-verdad', 'ad-rs');
+const indicePath = path.join(adrsDir, 'adr-indice.md');
 const expectedFiles = [
-  path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md'),
-  path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migrate.md'),
-  path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migraciones.md'),
-  path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuestas-automaticas.md')
+  path.join(adrsDir, '2025-12-16-proponer-traduccion-migraciones.md'),
+  path.join(adrsDir, '2025-12-16-proponer-traduccion-migrate.md'),
+  path.join(adrsDir, '2025-12-16-propuesta-traducir-migraciones.md'),
+  path.join(adrsDir, '2025-12-16-propuestas-automaticas.md')
 ];
 
 describe('adr-indice', () => {

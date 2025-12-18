@@ -1,9 +1,1441 @@
 {
+  "fecha": "2025-12-18T04:00:12.640Z",
   "grupos": [
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-fd3532ef-3aa2-4ccb-9f43-ea1e6b670fdb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-fd3532ef-3aa2-4ccb-9f43-ea1e6b670fdb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c74a3dc4-a0c6-4d68-abd0-4c6e2609442a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c74a3dc4-a0c6-4d68-abd0-4c6e2609442a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5e8f9a38-50c4-4e3c-991b-a7293cf64f01_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5e8f9a38-50c4-4e3c-991b-a7293cf64f01.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c9d4c383-2a3e-4906-894c-f48c0f5c578f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c9d4c383-2a3e-4906-894c-f48c0f5c578f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3fdedead-a772-447e-8ac8-f9a160d9cef3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3fdedead-a772-447e-8ac8-f9a160d9cef3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-419416b6-2bf5-43b1-b045-8a819f39511e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-419416b6-2bf5-43b1-b045-8a819f39511e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-54698448-05d0-48b9-9433-9951f286d965_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-54698448-05d0-48b9-9433-9951f286d965.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-24a58ce3-4fd4-4d55-838f-a7097985cc05_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-24a58ce3-4fd4-4d55-838f-a7097985cc05.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-957b00b0-bb0f-4ba8-9b5b-b2ab1380ca70_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-957b00b0-bb0f-4ba8-9b5b-b2ab1380ca70.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-7ec2aae1-aa3a-4d68-9f51-1790173a05a1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7ec2aae1-aa3a-4d68-9f51-1790173a05a1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-463f6f02-03da-4d00-a78b-1e4975dba4bc_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-463f6f02-03da-4d00-a78b-1e4975dba4bc.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ae5eb52b-b551-460e-8731-b53e81d8ce81_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ae5eb52b-b551-460e-8731-b53e81d8ce81.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f725c540-a716-464b-980e-17a642c912e1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f725c540-a716-464b-980e-17a642c912e1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-7ef15311-5887-4271-9bf7-c26bf12f4a6a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7ef15311-5887-4271-9bf7-c26bf12f4a6a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a09997b8-db38-4608-95d4-43e3920f802f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a09997b8-db38-4608-95d4-43e3920f802f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-7d6623e9-da3d-4741-98bc-28e07eb2f14f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7d6623e9-da3d-4741-98bc-28e07eb2f14f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f4c940e5-ae73-4eca-8219-efd69dfdfd87_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f4c940e5-ae73-4eca-8219-efd69dfdfd87.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-da12f339-62e1-497a-ba61-356b57e7f789_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-da12f339-62e1-497a-ba61-356b57e7f789.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-af761bd2-14c5-431b-8146-38a754c9abc5_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-af761bd2-14c5-431b-8146-38a754c9abc5.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-66de16f8-3bd8-4066-ba01-cf2a54db5806_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-66de16f8-3bd8-4066-ba01-cf2a54db5806.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e01eab2a-75e3-4b0c-a56c-e8f04d011de9_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e01eab2a-75e3-4b0c-a56c-e8f04d011de9.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ed8b42d2-6f58-49ec-b4ee-fcb59d40a610_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ed8b42d2-6f58-49ec-b4ee-fcb59d40a610.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-47736c53-ea8c-448e-baec-0dbbc7f8171e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-47736c53-ea8c-448e-baec-0dbbc7f8171e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-02a16cb4-82a9-457d-9ec7-4cb4e9380bab_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-02a16cb4-82a9-457d-9ec7-4cb4e9380bab.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-6ba652a1-65d3-4645-bc69-2e4b53f9d291_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-6ba652a1-65d3-4645-bc69-2e4b53f9d291.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a9f08356-26e6-4388-9529-d2db1e2197a9_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a9f08356-26e6-4388-9529-d2db1e2197a9.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-37d8a475-60eb-4a39-93e0-f03e1a7e12c2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-37d8a475-60eb-4a39-93e0-f03e1a7e12c2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ce4d31ff-a1b0-40af-9ca5-1e84bff0d8cb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ce4d31ff-a1b0-40af-9ca5-1e84bff0d8cb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-adaae0b4-5153-4391-8b52-2f5c90b453b4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-adaae0b4-5153-4391-8b52-2f5c90b453b4.md"
+      ]
+    },
     {
       "clave": "migraciones",
       "archivos": [
-        "falso"
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migration-2025-12-17.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrate.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migrate.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8a9eadd5-f1b9-4d36-9414-45a5cd398372_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8a9eadd5-f1b9-4d36-9414-45a5cd398372.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-579ff020-1068-4913-a9af-d64e4af1272a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-579ff020-1068-4913-a9af-d64e4af1272a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-dbffa3f6-2f8c-44da-9078-c59c2b986a93_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-dbffa3f6-2f8c-44da-9078-c59c2b986a93.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b2cf0108-577c-46c6-962e-ca465b8fb510_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b2cf0108-577c-46c6-962e-ca465b8fb510.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-4a062f74-df60-4766-b1e4-3ee1c13e97da_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4a062f74-df60-4766-b1e4-3ee1c13e97da.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-83f7c1ee-d309-4cd2-9ac5-0b3ec51cecf1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-83f7c1ee-d309-4cd2-9ac5-0b3ec51cecf1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3cbd5a25-3e4f-479e-b0a9-b410c0ee9907_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3cbd5a25-3e4f-479e-b0a9-b410c0ee9907.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-77725ce0-afa2-43ab-b6c2-85390551ac95_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-77725ce0-afa2-43ab-b6c2-85390551ac95.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-45eb140a-a673-4e34-b8f4-147b28abef10_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-45eb140a-a673-4e34-b8f4-147b28abef10.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d6e29142-148a-4e54-ab63-e06a12693b86_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d6e29142-148a-4e54-ab63-e06a12693b86.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-28a56315-e273-48da-bd3e-6097df54104a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-28a56315-e273-48da-bd3e-6097df54104a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d32b120e-9478-4753-8b25-908395150868_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d32b120e-9478-4753-8b25-908395150868.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5403f816-8a47-4fcc-9d39-ebda4cc4c7de_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5403f816-8a47-4fcc-9d39-ebda4cc4c7de.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2e273263-fa01-4d30-8ad6-9e39e00bfdfd_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2e273263-fa01-4d30-8ad6-9e39e00bfdfd.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-59321b8c-eeed-42af-aaf7-1306289892a7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-59321b8c-eeed-42af-aaf7-1306289892a7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-170340ea-4a0f-4612-be50-a1d14bbddc04_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-170340ea-4a0f-4612-be50-a1d14bbddc04.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-512668db-0dee-4e9f-82cf-dbd9abe026ce_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-512668db-0dee-4e9f-82cf-dbd9abe026ce.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-bd761b40-5a81-4129-a8ce-a709252e18a1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-bd761b40-5a81-4129-a8ce-a709252e18a1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ef495e50-6e7b-4896-9718-4ee1ea280c80_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ef495e50-6e7b-4896-9718-4ee1ea280c80.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-fe598078-5151-444a-a812-3b8d0d71e23f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-fe598078-5151-444a-a812-3b8d0d71e23f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1d0d4c21-f1f1-4adc-abed-14980ed9b549_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1d0d4c21-f1f1-4adc-abed-14980ed9b549.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-addac121-820e-4e8d-a006-af33c2bdc405_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-addac121-820e-4e8d-a006-af33c2bdc405.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-21f51dbc-26e5-4121-b775-54e26b9cb82a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-21f51dbc-26e5-4121-b775-54e26b9cb82a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ffa22c4e-5b47-48b8-b94c-8649771442e4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ffa22c4e-5b47-48b8-b94c-8649771442e4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-04df4d59-50ae-4c77-b153-ae4d3d466ed3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-04df4d59-50ae-4c77-b153-ae4d3d466ed3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-4c60ab84-2044-4106-8601-e563c56d11a4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4c60ab84-2044-4106-8601-e563c56d11a4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-79faec75-a010-4ada-9ab7-018223f869ea_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-79faec75-a010-4ada-9ab7-018223f869ea.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3660c070-6d01-42d7-99f9-fe1128d73d6a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3660c070-6d01-42d7-99f9-fe1128d73d6a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5c24285c-9a6b-4b6b-935b-44951c02ede1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5c24285c-9a6b-4b6b-935b-44951c02ede1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-9f8b268f-4a71-403a-896f-10b7805931db_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-9f8b268f-4a71-403a-896f-10b7805931db.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3854c373-757d-4789-8e12-ffe996643552_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3854c373-757d-4789-8e12-ffe996643552.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-59da9403-77e3-41d3-967b-be3bc2529190_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-59da9403-77e3-41d3-967b-be3bc2529190.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f9ce9803-d9af-49eb-a01e-d7604ffbab8e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f9ce9803-d9af-49eb-a01e-d7604ffbab8e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-eb462229-b64d-4019-8e29-58449330d97e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-eb462229-b64d-4019-8e29-58449330d97e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c50d74f4-d29d-4a64-a80a-121af02e2ddf_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c50d74f4-d29d-4a64-a80a-121af02e2ddf.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0fe9a80b-09f5-438a-9cfc-00b5c4b547b2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0fe9a80b-09f5-438a-9cfc-00b5c4b547b2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-aeddc1d5-3492-46cb-a910-233379bcad65_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-aeddc1d5-3492-46cb-a910-233379bcad65.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e92db9b3-d466-4eb8-9529-786d86e507f4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e92db9b3-d466-4eb8-9529-786d86e507f4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f06aa80e-c75d-4784-9746-7807f9b20e23_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f06aa80e-c75d-4784-9746-7807f9b20e23.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-legacy-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-legacy-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-317a1054-c140-488c-af5f-b0e926514495_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-317a1054-c140-488c-af5f-b0e926514495.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3259b7f3-7ed8-4969-96aa-4b551d290e78_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3259b7f3-7ed8-4969-96aa-4b551d290e78.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8239d426-14af-4e77-a622-926355dc594d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8239d426-14af-4e77-a622-926355dc594d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-dd0d7189-50e9-4f90-bda4-4795cab01267_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-dd0d7189-50e9-4f90-bda4-4795cab01267.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-02ed5ded-344f-4b69-87b3-6b2e83ab5b25_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-02ed5ded-344f-4b69-87b3-6b2e83ab5b25.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1d8ffe0f-99b7-4a50-8526-f060e3cd810d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1d8ffe0f-99b7-4a50-8526-f060e3cd810d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-042a338a-3009-4c99-bd5e-52057c30f435_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-042a338a-3009-4c99-bd5e-52057c30f435.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-daa81dad-7a60-49d8-9b99-6c970d9fbbf2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-daa81dad-7a60-49d8-9b99-6c970d9fbbf2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-25b88553-e942-4e70-a740-090e68f72602_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-25b88553-e942-4e70-a740-090e68f72602.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-02029ffc-d321-4f51-866f-2f8dd8ffd22d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-02029ffc-d321-4f51-866f-2f8dd8ffd22d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5522d889-6fc4-4017-bb94-11e921aa8e31_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5522d889-6fc4-4017-bb94-11e921aa8e31.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-91be6471-ffe0-48f0-abc6-5628557aa78f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-91be6471-ffe0-48f0-abc6-5628557aa78f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-6e7cdcd1-a322-43ab-b885-4d160ff97988_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-6e7cdcd1-a322-43ab-b885-4d160ff97988.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-fda422bd-2116-462d-b247-3f1f44fb72cb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-fda422bd-2116-462d-b247-3f1f44fb72cb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-317afcc5-cf9e-4fec-ba52-ce336cefed34_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-317afcc5-cf9e-4fec-ba52-ce336cefed34.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d57b1a16-8bdf-4587-a9d9-5fa45511d3e4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d57b1a16-8bdf-4587-a9d9-5fa45511d3e4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2b1a0878-43dc-47d7-8432-f3eb29b155d2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2b1a0878-43dc-47d7-8432-f3eb29b155d2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2ed6de4e-dea7-43d8-a821-37e670c7ba0e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2ed6de4e-dea7-43d8-a821-37e670c7ba0e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-52c21f34-1ae3-44e3-b00d-dc4f154a67a6_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-52c21f34-1ae3-44e3-b00d-dc4f154a67a6.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c734e594-1719-4f09-b300-733792ead49f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c734e594-1719-4f09-b300-733792ead49f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-782d81e9-1970-4ab1-a199-cd75889037d3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-782d81e9-1970-4ab1-a199-cd75889037d3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-10ee10ca-9b7a-4ee3-bf0d-1af7c3c90479_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-10ee10ca-9b7a-4ee3-bf0d-1af7c3c90479.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3387e320-73f4-4ae3-a886-adb3c16194a7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3387e320-73f4-4ae3-a886-adb3c16194a7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e59b8560-b7f6-458a-9a03-70f5dfb5afae_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e59b8560-b7f6-458a-9a03-70f5dfb5afae.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-prompts-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-prompts-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-915995bd-e933-4edd-ad15-fcc3d533b171_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-915995bd-e933-4edd-ad15-fcc3d533b171.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ff995ecf-124f-453a-98e8-098d58e862f3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ff995ecf-124f-453a-98e8-098d58e862f3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-63ad18de-2b54-4281-8e45-23589f6382fe_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-63ad18de-2b54-4281-8e45-23589f6382fe.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b70aef5e-9563-4924-aedd-e44582793051_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b70aef5e-9563-4924-aedd-e44582793051.md"
+      ]
+    },
+    {
+      "clave": "0010-propuesta-eliminar-fastify-plugin_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/0010-propuesta-eliminar-fastify-plugin.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b73a955e-dc81-4875-9e7e-4c1ed4e976a9_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b73a955e-dc81-4875-9e7e-4c1ed4e976a9.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-create-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-create-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-9b173fa8-e366-43f3-9858-a43f3bb234e8_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-9b173fa8-e366-43f3-9858-a43f3bb234e8.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-086d74c9-07df-47e4-b39f-2b91e80afab9_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-086d74c9-07df-47e4-b39f-2b91e80afab9.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a02effd6-70c3-4a45-9ac4-4469dfd91ece_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a02effd6-70c3-4a45-9ac4-4469dfd91ece.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8a9e58bc-fab5-4c24-b2e5-1c0d0737094a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8a9e58bc-fab5-4c24-b2e5-1c0d0737094a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-de7e9855-8ce8-4f19-829e-9b4c7ec3101a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-de7e9855-8ce8-4f19-829e-9b4c7ec3101a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c3177aae-a382-4630-901c-840519551439_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c3177aae-a382-4630-901c-840519551439.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-facae3b9-83e0-4d99-a9a6-e93a6260f4bf_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-facae3b9-83e0-4d99-a9a6-e93a6260f4bf.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-514b2454-639f-482e-b233-35a37fdf6e58_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-514b2454-639f-482e-b233-35a37fdf6e58.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1a1798d4-537b-449c-a2b9-bffb0e453f68_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1a1798d4-537b-449c-a2b9-bffb0e453f68.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-02ef7613-2ae1-4d0a-a5b9-88519927a2e1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-02ef7613-2ae1-4d0a-a5b9-88519927a2e1.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-template-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-template-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-befe42ac-0625-4e8e-8678-b2a3c9179ec7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-befe42ac-0625-4e8e-8678-b2a3c9179ec7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-dd1741b8-9aa1-4258-9756-793a8be0e4f0_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-dd1741b8-9aa1-4258-9756-793a8be0e4f0.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ff6bedda-79ab-47e2-8a5c-339424f2048b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ff6bedda-79ab-47e2-8a5c-339424f2048b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-086fc21b-de3d-466e-ac15-a32da41ebce5_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-086fc21b-de3d-466e-ac15-a32da41ebce5.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-72d97530-9b95-4f61-8cd3-ce84ff8cdf3c_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-72d97530-9b95-4f61-8cd3-ce84ff8cdf3c.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1e5d57f8-b5dd-40d9-b5f8-7a9c3482f0c5_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1e5d57f8-b5dd-40d9-b5f8-7a9c3482f0c5.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-aba873e0-15ec-4d27-a2d4-841f104714df_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-aba873e0-15ec-4d27-a2d4-841f104714df.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d3013d74-18ef-4aed-8c5d-9d92e0035914_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d3013d74-18ef-4aed-8c5d-9d92e0035914.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-02c5fc8b-f08d-4347-bd01-fa8994307879_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-02c5fc8b-f08d-4347-bd01-fa8994307879.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-33ae9107-6595-4cca-a48e-795fce1221b2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-33ae9107-6595-4cca-a48e-795fce1221b2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-dd322e2e-8ff1-402e-91d4-f055a1b9113f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-dd322e2e-8ff1-402e-91d4-f055a1b9113f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-16-propuestas-automaticas_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuestas-automaticas.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-4d109cb3-7c28-4046-a445-9fb8a9115a62_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4d109cb3-7c28-4046-a445-9fb8a9115a62.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c3687713-6f0a-427a-ae5f-4dfc709c90fb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c3687713-6f0a-427a-ae5f-4dfc709c90fb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-606ef27d-6435-481a-9f7b-15e1bc24549f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-606ef27d-6435-481a-9f7b-15e1bc24549f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0081798e-f8c8-4d3c-a57c-f18d2741b9ff_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0081798e-f8c8-4d3c-a57c-f18d2741b9ff.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a7578021-eb0d-44ee-8b7e-2aeb2f4efd4b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a7578021-eb0d-44ee-8b7e-2aeb2f4efd4b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-191ff449-d0c3-421b-8e79-2d89a3d5802e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-191ff449-d0c3-421b-8e79-2d89a3d5802e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2fd42350-bfae-4cba-80d7-3ee8a577ed1c_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2fd42350-bfae-4cba-80d7-3ee8a577ed1c.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-abc30ddc-ab43-4ecb-90d0-77371cade82a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-abc30ddc-ab43-4ecb-90d0-77371cade82a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-151cc97a-15b6-464d-b471-726a1acf133e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-151cc97a-15b6-464d-b471-726a1acf133e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-feb3901e-b142-448b-ad0f-6a9e5434a8fa_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-feb3901e-b142-448b-ad0f-6a9e5434a8fa.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2bee8a94-28f8-400a-8489-b0dae10a4325_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2bee8a94-28f8-400a-8489-b0dae10a4325.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-dd25dd23-f2aa-4625-b629-0896caab95ac_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-dd25dd23-f2aa-4625-b629-0896caab95ac.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-694ae8da-4fdd-4f21-8284-f6bad20117cb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-694ae8da-4fdd-4f21-8284-f6bad20117cb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3bf125bc-bb5e-41e4-b38a-b8273e53e31b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3bf125bc-bb5e-41e4-b38a-b8273e53e31b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-65ab8457-0ac8-479b-b2ff-2636b32c957d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-65ab8457-0ac8-479b-b2ff-2636b32c957d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0f48f0e2-278a-4bd4-a4df-24365d0eaeda_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0f48f0e2-278a-4bd4-a4df-24365d0eaeda.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ac582f2c-4982-4a44-b0bc-172c7a9abe62_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ac582f2c-4982-4a44-b0bc-172c7a9abe62.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ca8138c0-8117-4cd7-97fb-99f6cfcc348a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ca8138c0-8117-4cd7-97fb-99f6cfcc348a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-7a6fb699-21b6-4432-8a2b-2342620f6a48_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7a6fb699-21b6-4432-8a2b-2342620f6a48.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8d7e0cf1-e06e-4407-ab26-6f38029f3676_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8d7e0cf1-e06e-4407-ab26-6f38029f3676.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-be1bd4a0-24b1-41af-b991-d438b7db1f09_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-be1bd4a0-24b1-41af-b991-d438b7db1f09.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-253cd037-e647-41c9-a004-5ec0bd5ba649_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-253cd037-e647-41c9-a004-5ec0bd5ba649.md"
+      ]
+    },
+    {
+      "clave": "2025-12-17-propuesta-traducir-migraciones_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migraciones.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-056c3b9b-8ebb-4d5b-9e08-78d8e44433cb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-056c3b9b-8ebb-4d5b-9e08-78d8e44433cb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a0370e1e-9062-4a19-881d-363210387a57_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a0370e1e-9062-4a19-881d-363210387a57.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-01d41ab4-3e6c-4a47-9a2a-89b74b4b59ef_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-01d41ab4-3e6c-4a47-9a2a-89b74b4b59ef.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-46f29b46-b1aa-4ac9-a1bc-6c820c342ced_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-46f29b46-b1aa-4ac9-a1bc-6c820c342ced.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ae89bd0f-ec7d-4521-937a-a189f0a6c4ce_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ae89bd0f-ec7d-4521-937a-a189f0a6c4ce.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d8e59519-8673-4a50-966e-987d06573706_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d8e59519-8673-4a50-966e-987d06573706.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e6714b31-5167-4b46-84f6-d9ca13e836a2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e6714b31-5167-4b46-84f6-d9ca13e836a2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8e431767-5d38-4870-8a5a-a402c14769ab_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8e431767-5d38-4870-8a5a-a402c14769ab.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ef1f21a1-fe83-4029-842a-038220ce3966_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ef1f21a1-fe83-4029-842a-038220ce3966.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-service-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-service-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a3219c94-8fe0-48ef-b7ca-3add27f842bb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a3219c94-8fe0-48ef-b7ca-3add27f842bb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5e0d8722-9271-456a-95b4-f978017786da_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5e0d8722-9271-456a-95b4-f978017786da.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-69f77cff-c9ca-4ebb-98b1-10d0cf879841_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-69f77cff-c9ca-4ebb-98b1-10d0cf879841.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-512aaf89-2589-4c56-8688-740facdad803_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-512aaf89-2589-4c56-8688-740facdad803.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a1bec1a8-17bd-474e-90d5-0eda506faef6_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a1bec1a8-17bd-474e-90d5-0eda506faef6.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-94552a6b-a720-4c1c-bc24-e08c4ff43e44_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-94552a6b-a720-4c1c-bc24-e08c4ff43e44.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e0f15be1-5476-493c-aca0-357c451d26b6_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e0f15be1-5476-493c-aca0-357c451d26b6.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-17cf433e-2bfa-4065-b7c2-dcb0c0d0edc4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-17cf433e-2bfa-4065-b7c2-dcb0c0d0edc4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-839d1a54-0592-4241-83a2-7ccf65413004_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-839d1a54-0592-4241-83a2-7ccf65413004.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8f7f435f-89c5-457c-8d35-bee5819069c3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8f7f435f-89c5-457c-8d35-bee5819069c3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-cd49c6ce-ee44-4c27-8a4c-d5660bd26579_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-cd49c6ce-ee44-4c27-8a4c-d5660bd26579.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-spec-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-spec-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-092fed68-8648-4740-91b8-f8942abd25d9_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-092fed68-8648-4740-91b8-f8942abd25d9.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0ec40972-db2b-4e43-a0e2-f71ecf0d906f_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0ec40972-db2b-4e43-a0e2-f71ecf0d906f.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-891e2697-2aa2-454b-a4cd-1e8e57bc906d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-891e2697-2aa2-454b-a4cd-1e8e57bc906d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-6a2a3506-25f7-4c70-878a-c3c0547ba165_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-6a2a3506-25f7-4c70-878a-c3c0547ba165.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3e9a1bae-504d-4bf6-9ecb-c2e7b31fdc3d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3e9a1bae-504d-4bf6-9ecb-c2e7b31fdc3d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f761dfef-e1f8-4c77-acff-9975c83ee957_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f761dfef-e1f8-4c77-acff-9975c83ee957.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-cdb7a637-d820-4f33-8c50-0c6dc413a8b5_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-cdb7a637-d820-4f33-8c50-0c6dc413a8b5.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ccae8a77-98af-43db-9217-8fccaedef5ee_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ccae8a77-98af-43db-9217-8fccaedef5ee.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-9aa6c397-93bc-4b98-ba71-46b7efe7ee39_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-9aa6c397-93bc-4b98-ba71-46b7efe7ee39.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c3b4511a-f661-480e-bd31-02cf31de468e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c3b4511a-f661-480e-bd31-02cf31de468e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3afd5a62-149e-4fe7-b409-4b2dc9d2cb87_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3afd5a62-149e-4fe7-b409-4b2dc9d2cb87.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-824cce8e-26e7-4785-8d38-2a640fb249ee_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-824cce8e-26e7-4785-8d38-2a640fb249ee.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-434bd777-5797-4b5b-ac7f-51e0c775ed79_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-434bd777-5797-4b5b-ac7f-51e0c775ed79.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b89b3071-7cd9-49aa-a712-f025cd624a35_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b89b3071-7cd9-49aa-a712-f025cd624a35.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-873e8a64-3f54-4447-b7a9-fc38a4a5aa6b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-873e8a64-3f54-4447-b7a9-fc38a4a5aa6b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c04507fd-c107-4b24-a32c-26d07d5f7288_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c04507fd-c107-4b24-a32c-26d07d5f7288.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-885a32ee-1f5f-436f-be37-e62a477e21e5_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-885a32ee-1f5f-436f-be37-e62a477e21e5.md"
+      ]
+    },
+    {
+      "clave": "0006-proponer-traduccion-terminos-ingles_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/0006-proponer-traduccion-terminos-ingles.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-test-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-test-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0f2fd6cb-11b8-4866-9931-dec485414484_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0f2fd6cb-11b8-4866-9931-dec485414484.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-10a5f924-3220-4735-b661-576676ba037c_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-10a5f924-3220-4735-b661-576676ba037c.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-315aee51-4945-4f34-b453-06bf7aee891d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-315aee51-4945-4f34-b453-06bf7aee891d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d39206d5-33f0-4d60-9e48-645c9b7e0886_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d39206d5-33f0-4d60-9e48-645c9b7e0886.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2269003c-bfd5-46d6-97de-a582cfb76cbd_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2269003c-bfd5-46d6-97de-a582cfb76cbd.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-31da11b4-3859-44ac-bd35-1163b3fb27b1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-31da11b4-3859-44ac-bd35-1163b3fb27b1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-2207a229-7937-43c3-b03d-68f09f5e8112_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-2207a229-7937-43c3-b03d-68f09f5e8112.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ce08d3fa-1596-400e-81f4-2a665f9aec26_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ce08d3fa-1596-400e-81f4-2a665f9aec26.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-bea7ab53-4d9c-471e-8c12-489f4aa97bb6_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-bea7ab53-4d9c-471e-8c12-489f4aa97bb6.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0c3cf02b-181e-47bb-901f-7247864638e4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0c3cf02b-181e-47bb-901f-7247864638e4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-7a2ea48d-1d85-4563-87a5-d905d4d84c74_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7a2ea48d-1d85-4563-87a5-d905d4d84c74.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1bc945ab-1481-42e8-a8e6-1826721b6255_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1bc945ab-1481-42e8-a8e6-1826721b6255.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-85c6b3b0-4333-4588-ba80-9aa58af2fa89_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-85c6b3b0-4333-4588-ba80-9aa58af2fa89.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-0d0a1ce4-0616-4263-93a4-c789e7d4417b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-0d0a1ce4-0616-4263-93a4-c789e7d4417b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e992ed63-e231-4ced-b9a1-ff45fa58b5ec_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e992ed63-e231-4ced-b9a1-ff45fa58b5ec.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-4ffe6f1a-008c-48e4-8f27-be8fb32159f7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4ffe6f1a-008c-48e4-8f27-be8fb32159f7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f896eec4-b44c-496d-a9cb-f019fcc5201e_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f896eec4-b44c-496d-a9cb-f019fcc5201e.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d5683d5d-479d-4e28-b050-43da0c8c12da_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d5683d5d-479d-4e28-b050-43da0c8c12da.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f21aeae5-a3b9-4e55-adc8-4547f14a699a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f21aeae5-a3b9-4e55-adc8-4547f14a699a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f817e630-3ad5-4b9a-addf-a076d31006b3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f817e630-3ad5-4b9a-addf-a076d31006b3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-984e3ad2-d44b-40c2-bce3-677bc8e744c1_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-984e3ad2-d44b-40c2-bce3-677bc8e744c1.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-aaa1e612-6227-4504-a87f-a6ba73159e8c_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-aaa1e612-6227-4504-a87f-a6ba73159e8c.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-1119e1cc-4770-4758-9a5c-f421683dfefe_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-1119e1cc-4770-4758-9a5c-f421683dfefe.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-8cd97ae2-8980-4e8d-89c8-c24fd9f29bd7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-8cd97ae2-8980-4e8d-89c8-c24fd9f29bd7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-628750a9-a428-4c67-9a2c-06c8c583a9a7_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-628750a9-a428-4c67-9a2c-06c8c583a9a7.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-traducir-migraciones_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-traducir-migraciones.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-a090fbd7-b99a-4066-8bb2-ca78f3ba3cb2_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-a090fbd7-b99a-4066-8bb2-ca78f3ba3cb2.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-88beec87-cdee-4cbb-8619-cc4bf7365f57_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-88beec87-cdee-4cbb-8619-cc4bf7365f57.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-scripts-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-scripts-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-c62291da-e82b-4e6e-9ac6-0464569fadce_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-c62291da-e82b-4e6e-9ac6-0464569fadce.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f7f029e7-b46f-4393-b39c-f86650cbc411_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f7f029e7-b46f-4393-b39c-f86650cbc411.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-24eabba9-035e-4a02-980f-646ee147d54d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-24eabba9-035e-4a02-980f-646ee147d54d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-96b94b12-504c-41d1-9670-6c29ac6ca7d4_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-96b94b12-504c-41d1-9670-6c29ac6ca7d4.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d7038fe6-0c37-4c62-938a-3d057132b006_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d7038fe6-0c37-4c62-938a-3d057132b006.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ba75cd45-d17d-4ddf-874f-b1c55c7bd689_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ba75cd45-d17d-4ddf-874f-b1c55c7bd689.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-3c448b60-536f-4e1e-83eb-4c5df0b3b32d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3c448b60-536f-4e1e-83eb-4c5df0b3b32d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-60cfceb2-6301-4c1e-8b6d-13458c342cbb_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-60cfceb2-6301-4c1e-8b6d-13458c342cbb.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b2380133-02b3-4cbb-a794-a389cbe3106c_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b2380133-02b3-4cbb-a794-a389cbe3106c.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-f73530f4-31ec-48e4-8c4d-1501d56f7bc0_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-f73530f4-31ec-48e4-8c4d-1501d56f7bc0.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-60b5406b-99fe-4ade-bbed-9613c5dd594b_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-60b5406b-99fe-4ade-bbed-9613c5dd594b.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-b0f5dcc8-a302-4e42-a1d8-9b9bc6ac47fd_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b0f5dcc8-a302-4e42-a1d8-9b9bc6ac47fd.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-fa49aa25-2edb-4065-a35a-4d8e0d018833_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-fa49aa25-2edb-4065-a35a-4d8e0d018833.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-d5d4e43f-63a4-447e-a136-8368b4912bb3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d5d4e43f-63a4-447e-a136-8368b4912bb3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-86ea5b59-8efc-45ec-9a86-fc661ecf441a_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-86ea5b59-8efc-45ec-9a86-fc661ecf441a.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-e3c55e40-292e-446d-9843-85273c3b66d3_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-e3c55e40-292e-446d-9843-85273c3b66d3.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-493e5225-b799-48a4-b949-6906a884bacd_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-493e5225-b799-48a4-b949-6906a884bacd.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-ae23c51c-6a1a-4e24-b141-dfb7fc3a04a8_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ae23c51c-6a1a-4e24-b141-dfb7fc3a04a8.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-5928951d-4484-46ea-a55a-cd9106a6239d_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-5928951d-4484-46ea-a55a-cd9106a6239d.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-normalizar-ruta-t_rmino-detectado-517fad1a-11fe-46c0-a5c9-8eef3d2a0bf0_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-517fad1a-11fe-46c0-a5c9-8eef3d2a0bf0.md"
       ]
     }
   ]
