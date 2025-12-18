@@ -27,7 +27,7 @@ export async function validarSemantica(term: string, suggest?: string) {
   const normalize = (s: string) =>
     s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
   const parcial = normalize(term).includes(normalize(sugerencia)) || normalize(sugerencia).includes(normalize(term))
-  const score = parcial ? 0.6 : 0.5
+  const score = parcial ? 0.65 : 0.5
   return {
     // Para coincidencias parciales consideramos suficiente confianza práctica para marcar como válido
     valido: parcial ? true : false,
