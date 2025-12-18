@@ -1,9 +1,7 @@
-# Ignore temporary test outputs and generated proposals
+# Root level ignores for test artifacts
+documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/
+api/reports/
+api/reports/*.json
 api/tmp/
 api/api/tmp/
-tmp/
-# Reports and generated metrics
-api/reports/
-api/tmp/**/auto-approve-metrics.jsonl
-# Ignore proposals generated during tests
-documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/
+.tmp_metrics/
