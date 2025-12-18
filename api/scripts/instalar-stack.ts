@@ -54,10 +54,16 @@ services:
     restart: unless-stopped
 
   dragonfly:
-    image: dragonflydb/dragonfly:6.3.8-alpine
+    # usar latest como fallback para evitar tags no disponibles en Docker Hub
+    image: dragonflydb/dragonfly:latest
     ports:
       - "7379:7379"
     command: ["--maxmemory=2GB","--proactor_threads=4"]
+    healthcheck:
+      test: ["CMD-SHELL", "dragonfly --version || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     volumes:
       - dragonfly-data:/data
     restart: unless-stopped
