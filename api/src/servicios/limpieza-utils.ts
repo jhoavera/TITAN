@@ -57,7 +57,19 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
       return { ok: true, reason, rule: 'maintainer-shortcut' }
     }
 
-    // Long-term proposal auto-apply (conservador): muy antiguo y allowLongTermAuto
+    // Heurística: propuestas de glosario muy antiguas con allowLongTermAuto (específica)
+    if (filePath.includes(path.join('glosario-biblioteca', 'propuestas')) && opts.allowLongTermAuto && typeof opts.longTermDays === 'number') {
+      try {
+        const stat = fs.statSync(filePath)
+        const days = Math.floor((Date.now() - stat.mtime.getTime()) / (1000 * 60 * 60 * 24))
+        if (days >= opts.longTermDays && content.length < 2000) {
+          try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'propuesta de glosario antigua y auto-allow', rule: 'glossary-proposal' }) } catch(e) {}
+          return { ok: true, reason: 'propuesta de glosario antigua y auto-allow', rule: 'glossary-proposal' }
+        }
+      } catch {}
+    }
+
+    // Long-term proposal auto-apply (conservador): muy antiguo y allowLongTermAuto (genérico)
     if (opts.allowLongTermAuto && typeof opts.longTermDays === 'number') {
       try {
         const stat = fs.statSync(filePath)
