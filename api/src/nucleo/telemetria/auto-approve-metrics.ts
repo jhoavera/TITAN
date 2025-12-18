@@ -33,7 +33,13 @@ export function recordAutoApproveMetric(event: AutoApproveMetric) {
     const { out, file } = getMetricsPaths()
     fs.mkdirSync(out, { recursive: true })
     const line = JSON.stringify(event) + '\n'
-    fs.appendFileSync(file, line, 'utf8')
+    // Use open/write/close to make append more robust across processes
+    const fd = fs.openSync(file, 'a')
+    try {
+      fs.writeSync(fd, line, null, 'utf8')
+    } finally {
+      try { fs.closeSync(fd) } catch {}
+    }
   } catch (e) {
     // non-fatal: ensure we don't throw from metrics
     console.error('[metrics] failed to write metric', e instanceof Error ? e.message : String(e))
@@ -105,31 +111,63 @@ export function rotateAutoApproveMetrics(maxAgeDays = 30): { rotated: number; ar
   try {
     const { out, file } = getMetricsPaths()
     if (!fs.existsSync(file)) return { rotated: 0 }
-    const lines = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean)
-    if (lines.length === 0) return { rotated: 0 }
 
-    const cutoff = Date.now() - maxAgeDays * 24 * 60 * 60 * 1000
-    const keep: string[] = []
-    const rot: string[] = []
-
-    for (const l of lines) {
-      try {
-        const obj = JSON.parse(l) as AutoApproveMetric
-        const t = new Date(obj.ts).getTime()
-        if (t < cutoff) rot.push(l)
-        else keep.push(l)
-      } catch {
-        // If parse fails, keep the line to avoid data loss
-        keep.push(l)
-      }
+    // Acquire a simple lock by creating a .rotate.lock file with exclusive flag
+    const lockFile = path.join(out, '.rotate.lock')
+    let lockFd: number | undefined
+    try {
+      lockFd = fs.openSync(lockFile, 'wx') // throws if exists
+    } catch (e) {
+      // Another rotation is in progress
+      return { rotated: 0 }
     }
 
-    if (rot.length === 0) return { rotated: 0 }
+    try {
+      // Move the current file to a temp file to avoid losing metrics appended during rotation
+      const tmpName = path.join(out, `auto-approve-metrics.rotating.${process.pid}.${Date.now()}.tmp`)
+      fs.renameSync(file, tmpName)
 
-    const archiveName = path.join(out, `auto-approve-archive-${new Date().toISOString().slice(0,10)}.jsonl`)
-    fs.appendFileSync(archiveName, rot.join('\n') + '\n', 'utf8')
-    fs.writeFileSync(file, keep.join('\n') + (keep.length ? '\n' : ''), 'utf8')
-    return { rotated: rot.length, archivePath: archiveName }
+      const lines = fs.readFileSync(tmpName, 'utf8').split('\n').filter(Boolean)
+      if (lines.length === 0) {
+        // recreate an empty metrics file
+        fs.writeFileSync(file, '')
+        fs.unlinkSync(tmpName)
+        return { rotated: 0 }
+      }
+
+      const cutoff = Date.now() - maxAgeDays * 24 * 60 * 60 * 1000
+      const keep: string[] = []
+      const rot: string[] = []
+
+      for (const l of lines) {
+        try {
+          const obj = JSON.parse(l) as AutoApproveMetric
+          const t = new Date(obj.ts).getTime()
+          if (t < cutoff) rot.push(l)
+          else keep.push(l)
+        } catch {
+          // If parse fails, keep the line to avoid data loss
+          keep.push(l)
+        }
+      }
+
+      if (rot.length === 0) {
+        // write back the kept lines and finish
+        fs.writeFileSync(file, keep.join('\n') + (keep.length ? '\n' : ''), 'utf8')
+        fs.unlinkSync(tmpName)
+        return { rotated: 0 }
+      }
+
+      const archiveName = path.join(out, `auto-approve-archive-${new Date().toISOString().slice(0,10)}.jsonl`)
+      fs.appendFileSync(archiveName, rot.join('\n') + '\n', 'utf8')
+      fs.writeFileSync(file, keep.join('\n') + (keep.length ? '\n' : ''), 'utf8')
+      fs.unlinkSync(tmpName)
+      return { rotated: rot.length, archivePath: archiveName }
+    } finally {
+      // release lock
+      try { if (lockFd) fs.closeSync(lockFd) } catch {}
+      try { fs.unlinkSync(lockFile) } catch {}
+    }
   } catch (e) {
     console.error('[metrics] rotate failed', e instanceof Error ? e.message : String(e))
     return { rotated: 0 }
