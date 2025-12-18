@@ -1,6 +1,6 @@
 {
   "name": "titan-temp",
   "scripts": {
-    "dev": "bun -r ts-node/register src/index.ts"
+    "dev": "bun -r bun/register src/index.ts"
   }
 }
