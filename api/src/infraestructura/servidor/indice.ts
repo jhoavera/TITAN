@@ -1,4 +1,5 @@
-// _indice generado automáticamente - 2025-12-18T04:53:09.098Z
+// _indice generado automáticamente - 2025-12-18T20:48:46.297Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
-export * from '@infraestructura/servidor/bootstrap'
-export * from '@infraestructura/servidor/servidor-hono'
+export * from './app'
+export * from './bootstrap'
+export * from './servidor-hono'

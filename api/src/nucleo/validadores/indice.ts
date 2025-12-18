@@ -1,5 +1,5 @@
-// _indice generado automáticamente - 2025-12-18T04:53:09.096Z
+// _indice generado automáticamente - 2025-12-18T20:48:46.296Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
-export * from '@nucleo/validadores/validador-adrs'
-export * from '@nucleo/validadores/validador-glosario'
-export * from '@nucleo/validadores/validador-ops'
+export * from './validador-adrs'
+export * from './validador-glosario'
+export * from './validador-ops'

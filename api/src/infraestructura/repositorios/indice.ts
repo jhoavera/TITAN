@@ -1,6 +1,7 @@
-// _indice generado automáticamente - 2025-12-18T04:53:09.097Z
+// _indice generado automáticamente - 2025-12-18T20:48:46.297Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
-export * from '@infraestructura/repositorios/interfaz-repositorio-glosario'
-export * from '@infraestructura/repositorios/repositorio-adrs'
-export * from '@infraestructura/repositorios/repositorio-glosario-drizzle'
-export * from '@infraestructura/repositorios/repositorio-glosario'
+export * from './interfaz-repositorio-glosario'
+export * from './repositorio-adrs-drizzle'
+export * from './repositorio-adrs'
+export * from './repositorio-glosario-drizzle'
+export * from './repositorio-glosario'

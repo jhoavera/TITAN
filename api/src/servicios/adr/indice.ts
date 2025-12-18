@@ -1,5 +1,6 @@
-// _indice generado automáticamente - 2025-12-18T04:53:09.097Z
+// _indice generado automáticamente - 2025-12-18T20:48:46.296Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
-export * from '@servicios/adr/git'
-export * from '@servicios/adr/servicio-adr'
-export * from '@servicios/adr/types'
+export * from './git'
+export * from './servicio-adr-integrado'
+export * from './servicio-adr'
+export * from './types'

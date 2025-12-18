@@ -1,6 +1,6 @@
-// _indice generado automáticamente - 2025-12-18T04:53:09.098Z
+// _indice generado automáticamente - 2025-12-18T20:48:46.297Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
-export * from '@infraestructura/servidor/controladores/adrs-controlador'
-export * from '@infraestructura/servidor/controladores/auditoria-controlador'
-export * from '@infraestructura/servidor/controladores/glosario-controlador'
-export * from '@infraestructura/servidor/controladores/ops-controlador'
+export * from './adrs-controlador'
+export * from './auditoria-controlador'
+export * from './glosario-controlador'
+export * from './ops-controlador'
