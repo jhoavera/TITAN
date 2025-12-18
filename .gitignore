@@ -1,7 +1,16 @@
 # Root level ignores for test artifacts
 documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/
+# Propuestas generadas por scripts/tests (no versionar)
+documentacion-fuente-unica-verdad/ad-rs/*propuesta*
 api/reports/
 api/reports/*.json
 api/tmp/
 api/api/tmp/
 .tmp_metrics/
+# Additional ignores for test-generated artifacts and telemetry
+/tmp/
+/reports/
+api/tmp/**
+api/tmp/**/auto-approve-metrics.jsonl
+reports/
+tmp/
