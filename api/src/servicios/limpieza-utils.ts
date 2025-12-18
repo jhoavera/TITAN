@@ -144,10 +144,18 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
       return { ok: true, reason: 'propuesta de traducción pequeña', rule: 'translation-suggestion' }
     }
 
-    // Heurística: markdown corto (no code blocks, no imports) — segura para auto-approve si es muy pequeña
+    // Heurística: markdown corto (sin code blocks ni imports).
+    // NOTA: regla md-small ahora requiere una marca explícita en frontmatter
+    // (auto-approve / aprobado / confianza alta) para evitar aprobar markdown genérico.
     if (ext === 'md' && content.length < 500 && !content.includes('```') && !/^(\s*(import|export|require)\s+)/m.test(content)) {
-      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }) } catch(e) {}
-      return { ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }
+      const explicitMark = (fm['auto-approve'] && ['yes','true','si'].includes(fm['auto-approve'].toLowerCase())) || (fm['aprobado'] && fm['aprobado'].toLowerCase() === 'true') || (fm['confianza'] && fm['confianza'].toLowerCase() === 'alta') || contentLower.includes('auto-approve') || contentLower.includes('aprobado: true')
+      if (explicitMark) {
+        try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código (marca explícita)', rule: 'md-small-explicit' }) } catch(e) {}
+        return { ok: true, reason: 'markdown corto y sin código (marca explícita)', rule: 'md-small-explicit' }
+      }
+      // Si no tiene marca explícita, no auto-aprobar
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'markdown corto pero sin marca explícita', rule: 'md-small-no-mark' }) } catch(e) {}
+      // continue to final default rejection
     }
 
     // Heurística: JSON pequeño que parece propuesta/termino de glosario

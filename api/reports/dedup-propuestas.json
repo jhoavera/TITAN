@@ -1,7 +1,7 @@
 {
   "grupos": [
     {
-      "clave": "clave-e2e",
+      "clave": "migraciones",
       "archivos": [
         "falso"
       ]

@@ -3,7 +3,7 @@ import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-const run = (cmd: string) => execSync(cmd, { encoding: 'utf-8' });
+const run = (cmd: string) => execSync(cmd, { encoding: 'utf-8', timeout: 15000 });
 
 describe('prepr flow', () => {
   it('ejecuta flujo dedup -> proponer -> resumen', () => {

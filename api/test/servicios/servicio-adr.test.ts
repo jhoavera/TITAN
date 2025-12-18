@@ -7,11 +7,17 @@ const tmpRoot = path.resolve(__dirname, 'tmp-adr-service')
 if (!fs.existsSync(tmpRoot)) fs.mkdirSync(tmpRoot, { recursive: true })
 
 beforeEach(() => {
-  for (const f of fs.readdirSync(tmpRoot)) fs.unlinkSync(path.join(tmpRoot, f))
+  for (const f of fs.readdirSync(tmpRoot)) {
+    const p = path.join(tmpRoot, f)
+    try { fs.rmSync(p, { recursive: true, force: true }) } catch (e) { /* noop */ }
+  }
 })
 
 afterEach(() => {
-  for (const f of fs.readdirSync(tmpRoot)) fs.unlinkSync(path.join(tmpRoot, f))
+  for (const f of fs.readdirSync(tmpRoot)) {
+    const p = path.join(tmpRoot, f)
+    try { fs.rmSync(p, { recursive: true, force: true }) } catch (e) { /* noop */ }
+  }
 })
 
 describe('ServicioADR (integración básica)', () => {
