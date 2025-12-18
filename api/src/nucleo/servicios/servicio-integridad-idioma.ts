@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
-import { validarYRegistrarNombre } from './servicio-validacion-creacion'
+import { validarYRegistrarNombre } from '@nucleo/servicios/servicio-validacion-creacion'
+import { obtenerDocsRoot, rutaPropuestasGlosario } from '@nucleo/rutas/rutas-docs'
 
 const palabrasIngles = new Set([
   'migrations','migration','migrations','template','create','service','test','spec','legacy','scripts','prompts'
@@ -61,8 +62,8 @@ export async function procesarHallazgosYGenerarPropuestas(raiz: string, hallazgo
     let propuestaRuta: string | undefined = res.propuesta ?? undefined
     if (!propuestaRuta) {
       try {
-        const DOCS_ROOT = process.env.TITAN_DOCS_ROOT || path.resolve(__dirname, '../../../..')
-        const propuestasDir = path.resolve(DOCS_ROOT, 'documentacion-fuente-unica-verdad', 'glosario-biblioteca', 'propuestas')
+        const DOCS_ROOT = obtenerDocsRoot()
+        const propuestasDir = rutaPropuestasGlosario(DOCS_ROOT)
         await fs.promises.mkdir(propuestasDir, { recursive: true })
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
         const nombreArchivo = `${timestamp}-integridad-idioma-${termino.replace(/[\\/]/g, '_')}.md`
@@ -81,7 +82,7 @@ export async function procesarHallazgosYGenerarPropuestas(raiz: string, hallazgo
     const contenidoADR = `---\ntitulo: "Propuesta: traducir '${termino}' a español"\nfecha: ${new Date().toISOString()}\nestado: propuesta\n---\n\nPropuesta automática: se detectó el término en inglés '${termino}' en el repositorio (ej. ${path.relative(raiz,h.ruta)}). Se propone usar '${traduccion ?? 'TRADUCCION-POR-DEFINIR'}' como término en español y registrar la entrada en el glosario con justificación técnica.`
     let adrRuta: string | undefined = undefined
     try {
-      const crear = await import('./servicio-adrs')
+      const crear = await import('@nucleo/servicios/servicio-adrs')
       const creado = await crear.crearADR(raiz, adrNombre, contenidoADR)
       // crearADR ahora devuelve { ruta, preValidacion }
       adrRuta = typeof creado === 'string' ? creado : creado.ruta

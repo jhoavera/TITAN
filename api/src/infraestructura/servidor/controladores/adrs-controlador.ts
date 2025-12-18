@@ -1,9 +1,9 @@
 /* Controlador mínimo para ADRs (operaciones CRUD básicas)
  */
-import type { RequestLike, ReplyLike } from '../types/handler';
-import { esquemaCrearADR, esquemaActualizarADR } from '../../../nucleo/validadores/validador-adrs';
-import * as repo from '../../repositorios/repositorio-adrs';
-import { obtenerDb } from '../../base-de-datos/cliente';
+import type { RequestLike, ReplyLike } from '@infraestructura/servidor/types/handler';
+import { esquemaCrearADR, esquemaActualizarADR } from '@nucleo/validadores/validador-adrs';
+import * as repo from '@infraestructura/repositorios/repositorio-adrs';
+import { obtenerDb } from '@infraestructura/base-de-datos/cliente';
 
 export const crear = async (request: RequestLike, reply: ReplyLike) => {
   const body = await esquemaCrearADR.parseAsync(request.body);

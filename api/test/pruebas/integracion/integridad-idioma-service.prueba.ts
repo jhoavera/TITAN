@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
-import { withTempAudit } from '../../helpers/auditoria'
+import { withTempAudit } from '@test/helpers/auditoria'
 
 describe('servicio integridad idioma (integracion minimal)', () => {
   it('detecta término en inglés y registra eventos', async () => {
@@ -11,7 +11,7 @@ describe('servicio integridad idioma (integracion minimal)', () => {
     await fs.promises.writeFile(path.join(dir, 'migrations_dummy.txt'), 'contenido', 'utf8')
 
     await withTempAudit(async (tmpLog) => {
-      const mod = await import('../../../scripts/servicios/integridad-idioma')
+      const mod = await import('@scripts/servicios/integridad-idioma')
       const res = await mod.runIntegridadIdioma(dir)
       expect(res.hallazgos.length).toBeGreaterThanOrEqual(1)
 

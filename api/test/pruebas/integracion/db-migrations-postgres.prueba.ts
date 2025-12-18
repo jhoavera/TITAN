@@ -2,7 +2,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import { Client } from 'pg'
 import fs from 'fs'
 import path from 'path'
-import { hayTriggersAuditoria } from '../../../src/infraestructura/base-de-datos/utilidades/chequeo-auditoria'
+import { hayTriggersAuditoria } from '@infraestructura/base-de-datos/utilidades/chequeo-auditoria'
 
 const DOCKER_COMPOSE_FILE = path.resolve(__dirname, '../../..', 'docker-compose.local.yml')
 
@@ -45,7 +45,7 @@ describe('DB integration: aplicar migraciones 0001 + 0002 y verificar triggers d
     if (!client) throw new Error('No se pudo conectar a Postgres')
 
     // Ejecutar migraciones 0001 y 0002 en orden
-    const migracionesDir = path.resolve(__dirname, '../../../src/infraestructura/base-de-datos/migraciones')
+    const migracionesDir = path.resolve(process.cwd(), 'src/infraestructura/base-de-datos/migraciones')
     const files = ['0001_crear_tablas_glosario_adrs.sql', '0002_triggers_auditoria.sql']
     for (const f of files) {
       const sql = fs.readFileSync(path.join(migracionesDir, f), 'utf8')

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { analizarScripts } from '../../scripts/ci/analizar-node-compatibilidad'
+import { analizarScripts } from '@scripts/ci/analizar-node-compatibilidad'
 
 describe('analizar-node-compatibilidad', () => {
   it('detecta node -r ts-node/register y sugiere bun', () => {

@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import { spawnSync } from 'child_process'
-import { ServicioADRCRUD } from '../../src/servicios/adr-crud'
+import { ServicioADRCRUD } from '@servicios/adr-crud'
 
 const script = path.resolve(__dirname, '..', '..', 'scripts', 'ci', 'aplicar-aprobaciones-automatico.ts')
 const reportsDir = path.resolve(__dirname, '..', '..', 'reports')

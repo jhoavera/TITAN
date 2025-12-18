@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { shouldAutoApprove } from '../../src/servicios/limpieza-utils'
-import { readAutoApproveMetrics } from '../../src/nucleo/telemetria/auto-approve-metrics'
+import { shouldAutoApprove } from '@servicios/limpieza-utils'
+import { readAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 
 const FIX = path.resolve(__dirname, 'fixtures', 'metrics')
 fs.mkdirSync(FIX, { recursive: true })

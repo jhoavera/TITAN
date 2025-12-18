@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify'
-import * as ctrl from '../controladores/ops-controlador'
+import * as ctrl from '@infraestructura/servidor/controladores/ops-controlador'
 
 /**
  * Registrador legacy para operaciones (Ops).

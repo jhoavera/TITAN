@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 import path from 'path';
 import fs from 'fs';
-import Service from '../../src/servicios/deduplicacion-propuestas';
+import Service from '@servicios/deduplicacion-propuestas';
 
 const proposalsDir = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas');
 const args = process.argv.slice(2);

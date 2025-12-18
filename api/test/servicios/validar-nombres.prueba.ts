@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { validarNombre, validarNombres } from '../../src/servicios/validar-nombres';
+import { validarNombre, validarNombres } from '@servicios/validar-nombres';
 
 describe('servicio validar-nombres', () => {
   it('detecta término en inglés y sugiere traducción', () => {

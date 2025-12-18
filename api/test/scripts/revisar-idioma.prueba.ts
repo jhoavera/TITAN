@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import fs from 'fs';
 import path from 'path';
-import { main } from '../../scripts/revisar-idioma';
+import { main } from '@scripts/revisar-idioma';
 
 describe('script revisar-idioma (dry-run)', () => {
   const tmp = path.resolve(process.cwd(), 'tmp-revisar-idioma');

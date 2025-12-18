@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import type { SpawnSyncReturns } from 'child_process';
-import { commandExists, findActLike, shouldSkipCheck, extractVersion, versionSatisfies } from '../../scripts/ci/check-act-prereqs';
+import { commandExists, findActLike, shouldSkipCheck, extractVersion, versionSatisfies } from '@scripts/ci/check-act-prereqs';
 
 describe('check-act-prereqs', () => {
   it('should report available when runner returns status 0', () => {

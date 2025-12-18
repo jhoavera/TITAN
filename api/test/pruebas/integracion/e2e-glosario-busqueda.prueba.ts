@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { obtenerDb, inicializarDb } from '../../../src/infraestructura/base-de-datos/cliente'
+import { obtenerDb, inicializarDb } from '@infraestructura/base-de-datos/cliente'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
@@ -19,7 +19,7 @@ describe('E2E - Glosario: búsqueda, paginación y caracteres Unicode', () => {
     db.lastId = 0
     inicializarDb(db)
 
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
     app = servidor.default
   })
 

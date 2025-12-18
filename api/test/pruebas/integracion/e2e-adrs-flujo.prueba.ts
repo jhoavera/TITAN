@@ -1,7 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { crearApp } from '../../../src/infraestructura/servidor/app'
-import { obtenerDb, inicializarDb } from '../../../src/infraestructura/base-de-datos/cliente'
-import fs from 'fs'
+import { obtenerDb, inicializarDb } from '@infraestructura/base-de-datos/cliente'
 
 describe('E2E - ADRs: flujo crear → revisar → aprobar (incluye git_ref y auditoría)', () => {
   let app: any
@@ -18,8 +16,10 @@ describe('E2E - ADRs: flujo crear → revisar → aprobar (incluye git_ref y aud
     // Inicializar app y shared StubDB
     const db = obtenerDb() as any
     inicializarDb(db)
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
     app = servidor.default
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino')
+    _resetRateLimitForTests()
   })
 
   it('crea, pone en revisión y aprueba (git_ref) y registra auditoría', async () => {

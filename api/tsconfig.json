@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": ["bun-types"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@nucleo/*": ["./nucleo/*"],
+      "@modulos/*": ["./modulos/*"],
+      "@api/*": ["./api/*"],
+      "@compartido/*": ["./compartido/*"],
+      "@tipos/*": ["./tipos/*"],
+      "@utilidades/*": ["./utilidades/*"],
+      "@rutas/*": ["./rutas/*", "./infraestructura/servidor/rutas/*"],
+      "@componentes/*": ["./componentes/*"],
+      "@ganchos/*": ["./ganchos/*"],
+      "@servicios/*": ["./servicios/*"],
+      "@infraestructura/*": ["./infraestructura/*"],
+      "@scripts/*": ["../scripts/*"],
+      "@test/*": ["../test/*"],
+      "@tests/*": ["../tests/*"]
+    }
+  },
+  "include": ["src", "scripts", "test", "tests"],
+  "exclude": ["node_modules", "dist", "build"]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T04:06:55.700Z",
+  "generatedAt": "2025-12-18T06:50:05.842Z",
   "reporte": [
     {
       "termino": "migraciones",
@@ -24,6 +24,7 @@
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migrations.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-traducir-migraciones.md",
         "/home/jhoavera/Documentos/TITAN/api/test/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
         "/home/jhoavera/Documentos/TITAN/api/test/servicios/glosario.prueba.ts",
         "/home/jhoavera/Documentos/TITAN/api/test/servicios/validar-nombres-async.prueba.ts",

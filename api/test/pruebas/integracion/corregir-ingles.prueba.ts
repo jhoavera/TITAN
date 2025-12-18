@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
-import { withTempAudit } from '../../helpers/auditoria'
+import { withTempAudit } from '@test/helpers/auditoria'
 
-import { runCorregirIngles } from '../../../scripts/servicios/corregir-ingles'
+import { runCorregirIngles } from '@scripts/servicios/corregir-ingles'
 
 describe('corregir-ingles script (integracion minimal)', () => {
   it('genera propuestas y ADRs en modo propuesta', async () => {

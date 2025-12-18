@@ -3,7 +3,7 @@
  * de auditoría (ej. `fn_registrar_auditoria` y triggers `tg_auditar_*`).
  * Devuelve un booleano; resultado cacheado en proceso para evitar consultas repetidas.
  */
-import type { DB } from '../cliente';
+import type { DB } from '@infraestructura/base-de-datos/cliente';
 
 let _cacheResultado: boolean | null = null;
 

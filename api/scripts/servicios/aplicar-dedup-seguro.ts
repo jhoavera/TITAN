@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 import path from 'path';
 import fs from 'fs';
-import ServicioDeduplicacionPropuestas from '../../src/servicios/deduplicacion-propuestas';
+import ServicioDeduplicacionPropuestas from '@servicios/deduplicacion-propuestas';
 
 const args = process.argv.slice(2);
 let reportPath = path.resolve(process.cwd(), '../reports/dedup-propuestas-*.json');

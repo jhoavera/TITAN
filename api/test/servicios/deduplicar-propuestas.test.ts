@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import ServicioDeduplicacionPropuestas from '../../src/servicios/deduplicacion-propuestas';
+import ServicioDeduplicacionPropuestas from '@servicios/deduplicacion-propuestas';
 
 const tmpDir = path.join(process.cwd(), 'tmp', 'dedup-test');
 

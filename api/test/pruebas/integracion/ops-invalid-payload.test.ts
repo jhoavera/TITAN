@@ -1,38 +1,20 @@
-import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-const { crearFastifyCompat } = await import('../../helpers/fastify-compat')
-import fs from 'fs'
-import os from 'os'
-import path from 'path'
+import { describe, it, expect, beforeEach } from 'vitest'
 
-describe('Ops: validación payload Zod', () => {
-  let honoApp: any
-  let fastifyApp: any
-  let tmpDir: string
+describe('Ops: validación payload Zod en Hono', () => {
+  let app: any
 
   beforeEach(async () => {
-    tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'titan-ops-invalid-'))
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
-    honoApp = servidor.default
-
-    fastifyApp = crearFastifyCompat()
-    const rutaOps = await import('../../../src/infraestructura/servidor/rutas/ops')
-    await rutaOps.default(fastifyApp)
-  })
-
-  afterEach(async () => {
-    try { fs.rmSync(tmpDir, { recursive: true }) } catch (_) {}
-    if (honoApp && typeof honoApp.close === 'function') await honoApp.close()
-    if (fastifyApp && typeof fastifyApp.close === 'function') await fastifyApp.close()
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
+    app = servidor.default
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino')
+    _resetRateLimitForTests()
   })
 
   it('Devuelve 400 cuando payload es inválido (ops vacío)', async () => {
     const payload = { adrRuta: 'ruta.md', ops: [] }
-    const headers = { authorization: 'Bearer t', 'x-identificador-inquilino': 'TNT-TEST-0001' }
+    const headers = { authorization: 'Bearer token-usuario-prueba', 'x-identificador-inquilino': 'TNT-TEST-0001', 'content-type': 'application/json' }
 
-    const reqFast = await fastifyApp.inject({ method: 'POST', url: '/api/v1/ops/renombrar-por-adr', headers, payload })
-    expect(reqFast.statusCode).toBe(400)
-
-    const reqHono = await honoApp.fetch(new Request('http://localhost/api/v1/ops/renombrar-por-adr', { method: 'POST', headers: { ...headers, 'content-type': 'application/json' }, body: JSON.stringify(payload) }))
+    const reqHono = await app.request('/api/v1/ops/renombrar-por-adr', { method: 'POST', headers, body: JSON.stringify(payload) })
     expect(reqHono.status).toBe(400)
   })
 })

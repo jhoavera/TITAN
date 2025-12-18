@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { listarPropuestas, agruparYDeduplicar, consolidar } from '../../src/servicios/servicio-deduplicacion-propuestas';
+import { listarPropuestas, agruparYDeduplicar, consolidar } from '@servicios/servicio-deduplicacion-propuestas';
 
 function main() {
   const propuestas = listarPropuestas();

@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 import fs from 'fs'
 import path from 'path'
-import { shouldAutoApprove as sharedShouldAutoApprove } from '../../src/servicios/limpieza-utils'
+import { shouldAutoApprove as sharedShouldAutoApprove } from '@servicios/limpieza-utils'
 
 type Opciones = {
   dryRun: boolean

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { describe, it, beforeEach, afterEach, expect } from 'vitest'
-import { updateBunAliases } from '../../src/nucleo/indexacion/generador-indices-mcp'
+import { updateBunAliases } from '@nucleo/indexacion/generador-indices-mcp'
 
 const tmp = path.resolve(__dirname, 'tmp-aliases')
 const bunfig = path.join(tmp, 'bunfig.toml')

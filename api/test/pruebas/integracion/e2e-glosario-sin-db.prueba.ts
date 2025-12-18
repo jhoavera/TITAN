@@ -21,7 +21,7 @@ describe('E2E - Glosario (fallback sin DB): CRUD completo', () => {
     // limpiar fichero temporal
     try { await fs.promises.rm(tmpFile, { force: true }) } catch (_) {}
 
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
     app = servidor.default
   })
 

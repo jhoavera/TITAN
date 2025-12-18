@@ -29,7 +29,7 @@ export async function runCli(providedArgs?: string[], opciones?: Opciones) {
 
     // Validación previa: intentar usar servicio de validación
     try {
-      const mod = await import('../../src/nucleo/servicios/servicio-validacion-creacion')
+      const mod = await import('@nucleo/servicios/servicio-validacion-creacion')
       await mod.validarYRegistrarNombre(termino, 'glosario')
     } catch (_e) {
       // no bloquear creación por errores en validador

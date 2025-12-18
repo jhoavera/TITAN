@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import path from 'path'
 import process from 'process'
-import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '../../src/nucleo/servicios/servicio-integridad-idioma'
+import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '@nucleo/servicios/servicio-integridad-idioma'
 
 async function main() {
   const raiz = process.argv[2] ? path.resolve(process.argv[2]) : process.cwd()

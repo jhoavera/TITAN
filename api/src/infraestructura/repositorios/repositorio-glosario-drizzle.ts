@@ -1,5 +1,5 @@
-import type { RepositorioGlosario } from './interfaz-repositorio-glosario';
-import type { GlosarioRow } from '../base-de-datos/esquemas/esquema-glosario';
+import type { RepositorioGlosario } from '@infraestructura/repositorios/interfaz-repositorio-glosario';
+import type { GlosarioRow } from '@infraestructura/base-de-datos/esquemas/esquema-glosario';
 
 /**
  * Implementación ligera basada en Drizzle + pg.
@@ -18,7 +18,7 @@ export class RepositorioGlosarioDrizzle implements RepositorioGlosario {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { Pool } = require('pg');
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const { glosarioTabla } = require('../base-de-datos/esquemas/esquema-glosario');
+    const { glosarioTabla } = require('@infraestructura/base-de-datos/esquemas/esquema-glosario');
 
     const pool = new Pool({ connectionString: databaseUrl });
     this.db = drizzle(pool);

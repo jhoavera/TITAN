@@ -7,7 +7,7 @@ export type AutoApproveOptions = {
   longTermDays?: number
 }
 
-import { recordAutoApproveMetric } from '../nucleo/telemetria/auto-approve-metrics'
+import { recordAutoApproveMetric } from '@nucleo/telemetria/auto-approve-metrics'
 import path from 'path'
 
 export function parseFrontMatter(content: string): Record<string, string> {

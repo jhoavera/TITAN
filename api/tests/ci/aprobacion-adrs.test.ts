@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import fs from 'fs';
 import path from 'path';
-import { validarPropuesta, revisarYProponerAprobaciones } from '../../src/servicios/servicio-aprobacion-adrs';
+import { validarPropuesta, revisarYProponerAprobaciones } from '@servicios/servicio-aprobacion-adrs';
 
 const adrsDir = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs');
 const dedupReport = path.resolve(process.cwd(), 'reports', 'dedup-propuestas.json');

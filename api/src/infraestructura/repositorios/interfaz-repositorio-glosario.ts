@@ -1,4 +1,4 @@
-import { GlosarioRow } from '../base-de-datos/esquemas/esquema-glosario';
+import { GlosarioRow } from '@infraestructura/base-de-datos/esquemas/esquema-glosario';
 
 export interface RepositorioGlosario {
   listar(): Promise<GlosarioRow[]>;

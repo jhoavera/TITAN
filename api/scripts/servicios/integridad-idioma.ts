@@ -1,6 +1,6 @@
 import path from 'path'
-import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas, Hallazgo } from '../../src/nucleo/servicios/servicio-integridad-idioma'
-import { registrarEvento } from '../../src/nucleo/servicios/servicio-auditoria-prevalidacion'
+import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas, Hallazgo } from '@nucleo/servicios/servicio-integridad-idioma'
+import { registrarEvento } from '@nucleo/servicios/servicio-auditoria-prevalidacion'
 
 export async function runIntegridadIdioma(raiz: string) {
   const r = path.resolve(raiz)

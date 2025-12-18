@@ -1,27 +1,27 @@
-import { describe, it, expect } from 'vitest'
-const { crearFastifyCompat } = await import('../../helpers/fastify-compat')
-import fs from 'fs'
-import path from 'path'
-import os from 'os'
-import { withTempAudit } from '../../helpers/auditoria'
+import { describe, it, expect, beforeEach } from 'vitest'
+import { withTempAudit } from '@test/helpers/auditoria'
 
-describe('API Auditoria PreValidacion', () => {
+describe('API Auditoria PreValidacion (Hono)', () => {
+  const headers = { authorization: 'Bearer token-usuario-prueba', 'x-identificador-inquilino': 'TNT-TEST-0001' }
+  let app: any
+
+  beforeEach(async () => {
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
+    app = servidor.default
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino')
+    _resetRateLimitForTests()
+  })
+
   it('devuelve eventos después de validar nombre', async () => {
-    await withTempAudit(async (tmpfile) => {
-      const rutaAuditoria = (await import('../../../src/infraestructura/servidor/rutas/auditoria')).default
-      const { validarYRegistrarNombre } = await import('../../../src/nucleo/servicios/servicio-validacion-creacion')
+    await withTempAudit(async () => {
+      const { validarYRegistrarNombre } = await import('@nucleo/servicios/servicio-validacion-creacion')
 
-      const app = crearFastifyCompat()
-      await app.register(rutaAuditoria as any)
-
-      // registrar un nombre
       const nombre = `test-api-${Date.now()}`
       await validarYRegistrarNombre(nombre, 'glosario')
 
-      const res = await app.inject({ method: 'GET', url: '/api/v1/auditoria/prevalidacion?limit=5' })
-      if (res.statusCode !== 200) console.error('AUDIT ERROR BODY:', res.body)
-      expect(res.statusCode).toBe(200)
-      const body = JSON.parse(res.body)
+      const res = await app.request('/api/v1/auditoria/prevalidacion?limit=5', { headers })
+      const body = await res.json()
+      expect(res.status).toBe(200)
       expect(body).toHaveProperty('count')
       expect(body).toHaveProperty('eventos')
       expect(Array.isArray(body.eventos)).toBe(true)

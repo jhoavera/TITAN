@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { isSafeToAutoApply, applyProposalChanges } from '../../src/servicios/proponer-refactor-imports'
+import { isSafeToAutoApply, applyProposalChanges } from '@servicios/proponer-refactor-imports'
 import { execSync } from 'child_process'
 
 const TEST_DIR = path.resolve(__dirname, 'fixtures', 'proponer-imports-apply')

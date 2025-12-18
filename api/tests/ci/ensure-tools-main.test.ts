@@ -21,7 +21,7 @@ describe('ensure-tools script (integración mínima)', () => {
     const origWrite = process.stdout.write;
     // Capturar stdout
     (process.stdout as any).write = (chunk: any) => { outBuf.push(String(chunk)); return true; };
-    const ensure = require('../../scripts/ci/ensure-tools');
+    const ensure = require('@scripts/ci/ensure-tools');
     const code = ensure.main();
     // Restaurar
     (process.stdout as any).write = origWrite;
@@ -46,7 +46,7 @@ describe('ensure-tools script (integración mínima)', () => {
     const origWrite = process.stdout.write;
     (process.stdout as any).write = (chunk: any) => { outBuf.push(String(chunk)); return true; };
 
-    const ensure = require('../../scripts/ci/ensure-tools');
+    const ensure = require('@scripts/ci/ensure-tools');
     const code = ensure.main();
 
     (process.stdout as any).write = origWrite;

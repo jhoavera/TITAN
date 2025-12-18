@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { rutaADRs } from '@nucleo/rutas/rutas-docs';
 
 export type Propuesta = {
   path: string;
@@ -9,10 +10,8 @@ export type Propuesta = {
   estado?: string;
 };
 
-const cwdCandidate = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs');
-const moduleRelative = path.resolve(__dirname, '../../../documentacion-fuente-unica-verdad/ad-rs');
-// Preferir la carpeta dentro del repo (moduleRelative) si existe; si no, usar candidate desde cwd
-export const CARPETA_ADRS = fs.existsSync(moduleRelative) ? moduleRelative : cwdCandidate;
+const docsRoot = rutaADRs();
+export const CARPETA_ADRS = docsRoot;
 
 export function listarPropuestas(): Propuesta[] {
   if (!fs.existsSync(CARPETA_ADRS)) return [];

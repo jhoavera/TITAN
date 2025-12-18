@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { middlewareContextoInquilinoHono } from '../../../src/nucleo/middleware/hono/middleware-contexto-inquilino'
-import { middlewareCorsConfigurable } from '../../../src/nucleo/middleware/hono/middleware-cors-configurable'
-import { middlewareLoggingEstructurado } from '../../../src/nucleo/middleware/hono/middleware-logging-estructurado'
+import { middlewareContextoInquilinoHono } from '@nucleo/middleware/hono/middleware-contexto-inquilino'
+import { middlewareCorsConfigurable } from '@nucleo/middleware/hono/middleware-cors-configurable'
+import { middlewareLoggingEstructurado } from '@nucleo/middleware/hono/middleware-logging-estructurado'
 
 function makeCtx(headers: Record<string, string | undefined> = {}, method = 'GET') {
   const map = new Map(Object.entries(headers))

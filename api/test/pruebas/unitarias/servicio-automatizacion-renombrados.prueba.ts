@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import os from 'os'
 import { execSync } from 'child_process'
-import { ejecutarRenombrados } from '../../../src/nucleo/servicios/servicio-automatizacion-renombrados'
+import { ejecutarRenombrados } from '@nucleo/servicios/servicio-automatizacion-renombrados'
 
 describe('servicio-automatizacion-renombrados', () => {
   it('crea rama y renombra archivos en repo git temporal', async () => {

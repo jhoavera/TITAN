@@ -4,16 +4,16 @@ import path from 'path'
 import os from 'os'
 
 // Mocks
-vi.mock('../../src/nucleo/servicios/servicio-integridad-idioma', () => {
+vi.mock('@nucleo/servicios/servicio-integridad-idioma', () => {
   return {
     escanearRepositorioParaIngles: async (_r: string) => [{ termino: 'migraciones' }],
     procesarHallazgosYGenerarPropuestas: async (_r: string, _h: any[]) => [{ termino: 'migraciones', propuestaGlosario: true, sugerenciaTraduccion: 'migraciones' }]
   }
 })
 
-vi.mock('../../scripts/ci/abrir-pr-migracion', () => ({ crearPR: (_b: string, _t: string, _body: string) => ({ success: true, url: 'https://github.com/org/repo/pull/1' }) }))
+vi.mock('@scripts/ci/abrir-pr-migracion', () => ({ crearPR: (_b: string, _t: string, _body: string) => ({ success: true, url: 'https://github.com/org/repo/pull/1' }) }))
 
-import { planRenombrados, aplicarRenombrados } from '../../scripts/servicios/renombrar'
+import { planRenombrados, aplicarRenombrados } from '@scripts/servicios/renombrar'
 
 describe('renombrar guiado', () => {
   let tmpdir: string

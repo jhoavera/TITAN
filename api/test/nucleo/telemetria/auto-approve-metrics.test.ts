@@ -1,18 +1,24 @@
 import fs from 'fs'
 import path from 'path'
-import { summarizeAutoApproveMetrics, recordAutoApproveMetric, rotateAutoApproveMetrics, readAutoApproveMetrics } from '../../../src/nucleo/telemetria/auto-approve-metrics'
+import { summarizeAutoApproveMetrics, recordAutoApproveMetric, rotateAutoApproveMetrics, readAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 import { describe, it, beforeEach, afterEach, expect } from 'vitest'
 
-const METRICS_DIR = path.resolve(process.cwd(), 'tmp', 'metrics')
-const METRICS_FILE = path.join(METRICS_DIR, 'auto-approve-metrics.jsonl')
+let METRICS_DIR = path.resolve(process.cwd(), 'tmp', `metrics-${process.pid}-${Date.now()}-${Math.random().toString(36).slice(2,8)}`)
+let METRICS_FILE = ''
+
+beforeEach(() => {
+  METRICS_FILE = path.join(METRICS_DIR, 'auto-approve-metrics.jsonl')
+})
 
 describe('auto-approve metrics', () => {
   beforeEach(() => {
+    process.env.AUTO_APPROVE_METRICS_DIR = METRICS_DIR
     fs.rmSync(METRICS_DIR, { recursive: true, force: true })
     fs.mkdirSync(METRICS_DIR, { recursive: true })
   })
 
   afterEach(() => {
+    delete process.env.AUTO_APPROVE_METRICS_DIR
     fs.rmSync(METRICS_DIR, { recursive: true, force: true })
   })
 

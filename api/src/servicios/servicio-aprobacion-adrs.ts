@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import { agruparYDeduplicar } from './servicio-deduplicacion-propuestas';
+import { agruparYDeduplicar } from '@servicios/servicio-deduplicacion-propuestas';
+import { rutaADRs, rutaGlosario } from '@nucleo/rutas/rutas-docs';
 
 export type ValidacionResultado = {
   termino: string;
@@ -11,9 +12,9 @@ export type ValidacionResultado = {
   semExplicacion?: string;
 };
 
-const ADRS_DIR = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs');
-const ADRS_DIR_ALT = path.resolve(process.cwd(), 'documentacion-fuente-unica-verdad', 'ad-rs');
-const GLOSARIO = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/glosario-biblioteca/glosario.md');
+const ADRS_DIR = rutaADRs();
+const ADRS_DIR_ALT = rutaADRs();
+const GLOSARIO = rutaGlosario();
 const DEDUP_REPORTE = path.resolve(process.cwd(), 'reports', 'dedup-propuestas.json');
 
 function leerGlosario(): string[] {
@@ -45,7 +46,7 @@ function buscarADRsParaTerm(term: string): string[] {
   return posibles;
 }
 
-import { validarSemantica } from './servicio-validacion-semantica';
+import { validarSemantica } from '@servicios/servicio-validacion-semantica';
 
 export async function validarPropuesta(termino: string, sugerencia?: string): Promise<ValidacionResultado> {
   const razones: string[] = [];

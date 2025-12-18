@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { rutaAuditoriaPrevalidacionLog } from '@nucleo/rutas/rutas-docs'
 
 export type EventoPreValidacion = {
   timestamp: string
@@ -10,10 +11,8 @@ export type EventoPreValidacion = {
   propuesta?: string | null
 }
 
-const DEFAULT_AUDITORIA_FILE = path.resolve(__dirname, '../../../..', 'documentacion-fuente-unica-verdad', 'glosario-biblioteca', 'auditoria-prevalidacion.log')
-
 function getAuditFile(): string {
-  return process.env.TITAN_AUDIT_PREVALIDACION_PATH || DEFAULT_AUDITORIA_FILE
+  return process.env.TITAN_AUDIT_PREVALIDACION_PATH || rutaAuditoriaPrevalidacionLog()
 }
 
 export async function registrarEvento(e: Omit<EventoPreValidacion, 'timestamp'>) {

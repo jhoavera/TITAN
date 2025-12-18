@@ -1,9 +1,9 @@
 #!/usr/bin/env bun
 import fs from 'fs'
 import path from 'path'
-import { esquemaCrearADR } from '../../src/nucleo/validadores/validador-adrs'
-import { obtenerDb } from '../../src/infraestructura/base-de-datos/cliente'
-import * as repo from '../../src/infraestructura/repositorios/repositorio-adrs'
+import { esquemaCrearADR } from '@nucleo/validadores/validador-adrs'
+import { obtenerDb } from '@infraestructura/base-de-datos/cliente'
+import * as repo from '@infraestructura/repositorios/repositorio-adrs'
 
 const ADRS_DIR = process.env.ADRS_DIR_OVERRIDE || path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs')
 

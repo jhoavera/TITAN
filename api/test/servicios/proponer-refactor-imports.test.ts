@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { proposeRefactorImports } from '../../src/servicios/proponer-refactor-imports'
+import { proposeRefactorImports } from '@servicios/proponer-refactor-imports'
 
 const FIXTURE_DIR = path.resolve(__dirname, 'fixtures', 'proponer-imports')
 const OUT_DIR = path.resolve(__dirname, 'tmp-adrs')

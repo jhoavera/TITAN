@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { ejecutarConversion } from '../../scripts/ci/convertir-scripts-a-bun'
+import { ejecutarConversion } from '@scripts/ci/convertir-scripts-a-bun'
 
 describe('convertir-scripts-a-bun (integración PR)', () => {
   it('invoca crearPR con cuerpo que contiene lista de cambios y ADRs', async () => {
@@ -21,12 +21,12 @@ describe('convertir-scripts-a-bun (integración PR)', () => {
     fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n', 'utf8')
 
     // mockar servicio de idioma para crear ADRs
-    const idioma = await import('../../src/nucleo/servicios/servicio-integridad-idioma')
+    const idioma = await import('@nucleo/servicios/servicio-integridad-idioma')
     const spyProcesar = vi.spyOn(idioma, 'procesarHallazgosYGenerarPropuestas').mockResolvedValue([{ termino: 'migraciones', adr: '/ruta/adr.md' }])
     const spyEscanear = vi.spyOn(idioma, 'escanearRepositorioParaIngles').mockResolvedValue([{ tipo: 'archivo', ruta: 'some/file', termino: 'migraciones' }])
 
     // mock crearPR
-    const pr = await import('../../scripts/ci/abrir-pr-migracion')
+    const pr = await import('@scripts/ci/abrir-pr-migracion')
     const spyPr = vi.spyOn(pr, 'crearPR').mockImplementation(() => ({ success: true, url: 'https://github.com/org/repo/pull/999' }))
 
     // ejecutar con apply y crear PR

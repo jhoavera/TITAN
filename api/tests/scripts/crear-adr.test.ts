@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'bun:test';
 import fs from 'fs/promises';
 import path from 'path';
 import { spawnSync } from 'child_process';
-import { crearADRDesdeArgs } from '../../scripts/crear-adr';
+import { crearADRDesdeArgs } from '@scripts/crear-adr';
 
 const TMP = path.join(process.cwd(), 'tmp', 'test-crear-adr-cli');
 

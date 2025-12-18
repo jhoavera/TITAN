@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import zlib from 'zlib';
-import ServicioDeduplicacionPropuestas, { Propuesta, Grupo } from './deduplicacion-propuestas';
+import ServicioDeduplicacionPropuestas, { Propuesta, Grupo } from '@servicios/deduplicacion-propuestas';
+import { rutaAuditoriaPrevalidacionLog, rutaPropuestasGlosario, rutaTmpBase } from '@nucleo/rutas/rutas-docs';
 
 export type OpcionesLimpieza = {
   apply: boolean;
@@ -54,10 +55,10 @@ export class ServicioLimpiezaAvanzada {
     fixturesDir?: string;
     tmpBaseDir?: string;
   }) {
-    this.propuestasDir = cfg?.propuestasDir ?? path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas');
-    this.logAuditoriaPath = cfg?.logAuditoriaPath ?? path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/glosario-biblioteca/auditoria-prevalidacion.log');
+    this.propuestasDir = cfg?.propuestasDir ?? rutaPropuestasGlosario();
+    this.logAuditoriaPath = cfg?.logAuditoriaPath ?? rutaAuditoriaPrevalidacionLog();
     this.fixturesDir = cfg?.fixturesDir ?? path.resolve(process.cwd(), './tests/ci/fixtures/revision-flow');
-    this.tmpBaseDir = cfg?.tmpBaseDir ?? path.resolve(process.cwd(), '../tmp');
+    this.tmpBaseDir = cfg?.tmpBaseDir ?? rutaTmpBase();
   }
 
   async ejecutar(opts: OpcionesLimpieza): Promise<ResultadoLimpieza> {

@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { validarSemantica } from '../../src/servicios/servicio-validacion-semantica';
+import { validarSemantica } from '@servicios/servicio-validacion-semantica';
 
 async function main(): Promise<void> {
   const [, , termino, sugerencia] = process.argv;

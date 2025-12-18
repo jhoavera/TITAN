@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import fs from 'fs';
 import path from 'path';
-import { listarPropuestas, agruparYDeduplicar, consolidar } from '../../src/servicios/servicio-deduplicacion-propuestas';
+import { listarPropuestas, agruparYDeduplicar, consolidar } from '@servicios/servicio-deduplicacion-propuestas';
 
 const adrsDir = path.resolve(process.cwd(), '../documentacion-fuente-unica-verdad/ad-rs');
 const tmpA = path.join(adrsDir, 'tmp-propuesta-a.md');

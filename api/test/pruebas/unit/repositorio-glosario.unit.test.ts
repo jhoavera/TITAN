@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { obtenerDb, inicializarDb } from '../../../src/infraestructura/base-de-datos/cliente'
-import * as repo from '../../../src/infraestructura/repositorios/repositorio-glosario'
+import { obtenerDb, inicializarDb } from '@infraestructura/base-de-datos/cliente'
+import * as repo from '@infraestructura/repositorios/repositorio-glosario'
 
 describe('repositorio-glosario (unit)', () => {
   beforeEach(() => {

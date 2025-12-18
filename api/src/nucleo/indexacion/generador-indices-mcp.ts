@@ -14,16 +14,18 @@ export async function scanForRelativeImports(startDir: string): Promise<ImportOc
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name)
       if (entry.isDirectory()) {
-        // skip node_modules and .git
-        if (entry.name === 'node_modules' || entry.name === '.git') continue
+        // skip node_modules, .git y directorios de fixtures/tmp generados
+        if (entry.name === 'node_modules' || entry.name === '.git' || entry.name === 'fixtures' || entry.name === '__fixtures__' || entry.name === 'tmp') continue
         walk(full)
       } else if (entry.isFile() && (full.endsWith('.ts') || full.endsWith('.tsx') || full.endsWith('.js') || full.endsWith('.jsx'))) {
         const content = fs.readFileSync(full, 'utf8')
         const lines = content.split('\n')
+        const relativeImport = /^\s*(import|export)\s+.*from\s+['"]\.\.?/;
+        const relativeRequire = /^\s*[^/]*require\(\s*['"]\.\.?/;
         for (let i = 0; i < lines.length; i++) {
           const l = lines[i]
-          // match import ... from '../...' or require('../...') or import './'
-          if (/from\s+['"]\.\.|from\s+['"]\./.test(l) || /require\(['"]\./.test(l)) {
+          // detectar imports/exports/require con segmentos relativos (../ o ./) reales, evitando strings de pruebas
+          if (relativeImport.test(l) || relativeRequire.test(l)) {
             results.push({ file: full, line: i + 1, text: l.trim() })
           }
         }
@@ -43,10 +45,22 @@ export function generateIndexForType(typeDir: string): void {
     if (f.endsWith('.d.ts')) return false
     return true
   })
+
+  // Derivar alias absoluto usando la ruta relativa a src
+  const srcMarker = `${path.sep}src${path.sep}`
+  const idx = typeDir.indexOf(srcMarker)
+  if (idx === -1) {
+    throw new Error(`[indexer] No se pudo derivar alias porque typeDir no contiene /src/: ${typeDir}`)
+  }
+  const subPath = typeDir.slice(idx + srcMarker.length) // ej: "nucleo/middleware"
+  const [aliasBase, ...rest] = subPath.split(path.sep)
+  const aliasPrefix = rest.length > 0 ? `@${aliasBase}/${rest.join('/')}` : `@${aliasBase}`
+
   const exports = files.sort().map((f) => {
     const base = f.replace(/\.(ts|tsx)$/, '')
-    return `export * from './${base}'`
+    return `export * from '${aliasPrefix}/${base}'`
   })
+
   const header = `// _indice generado automáticamente - ${new Date().toISOString()}\n// No editar a mano, usar scripts/indexar-aliases.ts para regenerar\n`
   const content = `${header}${exports.join('\n')}\n`
   fs.writeFileSync(path.join(typeDir, 'indice.ts'), content, 'utf8')

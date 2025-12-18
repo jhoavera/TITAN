@@ -1,10 +1,10 @@
 /* Controlador mínimo para Glosario (operaciones CRUD básicas)
  * Usa validadores Zod y el repositorio.
  */
-import type { RequestLike, ReplyLike } from '../types/handler';
-import { esquemaCrearGlosario, esquemaActualizarGlosario } from '../../../nucleo/validadores/validador-glosario';
-import { obtenerDb } from '../../base-de-datos/cliente';
-import ServicioGlosario from '../../../servicios/glosario';
+import type { RequestLike, ReplyLike } from '@infraestructura/servidor/types/handler';
+import { esquemaCrearGlosario, esquemaActualizarGlosario } from '@nucleo/validadores/validador-glosario';
+import { obtenerDb } from '@infraestructura/base-de-datos/cliente';
+import ServicioGlosario from '@servicios/glosario';
 
 export const crear = async (request: RequestLike, reply: ReplyLike) => {
   let body: any

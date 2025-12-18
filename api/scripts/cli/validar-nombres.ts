@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { validarNombre } from '../../src/servicios/validar-nombres';
+import { validarNombre } from '@servicios/validar-nombres';
 
 // CLI mínimo: recibe nombres como argumentos y muestra validación en JSON
 function main(): void {

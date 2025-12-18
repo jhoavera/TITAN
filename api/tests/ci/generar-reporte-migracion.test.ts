@@ -1,4 +1,4 @@
-import { generarReporte } from '../../scripts/ci/generar-reporte-migracion'
+import { generarReporte } from '@scripts/ci/generar-reporte-migracion'
 import fs from 'fs'
 import { describe, it, expect } from 'vitest'
 

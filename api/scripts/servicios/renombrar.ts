@@ -2,7 +2,7 @@
 import fs from 'fs'
 import path from 'path'
 import { spawnSync } from 'child_process'
-import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '../../src/nucleo/servicios/servicio-integridad-idioma'
+import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '@nucleo/servicios/servicio-integridad-idioma'
 import { crearADR } from './adrs'
 import { crearPR } from '../ci/abrir-pr-migracion'
 

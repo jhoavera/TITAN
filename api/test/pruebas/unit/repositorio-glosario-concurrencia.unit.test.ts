@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import * as repo from '../../../src/infraestructura/repositorios/repositorio-glosario'
-import { obtenerDb } from '../../../src/infraestructura/base-de-datos/cliente'
+import * as repo from '@infraestructura/repositorios/repositorio-glosario'
+import { obtenerDb } from '@infraestructura/base-de-datos/cliente'
 
 describe('repositorio-glosario - concurrencia y duplicados (unit)', () => {
   beforeEach(() => {

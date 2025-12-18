@@ -5,8 +5,8 @@
 import { z } from 'zod';
 import * as fs from 'fs';
 import * as path from 'path';
-import { esquemaCrearGlosario, esquemaActualizarGlosario, esquemaAprobarGlosario } from '../../nucleo/validadores/validador-glosario';
-import { esquemaCrearADR, esquemaActualizarADR } from '../../nucleo/validadores/validador-adrs';
+import { esquemaCrearGlosario, esquemaActualizarGlosario, esquemaAprobarGlosario } from '@nucleo/validadores/validador-glosario';
+import { esquemaCrearADR, esquemaActualizarADR } from '@nucleo/validadores/validador-adrs';
 
 type OpenAPISchema = Record<string, unknown>;
 

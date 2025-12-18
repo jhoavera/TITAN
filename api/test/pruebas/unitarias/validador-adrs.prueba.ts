@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { esquemaCrearADR, esquemaActualizarADR } from '../../../src/nucleo/validadores/validador-adrs';
+import { esquemaCrearADR, esquemaActualizarADR } from '@nucleo/validadores/validador-adrs';
 
 describe('Validador ADR - unidad', () => {
   it('valida una ADR válida', async () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { esquemaCrearGlosario, esquemaActualizarGlosario, categoriasPermitidas } from '../../../src/nucleo/validadores/validador-glosario';
+import { esquemaCrearGlosario, esquemaActualizarGlosario, categoriasPermitidas } from '@nucleo/validadores/validador-glosario';
 
 describe('Validador Glosario - unidad', () => {
   it('valida correctamente una entrada válida', async () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'bun:test';
-import { ServicioADR } from '../../../src/servicios/adr/servicio-adr';
+import { ServicioADR } from '@servicios/adr/servicio-adr';
 import fs from 'fs/promises';
 import path from 'path';
 import { spawnSync } from 'child_process';

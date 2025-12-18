@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
-import { recordAutoApproveMetric, readAutoApproveMetrics, rotateAutoApproveMetrics } from '../../src/nucleo/telemetria/auto-approve-metrics'
+import { recordAutoApproveMetric, readAutoApproveMetrics, rotateAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 
 const OUT = path.join(process.cwd(), 'tmp', 'metrics')
 const FILE = path.join(OUT, 'auto-approve-metrics.jsonl')

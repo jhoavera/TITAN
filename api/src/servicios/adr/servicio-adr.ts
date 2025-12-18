@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { z } from 'zod';
-import { ADR } from './types';
+import { ADR } from '@servicios/adr/types';
 
 const esquemaCreacionADR = z.object({
   titulo: z.string().min(3),

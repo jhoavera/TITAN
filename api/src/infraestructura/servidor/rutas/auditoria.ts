@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify'
-import * as controlador from '../controladores/auditoria-controlador'
+import * as controlador from '@infraestructura/servidor/controladores/auditoria-controlador'
 
 /**
  * Registrador legacy para auditoría.

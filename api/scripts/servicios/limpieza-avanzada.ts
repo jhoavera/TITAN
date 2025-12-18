@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 import path from 'path';
-import ServicioLimpiezaAvanzada, { OpcionesLimpieza } from '../../src/servicios/limpieza-avanzada';
+import ServicioLimpiezaAvanzada, { OpcionesLimpieza } from '@servicios/limpieza-avanzada';
 
 function parseArgs(): OpcionesLimpieza {
   const argv = process.argv.slice(2);

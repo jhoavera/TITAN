@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { validarSemantica } from '../../src/servicios/servicio-validacion-semantica';
+import { validarSemantica } from '@servicios/servicio-validacion-semantica';
 
 describe('servicio-validacion-semantica (stub avanzado)', () => {
   it('valida sugerencia canónica con alta confianza', async () => {

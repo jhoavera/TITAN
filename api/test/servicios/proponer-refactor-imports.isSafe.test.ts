@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { isSafeToAutoApply } from '../../src/servicios/proponer-refactor-imports'
+import { isSafeToAutoApply } from '@servicios/proponer-refactor-imports'
 
 const FIXTURE_DIR = path.resolve(__dirname, 'fixtures', 'isSafe-fixtures')
 fs.mkdirSync(FIXTURE_DIR, { recursive: true })

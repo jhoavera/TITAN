@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { middlewareRateLimitInquilino, _resetRateLimitForTests } from '../../../src/nucleo/middleware/hono/middleware-rate-limit-inquilino'
+import { middlewareRateLimitInquilino, _resetRateLimitForTests } from '@nucleo/middleware/hono/middleware-rate-limit-inquilino'
 
 function makeCtx(headers: Record<string, string | undefined> = {}, method = 'GET') {
   const map = new Map(Object.entries(headers))

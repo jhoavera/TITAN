@@ -2,8 +2,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { spawnSync } from 'child_process';
 import { z } from 'zod';
-import type { ADR } from '../adr/types';
-import { ServicioADR } from '../adr/servicio-adr';
+import type { ADR } from '@servicios/adr/types';
+import { ServicioADR } from '@servicios/adr/servicio-adr';
 
 const EsquemaOpciones = z.object({
   rutaBase: z.string().optional(),

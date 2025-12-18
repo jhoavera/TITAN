@@ -1,11 +1,11 @@
 /* Repositorio para `adrs`.
  * Implementación mínima para CRUDs. Todo en español técnico empresarial.
  */
-import type { DB } from '../base-de-datos/cliente';
+import type { DB } from '@infraestructura/base-de-datos/cliente';
 // Carga dinámica de esquema para evitar resolución estática de módulos heavy en entornos de test
 // (ej. `drizzle-orm/pg-core`). Se importa cuando se requiere dentro de cada operación.
-import { auditoria_cambios } from '../base-de-datos/esquemas/esquema-auditoria';
-import { hayTriggersAuditoria } from '../base-de-datos/utilidades/chequeo-auditoria';
+import { auditoria_cambios } from '@infraestructura/base-de-datos/esquemas/esquema-auditoria';
+import { hayTriggersAuditoria } from '@infraestructura/base-de-datos/utilidades/chequeo-auditoria';
 import type { InferModel } from 'drizzle-orm';
 
 export type ADR = InferModel<typeof adrs>;
@@ -13,10 +13,10 @@ export type ADR = InferModel<typeof adrs>;
 export const crearADR = async (db: DB, datos: Partial<ADR>, identificadorInquilino: string, autorId: string): Promise<ADR> => {
   // Validar slug/archivo antes de crear y registrar propuesta si no cumple
   try {
-    const { validarYRegistrarNombre } = await import('../../nucleo/servicios/servicio-validacion-creacion');
+    const { validarYRegistrarNombre } = await import('@nucleo/servicios/servicio-validacion-creacion');
     await validarYRegistrarNombre(datos.slug ?? (datos.archivo_markdown ?? 'adr-' + (datos.numero ?? '0000')));
   } catch (_err) {}
-  const { adrs } = await import('../base-de-datos/esquemas/esquema-adrs');
+  const { adrs } = await import('@infraestructura/base-de-datos/esquemas/esquema-adrs');
   const resultado = await (db as any).insert(adrs).values({
     identificador_inquilino: identificadorInquilino,
     numero: datos.numero,

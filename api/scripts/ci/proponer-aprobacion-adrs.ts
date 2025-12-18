@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { revisarYProponerAprobaciones } from '../../src/servicios/servicio-aprobacion-adrs';
+import { revisarYProponerAprobaciones } from '@servicios/servicio-aprobacion-adrs';
 
 async function main() {
   const res = await revisarYProponerAprobaciones();

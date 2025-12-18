@@ -5,7 +5,7 @@
  */
 import { Pool } from 'pg';
 // import { drizzle } from 'drizzle-orm/node-postgres'; // descomentar cuando esté instalada la dependencia
-import { inicializarDb } from './cliente';
+import { inicializarDb } from '@infraestructura/base-de-datos/cliente';
 
 export type ConfiguracionBD = {
   url: string;

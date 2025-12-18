@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { readAutoApproveMetrics } from '../../src/nucleo/telemetria/auto-approve-metrics'
+import { readAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 
 function main() {
   const metrics = readAutoApproveMetrics()

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { hayTriggersAuditoria, limpiarCacheChequeoAuditoria } from '../../../src/infraestructura/base-de-datos/utilidades/chequeo-auditoria'
+import { hayTriggersAuditoria, limpiarCacheChequeoAuditoria } from '@infraestructura/base-de-datos/utilidades/chequeo-auditoria'
 
 describe('Chequeo de triggers de auditoría', () => {
   beforeEach(() => limpiarCacheChequeoAuditoria())

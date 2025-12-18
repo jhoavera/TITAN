@@ -2,12 +2,12 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
-import { withTempAudit } from '../../helpers/auditoria'
+import { withTempAudit } from '@test/helpers/auditoria'
 
 describe('metrics agregadas de pre-validacion', () => {
   it('produce contadores por tipo y hayIngles', async () => {
     await withTempAudit(async (logfile) => {
-      const mod = await import('../../../src/nucleo/servicios/servicio-auditoria-prevalidacion')
+      const mod = await import('@nucleo/servicios/servicio-auditoria-prevalidacion')
       const { registrarEvento, metricsText, leerEventos } = mod
 
       // limpiar archivo si existe

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "bun -r bun/register src/index.ts",
+    "dev": "bun -r ts-node/register src/index.ts",
     "dev:hono": "bun ./src/infraestructura/servidor/servidor-hono.ts",
     "pruebas": "bun test",
     "revisar-idioma": "ts-bun ./scripts/revisar-idioma.ts",

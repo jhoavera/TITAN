@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { z } from 'zod';
-import { convertZod, generateOpenApiYAML } from '../../src/infraestructura/documentacion/generador-openapi';
+import { convertZod, generateOpenApiYAML } from '@infraestructura/documentacion/generador-openapi';
 
 describe('generador-openapi extendido', () => {
   it('convierte arrays y formatos (email, uuid)', () => {

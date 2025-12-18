@@ -1,15 +1,18 @@
-/* Bootstrap del servidor: inicializa DB, crea la app y arranca en modo local para pruebas.
- * Uso: llamar a `bootstrap()` desde script de desarrollo.
- */
-import { crearApp } from './app';
-import { inicializarBaseDeDatos } from '../base-de-datos/bootstrap-db';
+/* Bootstrap del servidor con Hono: inicializa DB y expone instancia Hono para servir con Bun. */
+import app from '@infraestructura/servidor/servidor-hono';
+import { inicializarBaseDeDatos } from '@infraestructura/base-de-datos/bootstrap-db';
 
 export const bootstrap = async (cfg: { puerto?: number; dbUrl: string }) => {
   const pool = await inicializarBaseDeDatos({ url: cfg.dbUrl });
-  const app = crearApp();
-
   const puerto = cfg.puerto ?? 3000;
-  await app.listen({ port: puerto as number, host: '127.0.0.1' });
-  app.log.info(`Servidor escuchando en http://127.0.0.1:${puerto}`);
-  return { app, pool };
+
+  // Arranque opcional con Bun.serve; si no está disponible (tests), solo devolvemos la app.
+  let server: any = null;
+  if (typeof Bun !== 'undefined' && typeof Bun.serve === 'function') {
+    server = Bun.serve({ port: puerto, fetch: app.fetch });
+    // eslint-disable-next-line no-console
+    console.log(`Servidor Hono escuchando en http://127.0.0.1:${puerto}`);
+  }
+
+  return { app, pool, server };
 };

@@ -1,4 +1,4 @@
-import * as controlador from '../controladores/glosario-controlador';
+import * as controlador from '@infraestructura/servidor/controladores/glosario-controlador';
 
 /**
  * Legacy: registrador compatible con Fastify.

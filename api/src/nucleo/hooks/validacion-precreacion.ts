@@ -1,4 +1,4 @@
-import { validarYRegistrarNombre } from '../servicios/servicio-validacion-creacion'
+import { validarYRegistrarNombre } from '@nucleo/servicios/servicio-validacion-creacion'
 
 export type ResultadoValidacionPreCreacion = {
   propuestaCreada?: string | null

@@ -2,7 +2,7 @@
 import path from 'path'
 import process from 'process'
 import { runIntegridadIdioma } from './integridad-idioma'
-import { ensureRunningOnBunOrExit } from '../../src/comun/utilidades/verificar-stack'
+import { ensureRunningOnBunOrExit } from '@comun/utilidades/verificar-stack'
 
 async function main() {
   const raiz = process.argv[2] ? path.resolve(process.argv[2]) : process.cwd()

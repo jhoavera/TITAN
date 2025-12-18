@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '../../../src/nucleo/servicios/servicio-integridad-idioma'
+import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '@nucleo/servicios/servicio-integridad-idioma'
 
 describe('Servicio integridad idioma', () => {
   const tmp = path.join(process.cwd(), 'test-temp-idioma')

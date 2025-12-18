@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'bun:test';
 import fs from 'fs/promises';
 import path from 'path';
 import { spawnSync } from 'child_process';
-import { ServicioDeduplicacion } from '../../../src/servicios/servicio-deduplicacion';
+import { ServicioDeduplicacion } from '@servicios/servicio-deduplicacion';
 
 const TMP = path.join(process.cwd(), 'tmp', 'test-dedup');
 
@@ -26,7 +26,7 @@ beforeEach(async () => {
 
 describe('ServicioDeduplicacion', () => {
   it('detecta duplicados por hash y mueve los duplicados cuando se aplica', async () => {
-    const mod = await import(`file://${path.join(process.cwd(), 'src', 'servicios', 'servicio-deduplicacion.ts')}`);
+    const mod = await import('@servicios/servicio-deduplicacion');
     const ServicioDeduplicacion = mod.ServicioDeduplicacion;
     const s = new ServicioDeduplicacion(TMP);
     const grupos = await s.detectarDuplicados({ raiz: TMP });

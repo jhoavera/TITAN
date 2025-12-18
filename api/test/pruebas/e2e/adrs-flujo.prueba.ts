@@ -1,13 +1,12 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
-import fastify from 'fastify';
 
 // Mock cliente DB para evitar inicialización real
-vi.mock('../../../src/infraestructura/base-de-datos/cliente', () => ({ inicializarDb: () => {}, obtenerDb: () => ({}) }));
+vi.mock('@infraestructura/base-de-datos/cliente', () => ({ inicializarDb: () => {}, obtenerDb: () => ({}) }));
 
 // Mock in-memory para repositorio de ADRs
 const store: Record<string, any> = {};
 
-vi.mock('../../../src/infraestructura/repositorios/repositorio-adrs', () => ({
+vi.mock('@infraestructura/repositorios/repositorio-adrs', () => ({
   crearADR: async (_db: any, body: any, identificadorInquilino: string, autorId: string) => {
     const id = '00000000-0000-0000-0000-0000000000' + (Object.keys(store).length + 1);
     const obj = { ...body, id, identificador_inquilino: identificadorInquilino, autor: autorId, estado: body.estado || 'BORRADOR' };
@@ -25,59 +24,56 @@ vi.mock('../../../src/infraestructura/repositorios/repositorio-adrs', () => ({
   obtenerListaADRs: async () => Object.values(store),
 }));
 
-describe('E2E ADRs - flujo crear → enviar a revisión → aprobar', async () => {
-  let app: ReturnType<typeof fastify>;
+describe('E2E ADRs Hono - flujo crear → enviar a revisión → aprobar', async () => {
+  let app: any;
 
   beforeEach(async () => {
-    // reset store
     for (const k of Object.keys(store)) delete store[k];
-    app = fastify();
-    // middleware que establece identificador de inquilino y usuario
-    app.addHook('preHandler', (req: any, _reply, done) => {
-      req.identificadorInquilino = 'TNT-PRUEBA-000001';
-      req.usuario = { id: '00000000-0000-0000-0000-000000000001' };
-      done();
-    });
-    // registrar rutas reales (import dinámico para compatibilidad ESM)
-    const rutaADRs = (await import('../../../src/infraestructura/servidor/rutas/adrs')).default;
-    await app.register(rutaADRs);
+    const servidor = await import('@infraestructura/servidor/servidor-hono');
+    app = servidor.default;
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino');
+    _resetRateLimitForTests();
   });
 
   it('flujo completo con git_ref al aprobar', async () => {
-    // Crear ADR
-    const crearResp = await app.inject({ method: 'POST', url: '/api/v1/adrs', payload: {
-      numero: 42,
-      titulo: 'Prueba flujo E2E ADR',
-      objetivo: 'Verificar flujo de creación y aprobación',
-      decision: 'Elegir opción de prueba',
-    }});
+    const headers = {
+      authorization: 'Bearer token-usuario-prueba',
+      'x-identificador-inquilino': 'TNT-PRUEBA-000001',
+      'content-type': 'application/json'
+    };
 
-    if (crearResp.statusCode !== 201) {
-      // mostrar payload para diagnosticar fallo en ambiente de pruebas
-      // eslint-disable-next-line no-console
-      console.error('CREAR RESP INESPERADA:', crearResp.statusCode, crearResp.payload);
-    }
-    expect(crearResp.statusCode).toBe(201);
-    const creado = JSON.parse(crearResp.payload);
-    expect(creado.numero).toBe(42);
+    const crearResp = await app.request('/api/v1/adrs', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        numero: 42,
+        titulo: 'Prueba flujo E2E ADR',
+        objetivo: 'Verificar flujo de creación y aprobación',
+        decision: 'Elegir opción de prueba'
+      })
+    });
 
-    // Enviar a revisión (actualizar estado)
-    const enviarResp = await app.inject({ method: 'PATCH', url: `/api/v1/adrs/${creado.id}`, payload: { estado: 'PENDIENTE' }});
-    expect(enviarResp.statusCode).toBe(200);
-    const pendiente = JSON.parse(enviarResp.payload);
+    const crearBody = await crearResp.json();
+    expect(crearResp.status).toBe(201);
+    expect(crearBody.creado.numero).toBe(42);
+
+    const enviarResp = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, {
+      method: 'PATCH', headers, body: JSON.stringify({ estado: 'PENDIENTE' })
+    });
+    const pendiente = await enviarResp.json();
+    expect(enviarResp.status).toBe(200);
     expect(pendiente.estado).toBe('PENDIENTE');
 
-    // Aprobar (simular que aprobador añade git_ref)
-    const aprobarResp = await app.inject({ method: 'PATCH', url: `/api/v1/adrs/${creado.id}`, payload: { estado: 'APROBADO', notas_revision: 'Aprobado en pruebas', git_ref: 'refs/heads/main@{2025-12-15}' } as any });
-    expect(aprobarResp.statusCode).toBe(200);
-    const aprobado = JSON.parse(aprobarResp.payload);
-    // Validar que git_ref quedó registrado
+    const aprobarResp = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, {
+      method: 'PATCH', headers, body: JSON.stringify({ estado: 'APROBADO', notas_revision: 'Aprobado en pruebas', git_ref: 'refs/heads/main@{2025-12-15}' })
+    });
+    const aprobado = await aprobarResp.json();
+    expect(aprobarResp.status).toBe(200);
     expect((aprobado as any).git_ref || (aprobado as any).gitRef).toBeTruthy();
 
-    // Obtener y verificar
-    const getResp = await app.inject({ method: 'GET', url: `/api/v1/adrs/${creado.id}` });
-    expect(getResp.statusCode).toBe(200);
-    const finalObj = JSON.parse(getResp.payload);
+    const getResp = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, { headers });
+    const finalObj = await getResp.json();
+    expect(getResp.status).toBe(200);
     expect(finalObj.estado).toBe('APROBADO');
   });
 });

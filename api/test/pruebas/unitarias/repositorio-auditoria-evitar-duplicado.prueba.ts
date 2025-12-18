@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
-import * as repoGlosario from '../../../src/infraestructura/repositorios/repositorio-glosario';
-import * as repoADRs from '../../../src/infraestructura/repositorios/repositorio-adrs';
-import { validarNombreArchivo } from '../../../src/nucleo/utilidades/validar-nombre-archivo';
-import { limpiarCacheChequeoAuditoria } from '../../../src/infraestructura/base-de-datos/utilidades/chequeo-auditoria';
+import * as repoGlosario from '@infraestructura/repositorios/repositorio-glosario';
+import * as repoADRs from '@infraestructura/repositorios/repositorio-adrs';
+import { validarNombreArchivo } from '@nucleo/utilidades/validar-nombre-archivo';
+import { limpiarCacheChequeoAuditoria } from '@infraestructura/base-de-datos/utilidades/chequeo-auditoria';
 
 describe('Comportamiento auditoría - evitar duplicados (repositorios)', () => {
   it('validar nombre del archivo cumple estándares', () => {

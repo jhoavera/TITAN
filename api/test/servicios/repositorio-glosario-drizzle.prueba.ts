@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { RepositorioGlosarioDrizzle } from '../../src/infraestructura/repositorios/repositorio-glosario-drizzle'
+import { RepositorioGlosarioDrizzle } from '@infraestructura/repositorios/repositorio-glosario-drizzle'
 
 describe('repositorio-glosario-drizzle (sanity)', () => {
   it('salta si no hay DATABASE_URL (sanity)', async () => {

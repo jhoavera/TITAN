@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { validarNombreConGlosario } from '../../src/servicios/validar-nombres'
+import { validarNombreConGlosario } from '@servicios/validar-nombres'
 
 describe('validar-nombres con glosario (async)', () => {
   it('marca como válido si hay entrada aprobada en glosario', async () => {

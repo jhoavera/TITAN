@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { scanForRelativeImports, ImportOccurrence } from '../nucleo/indexacion/generador-indices-mcp'
+import { scanForRelativeImports, ImportOccurrence } from '@nucleo/indexacion/generador-indices-mcp'
 
 export type Proposal = {
   id: string
@@ -147,7 +147,7 @@ export async function isSafeToAutoApply(proposal: Proposal, opts: { baseDir?: st
   // Heurística: ensure each file has at least one relative import and that replacements will be simple path string changes
   for (const f of proposal.files) {
     const content = fs.readFileSync(f, 'utf8')
-    // If file contains export of multiple symbols, still ok as we only change import specifiers, but ensure file is not a barrel re-export like "export * from './...';"
+    // If file contains export of multiple symbols, still ok as we only change import specifiers, but ensure file is not a barrel re-export like "export * from <sibling-module>;"
     const isBarrel = /export\s+\*\s+from\s+['"]\./.test(content)
     const isReExportNamed = /export\s+\{[^}]+\}\s+from\s+['"]\./.test(content)
     if (isBarrel || isReExportNamed) {
@@ -401,7 +401,7 @@ export async function isSafeToAutoApply(proposal: Proposal, opts: { baseDir?: st
         }
       }
 
-      // CommonJS require destructuring: const {a, b} = require('./x')
+      // CommonJS require destructuring: const {a, b} = require('<modulo-local>')
       const reqRegex = /const\s+\{([^}]+)\}\s*=\s*require\(\s*['"]([^'\"]+)['"]\s*\)/g
       while ((mm = reqRegex.exec(txt))) {
         const names = mm[1].split(',').map((s) => s.trim().split(/\s+as\s+/)[0].trim()).filter(Boolean)

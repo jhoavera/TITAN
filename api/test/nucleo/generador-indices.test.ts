@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { generateIndexForType } from '../../../api/src/nucleo/indexacion/generador-indices-mcp'
+import { generateIndexForType } from '@nucleo/indexacion/generador-indices-mcp'
 
 const tmpDir = path.resolve(__dirname, 'tmp-indices')
 beforeAll(() => {

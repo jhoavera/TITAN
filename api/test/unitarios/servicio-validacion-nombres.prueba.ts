@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { ServicioValidacionNombres } from '../../src/servicios/servicio-validacion-nombres';
+import { ServicioValidacionNombres } from '@servicios/servicio-validacion-nombres';
 
 describe('ServicioValidacionNombres', () => {
   const svc = new ServicioValidacionNombres();

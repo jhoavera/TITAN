@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { registerClient, unregisterClient, broadcast, _resetClientsForTests } from '../../../src/nucleo/websocket/use-websocket'
+import { registerClient, unregisterClient, broadcast, _resetClientsForTests } from '@nucleo/websocket/use-websocket'
 
 describe('use-websocket (pubsub en memoria)', () => {
   beforeEach(() => { _resetClientsForTests() })

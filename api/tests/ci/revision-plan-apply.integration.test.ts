@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import { execSync } from 'child_process'
-import { main as revisarIdioma } from '../../scripts/revisar-idioma'
-import { proposeRefactorImports } from '../../src/servicios/proponer-refactor-imports'
-import { applyProposalChanges } from '../../src/servicios/proponer-refactor-imports'
+import { main as revisarIdioma } from '@scripts/revisar-idioma'
+import { proposeRefactorImports } from '@servicios/proponer-refactor-imports'
+import { applyProposalChanges } from '@servicios/proponer-refactor-imports'
 
 const FIX = path.resolve(__dirname, 'fixtures', 'revision-flow')
 

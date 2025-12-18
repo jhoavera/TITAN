@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 import path from 'path'
 import process from 'process'
-import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '../../src/nucleo/servicios/servicio-integridad-idioma'
-import { ensureRunningOnBunOrExit } from '../../src/comun/utilidades/verificar-stack'
+import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '@nucleo/servicios/servicio-integridad-idioma'
+import { ensureRunningOnBunOrExit } from '@comun/utilidades/verificar-stack'
 
 
 export async function runCorregirIngles(raiz: string, opts: { aplicar?: boolean } = {}) {

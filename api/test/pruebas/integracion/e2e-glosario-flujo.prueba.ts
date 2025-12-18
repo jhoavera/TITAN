@@ -1,6 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import { crearApp } from '../../../src/infraestructura/servidor/app'
-import { obtenerDb, inicializarDb } from '../../../src/infraestructura/base-de-datos/cliente'
+import { obtenerDb, inicializarDb } from '@infraestructura/base-de-datos/cliente'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
@@ -21,8 +20,10 @@ describe('E2E - Glosario: crear término que genera propuesta y aprobar', () => 
     const db = obtenerDb() as any
     inicializarDb(db)
 
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
     app = servidor.default
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino')
+    _resetRateLimitForTests()
     // limpiar propuestas (en el root temporal)
     const propuestasDir = path.join(process.env.TITAN_DOCS_ROOT as string, 'documentacion-fuente-unica-verdad', 'glosario-biblioteca', 'propuestas')
     try { await fs.promises.rm(propuestasDir, { recursive: true, force: true }); } catch (_e) {}
@@ -48,7 +49,7 @@ describe('E2E - Glosario: crear término que genera propuesta y aprobar', () => 
 
     // Verificar que se creó la propuesta en el filesystem
     // A veces el validador crea la propuesta fuera de api/ (en la raíz del repo). Llamamos directamente al servicio para confirmar la creación y obtener la ruta.
-    const { validarYRegistrarNombre } = await import('../../../src/nucleo/servicios/servicio-validacion-creacion')
+    const { validarYRegistrarNombre } = await import('@nucleo/servicios/servicio-validacion-creacion')
     const resVal = await validarYRegistrarNombre('create-service-template', 'glosario')
     expect(resVal.propuesta).toBeTruthy()
     const existe = await fs.promises.stat(resVal.propuesta).then(() => true).catch(() => false)

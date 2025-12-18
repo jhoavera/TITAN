@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { tryInstallGh, isNodePresent, tryRemoveNode, EnsureResult } from '../../scripts/ci/ensure-tools'
+import { tryInstallGh, isNodePresent, tryRemoveNode, EnsureResult } from '@scripts/ci/ensure-tools'
 
 function makeRunner(status: number, stdout = '', stderr = '') {
   return (_cmd: string) => ({ status, stdout: Buffer.from(stdout), stderr: Buffer.from(stderr) } as any)
@@ -27,7 +27,7 @@ describe('ensure-tools basic tests', () => {
   })
 })
 import { describe, it, expect } from 'vitest';
-import { tryInstallBun, tryInstallAct, tryInstallPsql, tryInstallQdrant, summarize, EnsureResult } from '../../scripts/ci/ensure-tools';
+import { tryInstallBun, tryInstallAct, tryInstallPsql, tryInstallQdrant, summarize, EnsureResult } from '@scripts/ci/ensure-tools';
 import { SpawnSyncReturns } from 'child_process';
 
 describe('ensure-tools', () => {

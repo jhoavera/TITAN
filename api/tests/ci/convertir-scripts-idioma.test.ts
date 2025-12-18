@@ -1,5 +1,5 @@
-import { ejecutarConversion } from '../../scripts/ci/convertir-scripts-a-bun'
-import * as idioma from '../../src/nucleo/servicios/servicio-integridad-idioma'
+import { ejecutarConversion } from '@scripts/ci/convertir-scripts-a-bun'
+import * as idioma from '@nucleo/servicios/servicio-integridad-idioma'
 import fs from 'fs'
 import path from 'path'
 import { expect, it, describe, beforeEach, afterEach, vi } from 'vitest'

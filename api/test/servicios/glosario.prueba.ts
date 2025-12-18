@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll, afterEach } from 'vitest';
-import { ServicioGlosario } from '../../src/servicios/glosario';
+import { ServicioGlosario } from '@servicios/glosario';
 import fs from 'fs';
 import path from 'path';
 

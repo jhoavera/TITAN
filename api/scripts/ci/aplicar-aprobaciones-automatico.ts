@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { revisarYProponerAprobaciones } from '../../src/servicios/servicio-aprobacion-adrs';
+import { revisarYProponerAprobaciones } from '@servicios/servicio-aprobacion-adrs';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';

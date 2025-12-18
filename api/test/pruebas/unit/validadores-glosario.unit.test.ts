@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { esquemaCrearGlosario } from '../../../src/nucleo/validadores/validador-glosario'
+import { esquemaCrearGlosario } from '@nucleo/validadores/validador-glosario'
 
 describe('validadores - Glosario (unit)', () => {
   it('rechaza término demasiado corto', () => {

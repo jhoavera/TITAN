@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { shouldAutoApprove } from '../../src/servicios/limpieza-utils'
-import { readAutoApproveMetrics } from '../../src/nucleo/telemetria/auto-approve-metrics'
+import { shouldAutoApprove } from '@servicios/limpieza-utils'
+import { readAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 
 const tmpDir = path.resolve(__dirname, 'tmp-metrics')
 const metricsFile = path.resolve(process.cwd(), 'tmp', 'metrics', 'auto-approve-metrics.jsonl')

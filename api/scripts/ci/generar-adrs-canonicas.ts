@@ -114,8 +114,8 @@ export async function generarADRsCanónicas(reporte: { reporte: Array<{ termino:
     let creadoEnDb: any = undefined
     if (applyDb) {
       try {
-        const { crearADR } = await import('../../src/infraestructura/repositorios/repositorio-adrs')
-        const { obtenerDb } = await import('../../src/infraestructura/base-de-datos/cliente')
+        const { crearADR } = await import('@infraestructura/repositorios/repositorio-adrs')
+        const { obtenerDb } = await import('@infraestructura/base-de-datos/cliente')
         const db = obtenerDb() as any
         const payload = { numero: 0, titulo: `Propuesta: ${item.termino}`, objetivo: `Propuesta automática para término ${item.termino}`, decision: item.sugerencia ?? 'Revisar' }
         const r = await crearADR(db, payload as any, 'TNT-DEFAULT', 'generar-adrs-canonicas')

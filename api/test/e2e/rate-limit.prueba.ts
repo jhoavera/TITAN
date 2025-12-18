@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import app from '../../src/infraestructura/servidor/servidor-hono';
-import { _resetRateLimitForTests } from '../../src/nucleo/middleware/hono/middleware-rate-limit-inquilino';
+import app from '@infraestructura/servidor/servidor-hono';
+import { _resetRateLimitForTests } from '@nucleo/middleware/hono/middleware-rate-limit-inquilino';
 
 const validBody = { termino: 'PruebaRateLimit', definicion: 'Definición suficientemente larga para pasar la validación de pruebas', categoria: 'TERMINO_TECNICO' };
 

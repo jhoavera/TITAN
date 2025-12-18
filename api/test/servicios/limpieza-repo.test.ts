@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { run } from '../../scripts/servicios/limpieza-repo'
+import { run } from '@scripts/servicios/limpieza-repo'
 
 describe('servicio limpieza-repo', () => {
   it('lista sin error en dry-run', async () => {

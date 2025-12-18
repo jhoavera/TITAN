@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { validarPreCreacion } from '../../../src/nucleo/hooks/validacion-precreacion'
+import { validarPreCreacion } from '@nucleo/hooks/validacion-precreacion'
 
 describe('Hook validacion-precreacion', () => {
   it('valida nombres y devuelve propuesta cuando detecta ingles', async () => {

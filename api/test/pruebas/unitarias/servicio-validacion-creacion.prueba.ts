@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { validarYRegistrarNombre, detectarIngles } from '../../../src/nucleo/servicios/servicio-validacion-creacion';
+import { validarYRegistrarNombre, detectarIngles } from '@nucleo/servicios/servicio-validacion-creacion';
 import { promises as fs } from 'fs';
 import path from 'path';
 

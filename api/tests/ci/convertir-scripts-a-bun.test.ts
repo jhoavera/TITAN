@@ -1,4 +1,4 @@
-import { planConversion, detectEnglishTerms } from '../../scripts/ci/convertir-scripts-a-bun'
+import { planConversion, detectEnglishTerms } from '@scripts/ci/convertir-scripts-a-bun'
 import { expect, it, describe } from 'vitest'
 
 describe('convertir-scripts-a-bun', () => {

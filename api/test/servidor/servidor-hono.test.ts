@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import app from '../../src/infraestructura/servidor/servidor-hono';
+import app from '@infraestructura/servidor/servidor-hono';
 
 describe('servidor Hono básico', () => {
   it('devuelve ok en health', async () => {

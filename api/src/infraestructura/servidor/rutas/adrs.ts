@@ -1,5 +1,5 @@
 import type { FastifyPluginAsync } from 'fastify';
-import * as controlador from '../controladores/adrs-controlador';
+import * as controlador from '@infraestructura/servidor/controladores/adrs-controlador';
 
 /**
  * Registrador legacy para ADRs compatible con Fastify.

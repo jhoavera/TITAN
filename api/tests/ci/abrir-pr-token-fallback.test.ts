@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import * as prModule from '../../scripts/ci/abrir-pr-migracion'
+import * as prModule from '@scripts/ci/abrir-pr-migracion'
 
 describe('abrir-pr-migracion token fallback', () => {
   it('usa curl + GITHUB_TOKEN cuando gh no está presente', () => {

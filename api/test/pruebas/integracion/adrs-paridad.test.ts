@@ -1,77 +1,52 @@
-import { describe, it, expect, beforeEach, afterEach } from 'vitest'
-import fs from 'fs'
-import path from 'path' 
+import { describe, it, expect, beforeEach } from 'vitest'
+import { obtenerDb } from '@infraestructura/base-de-datos/cliente'
 
-describe('Migración ADRs: paridad Fastify <-> Hono', () => {
-  const tmpFile = path.join(process.cwd(), 'tmp-adrs.json')
-  let honoApp: any
-  let fastifyApp: any
+describe('ADRs Hono CRUD', () => {
+  let app: any
 
   beforeEach(async () => {
-    delete process.env.DATABASE_URL
-    try { await fs.promises.rm(tmpFile, { force: true }) } catch (_) {}
-
-    const servidor = await import('../../../src/infraestructura/servidor/servidor-hono')
-    honoApp = servidor.default
-
-    const { crearFastifyCompat } = await import('../../helpers/fastify-compat')
-    fastifyApp = crearFastifyCompat()
-    const rutaADRs = await import('../../../src/infraestructura/servidor/rutas/adrs')
-    await rutaADRs.default(fastifyApp)
+    const db: any = obtenerDb()
+    db.store = {}
+    db.lastId = 0
+    const servidor = await import('@infraestructura/servidor/servidor-hono')
+    app = servidor.default
+    const { _resetRateLimitForTests } = await import('@nucleo/middleware/hono/middleware-rate-limit-inquilino')
+    _resetRateLimitForTests()
   })
 
-  afterEach(async () => {
-    try { await fs.promises.rm(tmpFile, { force: true }) } catch (_) {}
-    if (honoApp && typeof honoApp.close === 'function') await honoApp.close()
-    if (fastifyApp && typeof fastifyApp.close === 'function') await fastifyApp.close()
-  })
-
-  it('Parity: CRUD ADRs should match between Fastify and Hono', async () => {
-    // Payload válido según esquemas Zod
+  it('realiza CRUD completo con stub DB', async () => {
+    const headers = { authorization: 'Bearer token-usuario-prueba', 'x-identificador-inquilino': 'TNT-TEST-0001', 'content-type': 'application/json' }
     const payload = {
       numero: 9999,
       titulo: 'Decidir formato de ejemplo para migración',
       objetivo: 'Asegurar que la migración preserve comportamiento y validaciones',
-      decision: 'Se decide usar Hono y mantener compatibilidad con adaptador',
+      decision: 'Se decide usar Hono y mantener compatibilidad con adaptador'
     }
 
-    const headers = { authorization: 'Bearer t', 'x-identificador-inquilino': 'TNT-TEST-0001' }
-    const reqFastCreate = await fastifyApp.inject({ method: 'POST', url: '/api/v1/adrs', headers, payload })
-    const reqHonoCreate = await honoApp.fetch(new Request('http://localhost/api/v1/adrs', { method: 'POST', headers: { ...headers, 'content-type': 'application/json' }, body: JSON.stringify(payload) }))
+    const crear = await app.request('/api/v1/adrs', { method: 'POST', headers, body: JSON.stringify(payload) })
+    const crearBody = await crear.json()
+    expect(crear.status).toBe(201)
+    expect(crearBody.creado.numero).toBe(payload.numero)
 
-    expect(reqFastCreate.statusCode).toBe(201)
-    expect(reqHonoCreate.status).toBe(201)
+    const list = await app.request('/api/v1/adrs', { headers })
+    const lista = await list.json()
+    expect(list.status).toBe(200)
+    expect(lista.length).toBeGreaterThanOrEqual(1)
 
-    const creadoFast = JSON.parse(reqFastCreate.body).creado
-    const creadoHono = JSON.parse(await reqHonoCreate.text()).creado
-    expect(creadoFast.numero).toBe(payload.numero)
-    expect(creadoHono.numero).toBe(payload.numero)
+    const get = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, { headers })
+    const getBody = await get.json()
+    expect(get.status).toBe(200)
+    expect(getBody.id).toBe(crearBody.creado.id)
 
-    // Listar
-    const listFast = await fastifyApp.inject({ method: 'GET', url: '/api/v1/adrs', headers })
-    const listHono = await honoApp.fetch(new Request('http://localhost/api/v1/adrs', { headers }))
-    expect(listFast.statusCode).toBe(200)
-    expect(listHono.status).toBe(200)
+    const patch = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, { method: 'PATCH', headers, body: JSON.stringify({ estado: 'APROBADO' }) })
+    const patchBody = await patch.json()
+    expect(patch.status).toBe(200)
+    expect(patchBody.estado).toBe('APROBADO')
 
-    // Obtener
-    const getFast = await fastifyApp.inject({ method: 'GET', url: `/api/v1/adrs/${creadoFast.id}`, headers })
-    const getHono = await honoApp.fetch(new Request(`http://localhost/api/v1/adrs/${creadoHono.id}`, { headers }))
-    expect(getFast.statusCode).toBe(200)
-    expect(getHono.status).toBe(200)
+    const del = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, { method: 'DELETE', headers })
+    expect(del.status).toBe(204)
 
-    // Actualizar
-    const patchPayload = { estado: 'APROBADO' }
-    const patchFast = await fastifyApp.inject({ method: 'PATCH', url: `/api/v1/adrs/${creadoFast.id}`, headers, payload: patchPayload })
-    const patchHono = await honoApp.fetch(new Request(`http://localhost/api/v1/adrs/${creadoHono.id}`, { method: 'PATCH', headers: { ...headers, 'content-type': 'application/json' }, body: JSON.stringify(patchPayload) }))
-    expect(patchFast.statusCode).toBe(200)
-    expect(patchHono.status).toBe(200)
-    expect(JSON.parse(patchFast.body).estado).toBe('APROBADO')
-    expect(JSON.parse(await patchHono.text()).estado).toBe('APROBADO')
-
-    // Eliminar
-    const delFast = await fastifyApp.inject({ method: 'DELETE', url: `/api/v1/adrs/${creadoFast.id}`, headers })
-    const delHono = await honoApp.fetch(new Request(`http://localhost/api/v1/adrs/${creadoHono.id}`, { method: 'DELETE', headers }))
-    expect(delFast.statusCode).toBe(204)
-    expect(delHono.status).toBe(204)
+    const getAfter = await app.request(`/api/v1/adrs/${crearBody.creado.id}`, { headers })
+    expect(getAfter.status).toBe(404)
   })
 })

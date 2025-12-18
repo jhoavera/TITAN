@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'bun:test';
 import fs from 'fs/promises';
 import path from 'path';
-import { ServicioLimpieza } from '../../../src/servicios/limpieza/servicio-limpieza';
+import { ServicioLimpieza } from '@servicios/limpieza/servicio-limpieza';
 
 const TMP = path.join(process.cwd(), 'tmp', 'test-limpieza-propuestas');
 
@@ -23,7 +23,7 @@ describe('ServicioLimpieza -> integración ADR + Glosario', () => {
     const resultado = await s.ejecutarLimpieza(propuestas, { dryRun: false, commit: false, autor: { nombre: 'tester', email: 'tester@example.local' } });
 
     // buscar archivos de propuesta en glosario
-    const { ServicioGlosario } = await import('../../../src/servicios/glosario/servicio-glosario');
+    const { ServicioGlosario } = await import('@servicios/glosario/servicio-glosario');
     const sg = new ServicioGlosario(path.join(TMP, 'documentacion-fuente-unica-verdad', 'glosario-biblioteca'));
     const propuestasList = await sg.listarPropuestas();
     expect(propuestasList.length).toBeGreaterThan(0);

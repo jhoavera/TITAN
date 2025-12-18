@@ -1,7 +1,7 @@
-import type { RequestLike, ReplyLike } from '../types/handler'
+import type { RequestLike, ReplyLike } from '@infraestructura/servidor/types/handler'
 import fs from 'fs'
 import path from 'path'
-import { esquemaRenombrado } from '../../../nucleo/validadores/validador-ops.ts'
+import { esquemaRenombrado } from '@nucleo/validadores/validador-ops.ts'
 // importar servicio dinámicamente dentro del handler para evitar problemas de resolución en test env
 
 export async function renombrarPorADR(req: RequestLike, reply: ReplyLike) {

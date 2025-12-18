@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { summarizeAutoApproveMetrics, rotateAutoApproveMetrics } from '../../src/nucleo/telemetria/auto-approve-metrics'
+import { summarizeAutoApproveMetrics, rotateAutoApproveMetrics } from '@nucleo/telemetria/auto-approve-metrics'
 import fs from 'fs'
 import path from 'path'
 

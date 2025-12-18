@@ -1,7 +1,7 @@
 import { describe, it, expect, afterEach } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { shouldAutoApprove } from '../../src/servicios/limpieza-utils'
+import { shouldAutoApprove } from '@servicios/limpieza-utils'
 
 const tmpDir = path.resolve(__dirname, 'tmp-auto-approve')
 if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true })

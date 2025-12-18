@@ -1,8 +1,9 @@
-import { validarNombre, detectarInglesBasico } from '../utilidades/validar-nombre-archivo'
+import { validarNombre, detectarInglesBasico } from '@nucleo/utilidades/validar-nombre-archivo'
 import fs from 'fs'
 import path from 'path'
 
-import { registrarEvento } from './servicio-auditoria-prevalidacion'
+import { registrarEvento } from '@nucleo/servicios/servicio-auditoria-prevalidacion'
+import { rutaPropuestasGlosario } from '@nucleo/rutas/rutas-docs'
 
 export async function validarYRegistrarNombre(nombre: string, tipo: 'glosario' | 'adr' | 'otro' = 'otro') {
   const resultado = validarNombre(nombre)
@@ -11,8 +12,7 @@ export async function validarYRegistrarNombre(nombre: string, tipo: 'glosario' |
 
   if (!resultado.valido || hayIngles) {
     // crear propuesta en glosario-biblioteca/propuestas
-    const DOCS_ROOT = process.env.TITAN_DOCS_ROOT || path.resolve(__dirname, '../../../..')
-    const propuestasDir = path.resolve(DOCS_ROOT, 'documentacion-fuente-unica-verdad', 'glosario-biblioteca', 'propuestas')
+    const propuestasDir = rutaPropuestasGlosario()
     await fs.promises.mkdir(propuestasDir, { recursive: true })
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-')
     const nombreArchivo = `${timestamp}-${tipo}-${nombre.replace(/[\\/]/g, '_')}.md`

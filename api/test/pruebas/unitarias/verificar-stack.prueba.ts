@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import * as vs from '../../../src/comun/utilidades/verificar-stack'
+import * as vs from '@comun/utilidades/verificar-stack'
 
 describe('verificar-stack utilities', () => {
   it('detects Bun via mocked env var', () => {

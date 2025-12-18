@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'bun:test';
 import fs from 'fs/promises';
 import path from 'path';
 import { spawnSync } from 'child_process';
-import { ServicioLimpieza } from '../../../src/servicios/limpieza/servicio-limpieza';
+import { ServicioLimpieza } from '@servicios/limpieza/servicio-limpieza';
 
 const TMP = path.join(process.cwd(), 'tmp', 'test-limpieza-auto');
 

@@ -2,12 +2,12 @@
  * Implementación mínima usando Drizzle (se asume cliente Drizzle inyectado).
  * Todo en español técnico empresarial.
  */
-import type { DB } from '../base-de-datos/cliente';
+import type { DB } from '@infraestructura/base-de-datos/cliente';
 // Carga dinámica de esquema para evitar resolución estática de módulos heavy en entornos de test
 // (ej. `drizzle-orm/pg-core`). Se importa cuando se requiere dentro de cada operación.
-import { auditoria_cambios } from '../base-de-datos/esquemas/esquema-auditoria';
-import { glosario_terminos } from '../base-de-datos/esquemas/esquema-glosario';
-import { hayTriggersAuditoria } from '../base-de-datos/utilidades/chequeo-auditoria';
+import { auditoria_cambios } from '@infraestructura/base-de-datos/esquemas/esquema-auditoria';
+import { glosario_terminos } from '@infraestructura/base-de-datos/esquemas/esquema-glosario';
+import { hayTriggersAuditoria } from '@infraestructura/base-de-datos/utilidades/chequeo-auditoria';
 /* Minimal local shim for `InferModel` to avoid a hard dependency on `drizzle-orm`
  * when the package (or its types) isn't installed in the environment (e.g. tests).
  * Replace this with the real import when `drizzle-orm` is available.

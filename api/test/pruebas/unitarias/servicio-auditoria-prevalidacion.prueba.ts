@@ -2,12 +2,12 @@ import { describe, it, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
 import os from 'os'
-import { withTempAudit } from '../../helpers/auditoria'
+import { withTempAudit } from '@test/helpers/auditoria'
 
 describe('servicio-auditoria-prevalidacion', () => {
   it('registra y lee eventos', async () => {
     await withTempAudit(async (tmpfile) => {
-      const mod = await import('../../../src/nucleo/servicios/servicio-auditoria-prevalidacion')
+      const mod = await import('@nucleo/servicios/servicio-auditoria-prevalidacion')
       const { registrarEvento, leerEventos, contarPropuestas } = mod
 
       const nombre = `test-${Date.now()}`

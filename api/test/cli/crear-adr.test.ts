@@ -1,8 +1,8 @@
 import { describe, it, beforeEach, afterEach, expect } from 'vitest'
 import fs from 'fs'
 import path from 'path'
-import { crearADRFromPayload } from '../../scripts/cli/crear-adr'
-import { obtenerDb, inicializarDb } from '../../src/infraestructura/base-de-datos/cliente'
+import { crearADRFromPayload } from '@scripts/cli/crear-adr'
+import { obtenerDb, inicializarDb } from '@infraestructura/base-de-datos/cliente'
 
 const TMP = path.resolve(__dirname, 'tmp-adrs')
 const ADRS_DIR_ENV = TMP

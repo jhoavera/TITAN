@@ -4,7 +4,7 @@
  */
 import fs from 'fs';
 import path from 'path';
-import { ServicioValidacionNombres } from '../../src/servicios/servicio-validacion-nombres';
+import { ServicioValidacionNombres } from '@servicios/servicio-validacion-nombres';
 
 const REPORT_PATH = path.resolve(process.cwd(), 'reports/reporte-refactor-idioma.json');
 const OUT_PATH = path.resolve(process.cwd(), 'reports/plan-refactor-idioma.json');
