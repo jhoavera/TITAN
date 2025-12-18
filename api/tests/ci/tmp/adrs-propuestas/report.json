@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2025-12-18T22:45:17.720Z",
+  "generatedAt": "2025-12-18T22:47:04.021Z",
   "baseDir": "/home/jhoavera/Documentos/TITAN/api/tests/ci/fixtures/indexar/src",
   "proposalsCount": 1,
   "proposals": [
     {
-      "id": "P-IMP-1766097917720-1",
+      "id": "P-IMP-1766098024021-1",
       "title": "Propuesta: reemplazar importaciones relativas en /mod por alias absolutos",
       "filesCount": 1
     }
