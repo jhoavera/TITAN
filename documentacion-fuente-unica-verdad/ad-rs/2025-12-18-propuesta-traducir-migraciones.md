@@ -1,7 +1,7 @@
 ---
 titulo: "Propuesta: traducir migraciones → migraciones"
 autor: renombrar-guiado
-fecha: 2025-12-18T03:50:45.095Z
+fecha: 2025-12-18T03:51:36.408Z
 estado: propuesta
 ---
 
