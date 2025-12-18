@@ -128,6 +128,22 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
       return { ok: false, reason: 'extensión no segura para auto-approve', rule: 'extensión' }
     }
 
+    // Heurística: changelog / report / traducción (prioritarias sobre md-small)
+    if ((baseName.includes('changelog') || baseName.includes('cambios') || filePath.toLowerCase().includes('/changelogs/')) && ext === 'md' && content.length < 2000 && !content.includes('```')) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'changelog corto y sin código', rule: 'changelog' }) } catch(e) {}
+      return { ok: true, reason: 'changelog corto y sin código', rule: 'changelog' }
+    }
+
+    if (filePath.includes(path.join('reports')) && ['md', 'json', 'txt'].includes(ext) && content.length < 2000) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'report corto', rule: 'report-small' }) } catch(e) {}
+      return { ok: true, reason: 'report corto', rule: 'report-small' }
+    }
+
+    if (filePath.includes(path.join('ad-rs', 'propuestas')) && contentLower.includes('traducc') && content.length < 2000) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'propuesta de traducción pequeña', rule: 'translation-suggestion' }) } catch(e) {}
+      return { ok: true, reason: 'propuesta de traducción pequeña', rule: 'translation-suggestion' }
+    }
+
     // Heurística: markdown corto (no code blocks, no imports) — segura para auto-approve si es muy pequeña
     if (ext === 'md' && content.length < 500 && !content.includes('```') && !/^(\s*(import|export|require)\s+)/m.test(content)) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }) } catch(e) {}
@@ -165,6 +181,24 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     if (filePath.includes('documentacion-fuente-unica-verdad') && ext === 'md' && content.length < 2000 && !content.includes('```')) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'documento (doc-only) seguro y corto', rule: 'doc-only' }) } catch(e) {}
       return { ok: true, reason: 'documento (doc-only) seguro y corto', rule: 'doc-only' }
+    }
+
+    // Heurística: changelog / archivo de cambios (seguro si corto)
+    if ((baseName.includes('changelog') || baseName.includes('cambios') || filePath.toLowerCase().includes('/changelogs/')) && ext === 'md' && content.length < 2000 && !content.includes('```')) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'changelog corto y sin código', rule: 'changelog' }) } catch(e) {}
+      return { ok: true, reason: 'changelog corto y sin código', rule: 'changelog' }
+    }
+
+    // Heurística: reports pequeños (carpeta reports)
+    if (filePath.includes(path.join('reports')) && ['md', 'json', 'txt'].includes(ext) && content.length < 2000) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'report corto', rule: 'report-small' }) } catch(e) {}
+      return { ok: true, reason: 'report corto', rule: 'report-small' }
+    }
+
+    // Heurística: propuestas de traducción (ad-rs/propuestas) que contienen 'traducc' y son pequeñas
+    if (filePath.includes(path.join('ad-rs', 'propuestas')) && contentLower.includes('traducc') && content.length < 2000) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'propuesta de traducción pequeña', rule: 'translation-suggestion' }) } catch(e) {}
+      return { ok: true, reason: 'propuesta de traducción pequeña', rule: 'translation-suggestion' }
     }
 
     // - avoid approving files containing code blocks

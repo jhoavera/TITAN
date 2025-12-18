@@ -61,4 +61,16 @@ describe('auto-approve metrics', () => {
     expect(after.some(m => (m.file === 'old.md'))).toBe(false)
     expect(after.some(m => (m.file === 'new.md'))).toBe(true)
   })
+
+  it('includes newly added rules in summary (changelog/report/translation)', () => {
+    const now = new Date().toISOString()
+    recordAutoApproveMetric({ ts: now, file: 'CHANGELOG.md', ok: true, rule: 'changelog', reason: 'cambios' })
+    recordAutoApproveMetric({ ts: now, file: 'reports/reporte.md', ok: true, rule: 'report-small', reason: 'reporte' })
+    recordAutoApproveMetric({ ts: now, file: 'ad-rs/propuestas/traduccion.md', ok: true, rule: 'translation-suggestion', reason: 'traducción' })
+
+    const s = summarizeAutoApproveMetrics()
+    expect(s.byRule['changelog']).toBeDefined()
+    expect(s.byRule['report-small']).toBeDefined()
+    expect(s.byRule['translation-suggestion']).toBeDefined()
+  })
 })

@@ -96,4 +96,33 @@ export * from './otro'`
     // aceptar doc-only o md-small según orden interno de heurísticas
     expect(['doc-only', 'md-small']).toContain(res.rule)
   })
+
+  it('approves changelog files (changelog)', () => {
+    const file = path.join(tmpDir, 'CHANGELOG.md')
+    const content = `# Changelog\n\n- Cambios menores de texto y documentación.`
+    fs.writeFileSync(file, content, 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('changelog')
+  })
+
+  it('approves small reports in reports/ (report-small)', () => {
+    const pdir = path.join(tmpDir, 'reports')
+    fs.mkdirSync(pdir, { recursive: true })
+    const file = path.join(pdir, 'reporte.md')
+    fs.writeFileSync(file, '# Reporte\nContenido resumen', 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('report-small')
+  })
+
+  it('approves small translation proposals (translation-suggestion)', () => {
+    const pdir = path.join(tmpDir, 'ad-rs', 'propuestas')
+    fs.mkdirSync(pdir, { recursive: true })
+    const file = path.join(pdir, 'traduccion.md')
+    fs.writeFileSync(file, '# Propuesta de traducción\nTraducción propuesta: cambiar nombre de la variable', 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('translation-suggestion')
+  })
 })
