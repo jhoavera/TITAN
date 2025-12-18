@@ -3,11 +3,7 @@ import { listarPropuestas, agruparYDeduplicar, consolidar } from '@servicios/ser
 
 function main() {
   const propuestas = listarPropuestas();
-  if (propuestas.length === 0) {
-    console.log('No se detectaron propuestas automáticas.');
-    return 0;
-  }
-  const grupos = agruparYDeduplicar(propuestas);
+  const grupos = propuestas.length === 0 ? [] : agruparYDeduplicar(propuestas);
   const destino = consolidar(grupos);
   console.log(`Deduplicación completada. Reporte: ${destino}`);
   for (const g of grupos) {

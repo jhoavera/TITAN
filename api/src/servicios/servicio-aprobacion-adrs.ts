@@ -1,6 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { agruparYDeduplicar } from '@servicios/servicio-deduplicacion-propuestas';
 import { rutaADRs, rutaGlosario } from '@nucleo/rutas/rutas-docs';
 
 export type ValidacionResultado = {
@@ -12,10 +11,16 @@ export type ValidacionResultado = {
   semExplicacion?: string;
 };
 
-const ADRS_DIR = rutaADRs();
-const ADRS_DIR_ALT = rutaADRs();
 const GLOSARIO = rutaGlosario();
 const DEDUP_REPORTE = path.resolve(process.cwd(), 'reports', 'dedup-propuestas.json');
+
+function obtenerRutasADRs(): string[] {
+  const rutas: string[] = [];
+  if (process.env.ADRS_DIR) rutas.push(path.resolve(process.env.ADRS_DIR));
+  rutas.push(path.resolve(process.cwd(), 'documentacion-fuente-unica-verdad', 'ad-rs'));
+  rutas.push(rutaADRs());
+  return Array.from(new Set(rutas));
+}
 
 function leerGlosario(): string[] {
   if (!fs.existsSync(GLOSARIO)) return [];
@@ -30,7 +35,7 @@ function leerGlosario(): string[] {
 
 function buscarADRsParaTerm(term: string): string[] {
   const posibles: string[] = [];
-  for (const dir of [ADRS_DIR, ADRS_DIR_ALT]) {
+  for (const dir of obtenerRutasADRs()) {
     if (!fs.existsSync(dir)) continue;
     const archivos = fs.readdirSync(dir).filter((f) => f.endsWith('.md'));
     for (const f of archivos) {
@@ -58,10 +63,10 @@ export async function validarPropuesta(termino: string, sugerencia?: string): Pr
   let sugerenciaCanonical: string | undefined = undefined;
   if (fs.existsSync(DEDUP_REPORTE)) {
     try {
-      const report = JSON.parse(fs.readFileSync(DEDUP_REPORTE, 'utf-8'));
+      const report = JSON.parse(fs.readFileSync(DEDUP_REPORTE, 'utf-8')) as { grupos?: Array<{ clave?: string }> };
       if (report && Array.isArray(report.grupos)) {
-        const grupo = report.grupos.find((g: any) => g.clave && g.clave.toLowerCase().includes(termino.toLowerCase()));
-        if (grupo) {
+        const grupo = report.grupos.find((g) => typeof g.clave === 'string' && g.clave.toLowerCase().includes(termino.toLowerCase()));
+        if (grupo?.clave) {
           sugerenciaCanonical = grupo.clave;
         }
       }
@@ -99,8 +104,8 @@ export async function validarPropuesta(termino: string, sugerencia?: string): Pr
 export async function revisarYProponerAprobaciones(): Promise<{ fecha: string; propuestas: ValidacionResultado[] }> {
   const salida: ValidacionResultado[] = [];
   if (!fs.existsSync(DEDUP_REPORTE)) return { fecha: new Date().toISOString(), propuestas: [] };
-  const report = JSON.parse(fs.readFileSync(DEDUP_REPORTE, 'utf-8'));
-  const grupos = report.grupos as Array<{ clave: string; archivos: string[] }>;
+  const report = JSON.parse(fs.readFileSync(DEDUP_REPORTE, 'utf-8')) as { grupos?: Array<{ clave: string; archivos: string[] }> };
+  const grupos = (report.grupos ?? []) as Array<{ clave: string; archivos: string[] }>;
   for (const g of grupos) {
     const term = g.clave;
     // await validarPropuesta (es async ahora)

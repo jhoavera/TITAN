@@ -1,6 +1,7 @@
 // _indice generado automáticamente - 2025-12-18T04:53:09.097Z
 // No editar a mano, usar scripts/indexar-aliases.ts para regenerar
 export * from '@servicios/deduplicacion-propuestas'
+export * from '@servicios/adr-crud'
 export * from '@servicios/glosario'
 export * from '@servicios/limpieza-avanzada'
 export * from '@servicios/limpieza-utils'

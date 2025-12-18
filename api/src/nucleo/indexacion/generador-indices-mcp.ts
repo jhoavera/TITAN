@@ -46,19 +46,9 @@ export function generateIndexForType(typeDir: string): void {
     return true
   })
 
-  // Derivar alias absoluto usando la ruta relativa a src
-  const srcMarker = `${path.sep}src${path.sep}`
-  const idx = typeDir.indexOf(srcMarker)
-  if (idx === -1) {
-    throw new Error(`[indexer] No se pudo derivar alias porque typeDir no contiene /src/: ${typeDir}`)
-  }
-  const subPath = typeDir.slice(idx + srcMarker.length) // ej: "nucleo/middleware"
-  const [aliasBase, ...rest] = subPath.split(path.sep)
-  const aliasPrefix = rest.length > 0 ? `@${aliasBase}/${rest.join('/')}` : `@${aliasBase}`
-
   const exports = files.sort().map((f) => {
     const base = f.replace(/\.(ts|tsx)$/, '')
-    return `export * from '${aliasPrefix}/${base}'`
+    return `export * from './${base}'`
   })
 
   const header = `// _indice generado automáticamente - ${new Date().toISOString()}\n// No editar a mano, usar scripts/indexar-aliases.ts para regenerar\n`

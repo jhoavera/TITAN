@@ -1,13 +1,13 @@
 {
-  "fecha": "2025-12-18T06:50:11.727Z",
+  "fecha": "2025-12-18T06:57:45.245Z",
   "propuestas": [
     {
-      "termino": "migraciones",
+      "termino": "archivo-duplicado",
       "valido": true,
       "razones": [],
-      "sugerenciaCanonical": "migraciones",
+      "sugerenciaCanonical": "archivo-duplicado",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica: coincidencia exacta"
+      "semExplicacion": "ok"
     }
   ]
 }

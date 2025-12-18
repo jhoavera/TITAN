@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T06:50:05.842Z",
+  "generatedAt": "2025-12-18T06:57:39.659Z",
   "reporte": [
     {
       "termino": "migraciones",
@@ -59,6 +59,7 @@
         "/home/jhoavera/Documentos/TITAN/api/reports/PR_DRAFT_FINAL_MIGRACION_FASTIFY_A_HONO.md",
         "/home/jhoavera/Documentos/TITAN/api/PULL_REQUEST_DRAFT.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766008262799-ru2mrd/migraciones-test-adr.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766040611618-qg1ow5/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766012449228-cvt4ab/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766029846101-dt1jky/aplicadas/2025-12-18T03:50:46.164Z-aprobacion-migraciones.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766029846101-dt1jky/migraciones-test-adr.md",
@@ -78,6 +79,8 @@
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766015185531-btg05f/aplicadas/2025-12-17T23:46:25.589Z-aprobacion-migraciones.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766015185531-btg05f/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766029846029-ikv095/migraciones-test-adr.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766040611671-3zipsh/aplicadas/2025-12-18T06:50:11.730Z-aprobacion-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766040611671-3zipsh/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766029898968-28i52i/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766006839943-7z2pw4/migraciones-test-adr.md",
         "/home/jhoavera/Documentos/TITAN/api/tmp/aplicar-1766028792236-9t86nq/migraciones-test-adr.md",
@@ -134,7 +137,10 @@
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-a4c46917-d4e1-4b9d-8015-9ab547f81841.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3a279fc2-de0f-48e7-a36b-826ef6bbc7ce.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d6e9b98f-86d7-460b-82f0-4184a68c414e.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-31e87e82-2ca3-4b22-9b03-9327034c7761.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d678de88-ef0c-471c-9ae0-1315bfd4a582.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b98d4aba-4452-4c00-bd81-ff22e9e1b886.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4037f85e-ef68-4d51-a983-a2277ee6f14e.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-eb312023-d158-4c89-a98e-e718e04a5d6f.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migraciones.md",
@@ -143,6 +149,7 @@
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7d0392bb-cf4e-4126-a244-23f729d0d59f.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migration-2025-12-16.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-16.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ccc54d4c-3620-4a0d-98b1-c4cdb8c15139.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-af8aa4c8-3447-49e0-a954-df4c712a9966.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migrations.md",
@@ -166,8 +173,8 @@
         "/home/jhoavera/Documentos/TITAN/api/scripts/crear-adr.ts",
         "/home/jhoavera/Documentos/TITAN/api/scripts/revisar-idioma.ts",
         "/home/jhoavera/Documentos/TITAN/api/PULL_REQUEST_DRAFT.md",
-        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-propuestas/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-df1b0b3c-5d6d-40d8-8a78-4b838bfdef00.md",
-        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-0ef1e30e-c40c-4729-8d21-a5ad0da28123.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-propuestas/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-5c098083-8182-4206-b814-15adc2343abd.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-1e8d29db-61c2-4cd5-9aca-6d17ef45efcc.md",
         "/home/jhoavera/Documentos/TITAN/api/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-ef3b3457-d32b-4f20-a0f3-a58759adaff2.md"
       ]
     },
@@ -186,7 +193,10 @@
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-a4c46917-d4e1-4b9d-8015-9ab547f81841.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-3a279fc2-de0f-48e7-a36b-826ef6bbc7ce.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d6e9b98f-86d7-460b-82f0-4184a68c414e.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-31e87e82-2ca3-4b22-9b03-9327034c7761.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-d678de88-ef0c-471c-9ae0-1315bfd4a582.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-b98d4aba-4452-4c00-bd81-ff22e9e1b886.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-4037f85e-ef68-4d51-a983-a2277ee6f14e.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migration-2025-12-17.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-eb312023-d158-4c89-a98e-e718e04a5d6f.md",
@@ -196,6 +206,7 @@
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-7d0392bb-cf4e-4126-a244-23f729d0d59f.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migration-2025-12-16.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-16.md",
+        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-ccc54d4c-3620-4a0d-98b1-c4cdb8c15139.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-normalizar-ruta-término-detectado-af8aa4c8-3447-49e0-a954-df4c712a9966.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
         "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migrations.md",
@@ -224,8 +235,8 @@
         "/home/jhoavera/Documentos/TITAN/api/scripts/refactorizar-idioma.ts",
         "/home/jhoavera/Documentos/TITAN/api/scripts/revisar-idioma.ts",
         "/home/jhoavera/Documentos/TITAN/api/PULL_REQUEST_DRAFT.md",
-        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-propuestas/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-df1b0b3c-5d6d-40d8-8a78-4b838bfdef00.md",
-        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-0ef1e30e-c40c-4729-8d21-a5ad0da28123.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-propuestas/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-5c098083-8182-4206-b814-15adc2343abd.md",
+        "/home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-1e8d29db-61c2-4cd5-9aca-6d17ef45efcc.md",
         "/home/jhoavera/Documentos/TITAN/api/api/tmp/test-limpieza-auto/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-ef3b3457-d32b-4f20-a0f3-a58759adaff2.md"
       ]
     }
