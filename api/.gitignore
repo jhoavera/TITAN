@@ -1,0 +1,9 @@
+# Ignore temporary test outputs and generated proposals
+api/tmp/
+api/api/tmp/
+tmp/
+# Reports and generated metrics
+api/reports/
+api/tmp/**/auto-approve-metrics.jsonl
+# Ignore proposals generated during tests
+documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/
