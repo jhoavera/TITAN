@@ -1,0 +1,15 @@
+{
+  "dashboard": {
+    "title": "PreValidacion - Propuestas (TITAN)",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Propuestas por tipo y hayIngles",
+        "targets": [
+          { "expr": "titan_prevalidacion_propuestas_total", "legendFormat": "{tipo} {hayIngles}" }
+        ]
+      }
+    ]
+  },
+  "__version": 1
+}

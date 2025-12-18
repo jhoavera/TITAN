@@ -1,0 +1,11 @@
+{
+  "grupos": [
+    {
+      "clave": "archivo-duplicado",
+      "archivos": [
+        "/tmp/a",
+        "/tmp/b"
+      ]
+    }
+  ]
+}

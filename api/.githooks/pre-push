@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# Sample pre-push hook that calls the repository prepush npm script.
+# To enable locally: `cp .githooks/pre-push .git/hooks/pre-push && chmod +x .git/hooks/pre-push`
+set -e
+printf "Executing repo pre-push checks (bun run prepush)...\n"
+bun run prepush
+printf "Pre-push checks passed.\n"

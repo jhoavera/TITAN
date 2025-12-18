@@ -1,0 +1,22 @@
+[alias]
+"@" = "./src"
+"@nucleo/*" = "./src/nucleo/*"
+"@modulos/*" = "./src/modulos/*"
+"@api/*" = "./src/api/*"
+"@compartido/*" = "./src/compartido/*"
+"@tipos/*" = "./src/tipos/*"
+"@utilidades/*" = "./src/utilidades/*"
+"@rutas/*" = "./src/rutas/*"
+"@componentes/*" = "./src/componentes/*"
+"@ganchos/*" = "./src/ganchos/*"
+"@servicios/*" = "./src/servicios/*"
+
+[construccion]
+objetivo = "bun"
+minificar = true
+division = true
+mapa_fuentes = false
+
+[memoria_cache]
+directorio = "/cache_ssd/.bun"
+tamano_maximo = "20GB"

@@ -1,0 +1,8 @@
+---
+origen: integridad-idioma
+termino: create
+propuesto: crear
+archivo: glosario-biblioteca/propuestas/2025-12-17T20-17-50-559Z-integridad-idioma-migration.md
+---
+
+Automática: detectar uso de término en inglés 'create' en 'glosario-biblioteca/propuestas/2025-12-17T20-17-50-559Z-integridad-idioma-migration.md' - propuesto: 'crear'

@@ -1,0 +1,8 @@
+---
+origen: integridad-idioma
+termino: scripts
+propuesto: scripts
+archivo: documentacion-fuente-unica-verdad/legacy/ad-rs/ADR-0003-consolidacion-documentacion.propuesta
+---
+
+Automática: detectar uso de término en inglés 'scripts' en 'documentacion-fuente-unica-verdad/legacy/ad-rs/ADR-0003-consolidacion-documentacion.propuesta' - propuesto: 'scripts'

@@ -1,0 +1,8 @@
+---
+origen: integridad-idioma
+termino: scripts
+propuesto: scripts
+archivo: documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T04-47-08-161Z-integridad-idioma-scripts.md
+---
+
+Automática: detectar uso de término en inglés 'scripts' en 'documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T04-47-08-161Z-integridad-idioma-scripts.md' - propuesto: 'scripts'

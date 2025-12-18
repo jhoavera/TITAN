@@ -1,0 +1,47 @@
+# 0001 - Migración: Fastify → Hono (propuesta)
+
+Fecha: 2025-12-16
+Estado: propuesta
+Autor: equipo TITÁN (Copilot / Usuario)
+
+## Contexto
+El proyecto actualmente usa Fastify como servidor HTTP (dependencia `fastify@^5`). La documentación del proyecto y la dirección arquitectónica recomiendan preferir Hono sobre Fastify para ejecución bajo Bun (mejor startup, menor consumo, middleware por inquilino y mejor integración con Zod).
+
+## Problema
+Mantener Fastify incrementa la superficie de mantenimiento y no aprovecha las ventajas de Hono en Bun. Además hay pruebas y controladores escritos con tipos y hooks de Fastify que requieren migración para cumplir la política: "Preferir Bun y Hono" y "Todo en español técnico empresarial".
+
+## Propuesta
+Migrar el servidor de Fastify a Hono siguiendo un enfoque que:
+- Añade `hono` como dependencia y crea una nueva entrada de servidor `src/infraestructura/servidor/servidor-hono.ts` sin eliminar Fastify inicialmente.
+- Implementa adaptadores ligeros para permitir coexistencia temporal de controladores (wrappers que exponen una API mínima para reutilizar la lógica existente).
+- Convertir gradualmente las rutas y middleware a la API de Hono y tiparlas con objetos de valor TypeScript (modo strict).
+- Registrar un ADR formal que documente la decisión y el plan de corte.
+
+## Impacto
+- Cambios en: `src/infraestructura/servidor/*`, tests de integración E2E, `package.json` (dependencias y scripts), `bun.lock`, y documentación.
+- Se crearán adaptadores que minimizan cambios en la lógica de negocio.
+- Las pruebas E2E y unitarias deben actualizarse para usar Hono test harness.
+
+## Plan de migración (resumen)
+1. Crear ADR propuesta y archivo de seguimiento (este archivo).
+2. Añadir `hono` a `package.json` y script `dev:hono` (no eliminar `fastify` aún).
+3. Implementar `servidor-hono.ts` y adaptadores mínimos (controlador wrapper).
+4. Añadir tests E2E que verifiquen endpoints principales (glosario y ADRs) usando Hono.
+5. Convertir rutas y middleware por módulos, ejecutar suite y corregir fallas.
+6. Cuando todo pase y se tenga aprobación del ADR, eliminar `fastify` y limpiar dependencias (commit separado y ADR de limpieza).
+
+## Criterios de aceptación
+- Suite de tests completa (local) pasa (mismo estándar actual: 46 pass / 0 fail o superior).
+- Documentación actualizada (docs/ y `documentacion-fuente-unica-verdad`), y checklist en PR draft.
+- PR no será empujado hasta autorización explícita del autor.
+
+## Plan de rollback
+- Mantener `fastify` hasta que Hono provea paridad funcional. Si falla la migración, revertir el commit de introducción de Hono y restaurar el servidor Fastify (repositorio y tests).
+
+## Notas
+- Todas las modificaciones deben cumplir con políticas de nomenclatura en español; cambios de nombres o renombrados requieren ADRs específicos antes de aplicarlos.
+- Los cambios operacionales (scripts, CI local) serán realizados con Bun y debidamente documentados.
+
+---
+
+Acciones siguientes (en esta rama local): crear adaptador, añadir test mínimo, actualizar `package.json` con `hono@^4.5.3`, y preparar PR draft para revisión.

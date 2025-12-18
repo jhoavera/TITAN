@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Husky pre-push hook: run the repo prepush check (check-stack)
+bun run prepush

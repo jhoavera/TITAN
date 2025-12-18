@@ -1,0 +1,13 @@
+{
+  "fecha": "2025-12-18T00:58:13.132Z",
+  "propuestas": [
+    {
+      "termino": "archivo-duplicado",
+      "valido": true,
+      "razones": [],
+      "sugerenciaCanonical": "archivo-duplicado",
+      "semScore": 0.95,
+      "semExplicacion": "ok"
+    }
+  ]
+}

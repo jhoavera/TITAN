@@ -73,7 +73,7 @@ Reglas:
 
 - Tablas: `glosario_terminos`, `adrs`, `auditoria_cambios`.  
 - RLS: políticas que filtran por `identificador_inquilino`. Antes de cualquier operación la conexión debe ejecutar `SET app.identificador_inquilino_actual = '<uuid>'` (documentar en bootstrap DB).  
-- Auditoría: insertar en `auditoria_cambios` los eventos `CREAR`, `ACTUALIZAR`, `ELIMINAR`, con `usuario_id`, `git_ref` (si aplica), `ip`, `metadatos`.
+- Auditoría: insertar en `auditoria_cambios` los eventos `CREAR`, `ACTUALIZAR`, `ELIMINAR`, con `usuario_id`, `git_ref` (si aplica), `ip`, `metadatos`. Se recomienda registrar auditoría a nivel de base de datos mediante triggers (`migraciones/0002_triggers_auditoria.sql`); los repositorios también intentan registrar auditoría explícita para entornos sin triggers. Para evitar duplicados, los repositorios detectan la presencia de triggers mediante `hayTriggersAuditoria(db)` y omiten inserciones explícitas cuando la BD ya registra la auditoría.
 
 ---
 
@@ -116,6 +116,19 @@ Respuesta (200) devolverá la entidad actualizada incluyendo `id`, `estado`, `gi
 1. Unitarias (Vitest `.prueba.ts`): validadores Zod, utilitarios, repositorios mock.
 2. Integración: endpoints con DB en memoria o mocks Drizzle; test de políticas RLS (simular diferentes `identificadorInquilino`).
 3. E2E (Playwright o Fastify inject + Vitest): flujo crítico para ADRs (crear → enviar a revisión → aprobar con `git_ref`); flujo para Glosario (crear → aprobar).  
+
+### Casos E2E concretos (recomendados)
+
+- E2E - ADRs: flujo completo
+  1. Crear ADR (POST /api/v1/adrs) con token `Bearer token-usuario-prueba` y header `x-identificador-inquilino: TNT-TEST-0001` → debe devolver 201 y `id` (ej. `stub-1`).
+  2. Actualizar ADR a `EN_REVISION` (PATCH /api/v1/adrs/:id) por usuario revisor → devuelve 200 y `estado = EN_REVISION`.
+  3. Aprobar ADR (PATCH /api/v1/adrs/:id) incluyendo `git_ref` en payload → devuelve 200 y `git_ref` reflejado; además, debe existir un registro en `auditoria_cambios` (cuando no hay triggers DB) con `operacion: 'ACTUALIZAR'` y `git_ref`.
+
+- E2E - Glosario: flujo de propuesta y aprobación
+  1. Crear término con nombre que contiene indicios de inglés (ej. `create-service-template`) → devuelve 201; el servicio `validarYRegistrarNombre` debe haber creado una propuesta en `documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas`.
+  2. Aprobar término vía PATCH que actualice `estado` a `APROBADO` → 200 y estado persistido.
+
+Notas: Los tests E2E deberán inicializar un `StubDB` compartido mediante `inicializarDb()` para asegurar que las operaciones usan la misma instancia en memoria y permitan inspeccionar auditoría creada. Usar `crearApp()` y `app.inject()` para simular peticiones HTTP.
 
 Casos de prueba automatizados a añadir cada vez que se modifique el flujo.
 

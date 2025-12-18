@@ -1,0 +1,133 @@
+{
+  "fecha": "2025-12-17T23:00:49.316Z",
+  "propuestas": [
+    {
+      "termino": "migraciones",
+      "valido": true,
+      "razones": [],
+      "sugerenciaCanonical": "migraciones",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='migraciones', sugerencia='migraciones', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-legacy-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-legacy-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-legacy-2025-12-17_md', sugerencia='000x-proponer-traduccion-legacy-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-prompts-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-prompts-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-prompts-2025-12-17_md', sugerencia='000x-proponer-traduccion-prompts-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "0010-propuesta-eliminar-fastify-plugin_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "0010-propuesta-eliminar-fastify-plugin_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='0010-propuesta-eliminar-fastify-plugin_md', sugerencia='0010-propuesta-eliminar-fastify-plugin_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-create-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-create-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-create-2025-12-17_md', sugerencia='000x-proponer-traduccion-create-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-template-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-template-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-template-2025-12-17_md', sugerencia='000x-proponer-traduccion-template-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "2025-12-16-propuestas-automaticas_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "2025-12-16-propuestas-automaticas_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='2025-12-16-propuestas-automaticas_md', sugerencia='2025-12-16-propuestas-automaticas_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "2025-12-17-propuesta-traducir-migraciones_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "2025-12-17-propuesta-traducir-migraciones_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='2025-12-17-propuesta-traducir-migraciones_md', sugerencia='2025-12-17-propuesta-traducir-migraciones_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-service-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-service-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-service-2025-12-17_md', sugerencia='000x-proponer-traduccion-service-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-spec-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-spec-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-spec-2025-12-17_md', sugerencia='000x-proponer-traduccion-spec-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "0006-proponer-traduccion-terminos-ingles_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "0006-proponer-traduccion-terminos-ingles_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='0006-proponer-traduccion-terminos-ingles_md', sugerencia='0006-proponer-traduccion-terminos-ingles_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-test-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-test-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-test-2025-12-17_md', sugerencia='000x-proponer-traduccion-test-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    },
+    {
+      "termino": "000x-proponer-traduccion-scripts-2025-12-17_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "000x-proponer-traduccion-scripts-2025-12-17_md",
+      "semScore": 0.95,
+      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-scripts-2025-12-17_md', sugerencia='000x-proponer-traduccion-scripts-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+    }
+  ]
+}

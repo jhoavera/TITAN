@@ -1,0 +1,81 @@
+{
+  "fecha": "2025-12-17T23:00:35.255Z",
+  "plan": [
+    {
+      "termino": "migraciones",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/documento-maestro-parte-1.2.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-07-711Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-946Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-090Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-786Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-35-661Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-423Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-05-899Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-14-519Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-36-653Z-integridad-idioma-migrations.md"
+      ],
+      "totalArchivos": 16365,
+      "sugerenciaCanonical": "ver sugerencia en glosario",
+      "adrExistente": "/home/jhoavera/Documentos/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
+      "accionPropuesta": "revisar_adr_existente"
+    },
+    {
+      "termino": "migration",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-04-968Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-39-798Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-07-711Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-13-095Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-36-385Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-946Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-09-601Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-090Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-32-065Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-786Z-integridad-idioma-migrations.md"
+      ],
+      "totalArchivos": 42293,
+      "sugerenciaCanonical": "migración / migraciones",
+      "adrExistente": "/home/jhoavera/Documentos/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migrations.md",
+      "accionPropuesta": "revisar_adr_existente"
+    },
+    {
+      "termino": "migrations",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-04-968Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-39-798Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-07-711Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-36-385Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-946Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-09-601Z-integridad-idioma-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-090Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-10-786Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-19-35-661Z-integridad-idioma-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-423Z-integridad-idioma-migrations.md"
+      ],
+      "totalArchivos": 27320,
+      "sugerenciaCanonical": "migración / migraciones",
+      "adrExistente": "/home/jhoavera/Documentos/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migrations.md",
+      "accionPropuesta": "revisar_adr_existente"
+    },
+    {
+      "termino": "migrate",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-35-734Z-integridad-idioma-scripts.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/adr-indice.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuestas-automaticas.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migrate.md",
+        "/home/jhoavera/Documentos/TITAN/api/docs/ci-local.md",
+        "/home/jhoavera/Documentos/TITAN/api/doc/specs/ci-local-db.md",
+        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-nombres.ts",
+        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-deduplicacion-propuestas.ts",
+        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-semantica.ts",
+        "/home/jhoavera/Documentos/TITAN/api/tests/ci/convertir-scripts-a-bun.test.ts"
+      ],
+      "totalArchivos": 18,
+      "sugerenciaCanonical": "migrar",
+      "adrExistente": "/home/jhoavera/Documentos/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migrate.md",
+      "accionPropuesta": "revisar_adr_existente"
+    }
+  ]
+}

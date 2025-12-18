@@ -1,0 +1,92 @@
+{
+  "fecha": "2025-12-17T23:00:48.914Z",
+  "grupos": [
+    {
+      "clave": "migraciones",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migration-2025-12-17.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migraciones.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-migrations-2025-12-17.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migration.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrate.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuesta-traducir-migrations.md",
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migrate.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-legacy-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-legacy-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-prompts-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-prompts-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "0010-propuesta-eliminar-fastify-plugin_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/0010-propuesta-eliminar-fastify-plugin.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-create-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-create-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-template-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-template-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-16-propuestas-automaticas_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-propuestas-automaticas.md"
+      ]
+    },
+    {
+      "clave": "2025-12-17-propuesta-traducir-migraciones_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-propuesta-traducir-migraciones.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-service-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-service-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-spec-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-spec-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "0006-proponer-traduccion-terminos-ingles_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/0006-proponer-traduccion-terminos-ingles.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-test-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-test-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "000x-proponer-traduccion-scripts-2025-12-17_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-scripts-2025-12-17.md"
+      ]
+    }
+  ]
+}

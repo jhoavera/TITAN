@@ -1,0 +1,108 @@
+{
+  "fecha": "2025-12-16T23:42:51.078Z",
+  "total": 17,
+  "plan": [
+    {
+      "archivo": "src/nucleo/middleware/middleware-contexto-inquilino.ts",
+      "referencias": 5,
+      "accionPropuesta": "reescribir_middleware_a_hono",
+      "notas": []
+    },
+    {
+      "archivo": "src/nucleo/middleware/middleware-autenticacion-jwt.ts",
+      "referencias": 5,
+      "accionPropuesta": "reescribir_middleware_a_hono",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/servidor-hono.ts",
+      "referencias": 1,
+      "accionPropuesta": "auditar",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/rutas/adrs.ts",
+      "referencias": 9,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/rutas/ops.ts",
+      "referencias": 5,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/rutas/index.ts",
+      "referencias": 8,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/rutas/auditoria.ts",
+      "referencias": 6,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/rutas/glosario.ts",
+      "referencias": 9,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/adaptadores/fastify-to-hono.ts",
+      "referencias": 12,
+      "accionPropuesta": "auditar",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/controladores/ops-controlador.ts",
+      "referencias": 5,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/controladores/adrs-controlador.ts",
+      "referencias": 13,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/controladores/glosario-controlador.ts",
+      "referencias": 13,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/controladores/auditoria-controlador.ts",
+      "referencias": 7,
+      "accionPropuesta": "verificar_y_ajustar_adaptador",
+      "notas": []
+    },
+    {
+      "archivo": "src/infraestructura/servidor/app.ts",
+      "referencias": 4,
+      "accionPropuesta": "auditar",
+      "notas": []
+    },
+    {
+      "archivo": "src/nucleo/middleware/hono/middleware-rate-limit-inquilino.ts",
+      "referencias": 0,
+      "accionPropuesta": "implementar_hono_rate_limit",
+      "notas": ["implementado: middleware y tests unitarios"]
+    },
+    {
+      "archivo": "src/infraestructura/servidor/servidor-hono.ts",
+      "referencias": 1,
+      "accionPropuesta": "añadir_openapi_docs",
+      "notas": ["añadido endpoint /api/docs y /api/docs/openapi.yaml (UI Redoc)", "generador Zod→OpenAPI implementado (src/infraestructura/documentacion/generador-openapi.ts)", "generador extendido: arrays, formatos (email/uuid), ejemplos automáticos y seguridad por endpoint; tests unitarios y E2E añadidos", "generador: automatización de paths desde servidor Hono (detección de validadores y asociación de schemas) — prototipo implementado", "rate-limit aplicado a rutas /api/* en Hono y pruebas E2E añadidas"]
+    },
+    {
+      "archivo": "src/nucleo/websocket/use-websocket.ts",
+      "referencias": 0,
+      "accionPropuesta": "implementar_websocket_pubsub_local",
+      "notas": ["implementado: utilidad pub/sub en memoria y tests unitarios"]
+    }
+  ]
+}

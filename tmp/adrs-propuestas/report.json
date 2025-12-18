@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2025-12-17T06:28:14.403Z",
+  "baseDir": "/home/jhoavera/Documentos/TITAN/api/src",
+  "proposalsCount": 12,
+  "proposals": [
+    {
+      "id": "P-IMP-1765952894400-1",
+      "title": "Propuesta: reemplazar importaciones relativas en /nucleo/indexacion por alias absolutos",
+      "filesCount": 1
+    },
+    {
+      "id": "P-IMP-1765952894401-2",
+      "title": "Propuesta: reemplazar importaciones relativas en /nucleo/servicios por alias absolutos",
+      "filesCount": 2
+    },
+    {
+      "id": "P-IMP-1765952894401-3",
+      "title": "Propuesta: reemplazar importaciones relativas en /nucleo/hooks por alias absolutos",
+      "filesCount": 1
+    },
+    {
+      "id": "P-IMP-1765952894401-4",
+      "title": "Propuesta: reemplazar importaciones relativas en /servicios por alias absolutos",
+      "filesCount": 2
+    },
+    {
+      "id": "P-IMP-1765952894401-5",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/repositorios por alias absolutos",
+      "filesCount": 4
+    },
+    {
+      "id": "P-IMP-1765952894401-6",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/documentacion por alias absolutos",
+      "filesCount": 1
+    },
+    {
+      "id": "P-IMP-1765952894401-7",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/servidor por alias absolutos",
+      "filesCount": 2
+    },
+    {
+      "id": "P-IMP-1765952894401-8",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/servidor/rutas por alias absolutos",
+      "filesCount": 5
+    },
+    {
+      "id": "P-IMP-1765952894401-9",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/servidor/adaptadores por alias absolutos",
+      "filesCount": 1
+    },
+    {
+      "id": "P-IMP-1765952894401-10",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/servidor/controladores por alias absolutos",
+      "filesCount": 4
+    },
+    {
+      "id": "P-IMP-1765952894401-11",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/base-de-datos por alias absolutos",
+      "filesCount": 1
+    },
+    {
+      "id": "P-IMP-1765952894401-12",
+      "title": "Propuesta: reemplazar importaciones relativas en /infraestructura/base-de-datos/utilidades por alias absolutos",
+      "filesCount": 1
+    }
+  ]
+}

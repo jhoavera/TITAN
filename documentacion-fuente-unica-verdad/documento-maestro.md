@@ -179,6 +179,8 @@ const benchmarkRuntime = {
 // 4. APIs integradas → Reducción de dependencias, menos vulnerabilidades
 // 5. Compatibilidad suficiente → 95% APIs Node.js cubre nuestras necesidades
 Framework HTTP: Fastify 4.25+ vs Competidores - Análisis Técnico Profundo
+
+Nota: Actualmente se está ejecutando una migración gradual de la superficie HTTP hacia **Hono** (runtime objetivo con Bun). Fastify se considera legado y se mantendrá únicamente hasta completar la migración de middlewares y plugins; ver ADR `0007` y la propuesta `0010` para el plan de eliminación controlada.
 yaml
 Comparación Técnica Exhaustiva para Multi-Inquilino:
   
@@ -766,28 +768,11 @@ const configuracionColas = {
     }
   },
 };
-1.2 STACK COMPLETO CON VERSIONES Y JUSTIFICACIÓN DETALLADA Y ESPECÍFICA
-Categoría	Tecnología	Versión Exacta	¿Por qué esta versión específica?	Consumo Estimado i7-6700HQ	Justificación Técnica Detallada
-Runtime	Bun	1.1.8	Estable, soporta todos los bindings nativos, optimizado para TypeScript	45MB RAM	Última versión estable con mejoras de rendimiento del 15% vs 1.0. Inicio rápido crítico para desarrollo ágil. Mínimo sobrecarga, mejor gestión memoria que Node.js.
-HTTP Server	Fastify	4.25.2	Última estable con optimizaciones JSON parsing y validación Zod integrada	5MB RAM	Mejor balance rendimiento/características. Validación de esquema reduce bugs 90%. Optimizado para alta concurrencia multi-inquilino.
-HTTP Client	undici	6.2.1	Más rápido que axios (38%), menos memoria (60%), soporte HTTP/2 nativo	3MB RAM	Desarrollado por equipo Node.js, optimizado para alta concurrencia. Pool de conexiones inteligente.
-ORM	Drizzle	0.30.4	Type-safe total, migraciones simples, integración RLS perfecta	18KB + tipos	0.30 trae mejoras significativas en inferencia TypeScript y rendimiento. Cero consultas N+1 por diseño.
-Validación	Zod	3.23.0	Validación runtime + inferencia TypeScript, esquema extensible	12KB	Versión más estable, todas las características necesarias sin bloat. Integración perfecta con Fastify.
-IA Local	node-llama-cpp	0.5.0	Bindings actualizados para Bun, soporte GPU optimizado para Pascal	Depende modelo	Única versión con soporte estable para Bun + GPU acceleration. Bindings optimizados en C++.
-Vectores	Qdrant	1.9.0	Rust, eficiente, buena cuantización, modo on_disk para SSD	350MB RAM	1.9 introduce mejoras de memoria críticas para homelab. Clustering integrado para recomendaciones.
-Base Datos	PostgreSQL	15.6	RLS maduro, mejor rendimiento JSON, window functions optimizadas	1.2GB RAM	Última versión 15.x estable, mejor optimizada que 16.x para nuestro hardware específico.
-Cache/Colas	Redis	7.2.4	Más estable que 7.4, menos bugs, mejor gestión memoria	450MB RAM	7.2.4 probado extensivamente, 7.4 tiene issues conocidos en Docker. Configuración optimizada para colas.
-Logs	Pino	9.3.0	Más rápido que Winston (8x), integración Fastify nativa	8MB RAM	Transportes async, mínimo sobrecarga, estructuración automática. Integración con Loki.
-Monitoreo	Prometheus	2.51.0	Colector métricas estándar, eficiente en recursos	250MB RAM	Última versión 2.x estable, mejor scraping parallel. Exporters para todas nuestras tecnologías.
-Dashboards	Grafana	11.0.0	Visualización, alertas, plugins esenciales incluidos	400MB RAM	Version LTS, estable, buen soporte paneles personalizados. Alerting integrado.
-Logs Central	Loki	3.0.0	Almacenamiento logs eficiente, compresión nativa	300MB RAM	Índices en memoria, logs en disco - perfecto para homelab. Integración con Promtail.
-Testing	Vitest	1.2.0	10x más rápido que Jest, soporte TypeScript nativo	90MB RAM	Cobertura instantánea, snapshots eficientes, UI testing. Integración con Bun.
-E2E Testing	Playwright	1.44.0	Soporte múltiples navegadores, espera automática, simulación red	180MB RAM	Más estable que Cypress, mejor control red. Soporte para autenticación multi-inquilino.
-Contenedores	Docker	25.0.0	Estable, buen soporte NVIDIA, compatibilidad Bun	-	Última versión estable con mejoras de rendimiento. Docker Compose integrado.
-Orquestación	Docker Compose	2.24.0	Simplifica despliegue homelab, perfiles útiles para multi-inquilino	-	Soporte todas las características necesarias sin complejidad de Kubernetes.
-Reverse Proxy	Nginx	1.24.0	Ligero, eficiente, buen soporte WebSocket y HTTP/2	15MB RAM	Mejor que Traefik para nuestro caso simple. Configuración estática óptima.
-SSL/TLS	Let's Encrypt	-	Certificados SSL gratuitos, automáticos, compatibles	-	Integración con certbot automática. Soporte wildcard para subdominios inquilino.
-CI/CD	GitHub Actions	-	Integración nativa con GitHub, suficiente para nuestro flujo	-	No requiere servidor adicional. Workflows para testing y despliegue.
+
+1.2 STACK COMPLETO CON VERSIONES Y JUSTIFICACIÓN DETALLADA Y ESPECÍFICA1.2 STACK COMPLETO - VERSIÓN OPTIMIZADA PARA MULTI-INQUILINO HOMELAB 
+
+UBICADO en documentacion-fuente-unica-verad/documento-maestro-parte-1.2.md
+
 PARTE 2: ARQUITECTURA HEXAGONAL ESPECÍFICA PARA 3 NEGOCIOS - ENRIQUECIDA Y OPTIMIZADA
 // ARQUITECTURA IAM COMPLETA Y OPTIMIZADA PARA MVP
 class SistemaIAM {

@@ -32,6 +32,7 @@ CREATE INDEX IF NOT EXISTS idx_glosario_definicion_tsv ON public.glosario_termin
 -- Habilitar RLS y política básica de aislamiento por inquilino
 ALTER TABLE public.glosario_terminos ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS aislamiento_inquilino_glosario ON public.glosario_terminos;
 CREATE POLICY aislamiento_inquilino_glosario ON public.glosario_terminos
   FOR ALL
   USING (identificador_inquilino = current_setting('app.identificador_inquilino_actual')::uuid)
@@ -68,6 +69,7 @@ CREATE INDEX IF NOT EXISTS idx_adrs_inquilino_estado ON public.adrs (identificad
 -- Habilitar RLS para ADRs
 ALTER TABLE public.adrs ENABLE ROW LEVEL SECURITY;
 
+DROP POLICY IF EXISTS aislamiento_inquilino_adrs ON public.adrs;
 CREATE POLICY aislamiento_inquilino_adrs ON public.adrs
   FOR ALL
   USING (identificador_inquilino = current_setting('app.identificador_inquilino_actual')::uuid)

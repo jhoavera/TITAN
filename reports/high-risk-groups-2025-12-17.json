@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2025-12-17T23:10:00.000Z",
+  "threshold": 100,
+  "groups": [
+    {
+      "id": "2025-12-17t00-03-47-045z-otro-nombreconmayus-test-md-2025-12-17t00-03-47-833z-glosario-test-md-2025-12-17t00-03-52-185z-",
+      "miembros": 29581,
+      "canonical": "../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-07-063Z-glosario-test.md"
+    },
+    {
+      "id": "2025-12-17t21-20-03-720z-integridad-idioma-migration-md-2025-12-17t21-20-03-722z-integridad-idioma-migration-md-2025-12-",
+      "miembros": 6116,
+      "canonical": "../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-08-151Z-integridad-idioma-migrations.md"
+    },
+    {
+      "id": "2025-12-17t21-20-03-728z-integridad-idioma-migration-md-2025-12-17t21-20-03-729z-integridad-idioma-migration-md-2025-12-",
+      "miembros": 5587,
+      "canonical": "../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-04-968Z-integridad-idioma-migrations.md"
+    },
+    {
+      "id": "2025-12-17t21-20-03-728z-integridad-idioma-migrations-md-2025-12-17t21-20-03-729z-integridad-idioma-migrations-md-2025-1",
+      "miembros": 4948,
+      "canonical": "../documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-17T21-20-23-090Z-integridad-idioma-migrations.md"
+    }
+    // ... (lista truncada; completo en archivo original en reports/dedup-diffs-*.txt)
+  ]
+}
