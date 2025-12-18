@@ -1,5 +1,5 @@
 {
-  "fecha": "2025-12-17T23:00:48.914Z",
+  "fecha": "2025-12-18T03:50:45.701Z",
   "grupos": [
     {
       "clave": "migraciones",
@@ -80,6 +80,12 @@
       "clave": "000x-proponer-traduccion-test-2025-12-17_md",
       "archivos": [
         "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-test-2025-12-17.md"
+      ]
+    },
+    {
+      "clave": "2025-12-18-propuesta-traducir-migraciones_md",
+      "archivos": [
+        "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-18-propuesta-traducir-migraciones.md"
       ]
     },
     {

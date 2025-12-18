@@ -1,5 +1,5 @@
 {
-  "fecha": "2025-12-17T23:00:49.316Z",
+  "fecha": "2025-12-18T03:50:46.161Z",
   "propuestas": [
     {
       "termino": "migraciones",
@@ -7,7 +7,7 @@
       "razones": [],
       "sugerenciaCanonical": "migraciones",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='migraciones', sugerencia='migraciones', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-legacy-2025-12-17_md",
@@ -17,7 +17,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-legacy-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-legacy-2025-12-17_md', sugerencia='000x-proponer-traduccion-legacy-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-prompts-2025-12-17_md",
@@ -27,7 +27,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-prompts-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-prompts-2025-12-17_md', sugerencia='000x-proponer-traduccion-prompts-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "0010-propuesta-eliminar-fastify-plugin_md",
@@ -37,7 +37,7 @@
       ],
       "sugerenciaCanonical": "0010-propuesta-eliminar-fastify-plugin_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='0010-propuesta-eliminar-fastify-plugin_md', sugerencia='0010-propuesta-eliminar-fastify-plugin_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-create-2025-12-17_md",
@@ -47,7 +47,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-create-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-create-2025-12-17_md', sugerencia='000x-proponer-traduccion-create-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-template-2025-12-17_md",
@@ -57,7 +57,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-template-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-template-2025-12-17_md', sugerencia='000x-proponer-traduccion-template-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "2025-12-16-propuestas-automaticas_md",
@@ -67,7 +67,7 @@
       ],
       "sugerenciaCanonical": "2025-12-16-propuestas-automaticas_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='2025-12-16-propuestas-automaticas_md', sugerencia='2025-12-16-propuestas-automaticas_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "2025-12-17-propuesta-traducir-migraciones_md",
@@ -77,7 +77,7 @@
       ],
       "sugerenciaCanonical": "2025-12-17-propuesta-traducir-migraciones_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='2025-12-17-propuesta-traducir-migraciones_md', sugerencia='2025-12-17-propuesta-traducir-migraciones_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-service-2025-12-17_md",
@@ -87,7 +87,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-service-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-service-2025-12-17_md', sugerencia='000x-proponer-traduccion-service-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-spec-2025-12-17_md",
@@ -97,7 +97,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-spec-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-spec-2025-12-17_md', sugerencia='000x-proponer-traduccion-spec-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "0006-proponer-traduccion-terminos-ingles_md",
@@ -107,7 +107,7 @@
       ],
       "sugerenciaCanonical": "0006-proponer-traduccion-terminos-ingles_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='0006-proponer-traduccion-terminos-ingles_md', sugerencia='0006-proponer-traduccion-terminos-ingles_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-test-2025-12-17_md",
@@ -117,7 +117,17 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-test-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-test-2025-12-17_md', sugerencia='000x-proponer-traduccion-test-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
+    },
+    {
+      "termino": "2025-12-18-propuesta-traducir-migraciones_md",
+      "valido": false,
+      "razones": [
+        "no existe ADR propuesta para el termino"
+      ],
+      "sugerenciaCanonical": "2025-12-18-propuesta-traducir-migraciones_md",
+      "semScore": 0.95,
+      "semExplicacion": "ok"
     },
     {
       "termino": "000x-proponer-traduccion-scripts-2025-12-17_md",
@@ -127,7 +137,7 @@
       ],
       "sugerenciaCanonical": "000x-proponer-traduccion-scripts-2025-12-17_md",
       "semScore": 0.95,
-      "semExplicacion": "Evaluación semántica (stub): término='000x-proponer-traduccion-scripts-2025-12-17_md', sugerencia='000x-proponer-traduccion-scripts-2025-12-17_md', score=0.95, razon='Coincide con mapa canónico o variante conocida'"
+      "semExplicacion": "ok"
     }
   ]
 }
