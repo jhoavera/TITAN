@@ -6,7 +6,10 @@ import ServicioADRIntegrado from '../../src/servicios/adr/servicio-adr-integrado
 
 const TMP = path.join(process.cwd(), 'tmp', 'test-adr-migration')
 
-describe('E2E: migración ADR FS → DB', () => {
+const hasTestDb = Boolean(process.env.TEST_DATABASE_URL)
+const runner = hasTestDb ? describe : describe.skip
+
+runner('E2E: migración ADR FS → DB', () => {
   beforeAll(() => {
     if (!process.env.TEST_DATABASE_URL) throw new Error('TEST_DATABASE_URL no definido para E2E')
     // aplicar migraciones (script idempotente)
