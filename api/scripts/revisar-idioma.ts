@@ -54,8 +54,11 @@ export async function main(raizParam?: string, outPath?: string): Promise<void> 
   const ejecutarPruebasOK = () => {
     const testCmd = process.env.APPLY_TEST_CMD ?? 'bun run pruebas --runInBand';
     const { execSync } = require('child_process');
+    console.log('[revisar-idioma] Ejecutando checks de pruebas con comando:', testCmd);
+    // permitir valores sencillos para tests: 'true' -> OK, 'false' -> falla
+    if (testCmd === 'true') return true
+    if (testCmd === 'false') return false
     try {
-      console.log('[revisar-idioma] Ejecutando checks de pruebas con comando:', testCmd);
       execSync(testCmd, { stdio: 'inherit' });
       return true;
     } catch (e) {
@@ -78,12 +81,21 @@ export async function main(raizParam?: string, outPath?: string): Promise<void> 
 
     if (shouldApply) {
       // Crear entrada en glosario en estado pendiente (una por termino)
-      servicio.crear({ termino: entry.termino, definicion: `Propuesta: ${valid.sugerencia ?? 'revisar traducción'}`, autor: 'revisar-idioma' });
-      console.log(`  -> Entrada de glosario creada (estado pendiente) para '${entry.termino}'`);
+      try {
+        // await para asegurar que errores se capturan en el flujo de ejecución
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        await servicio.crear({ termino: entry.termino, definicion: `Propuesta: ${valid.sugerencia ?? 'revisar traducción'}`, autor: 'revisar-idioma' });
+        console.log(`  -> Entrada de glosario creada (estado pendiente) para '${entry.termino}'`);
+      } catch (e) {
+        console.error('[revisar-idioma] Error creando entrada de glosario:', e);
+      }
     }
   }
 
   console.log('\nResumen: %d términos detectados', reporte.reporte.length);
+
+  // Si aplicamos por pruebas ok, asegurar salida 0 explícita
+  if (applyWhenTestsPass && shouldApply) process.exitCode = 0
 }
 
 export async function buscarArchivos(dir: string): Promise<string[]> {

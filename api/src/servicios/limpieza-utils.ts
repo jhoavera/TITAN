@@ -27,7 +27,7 @@ export function parseFrontMatter(content: string): Record<string, string> {
   return fm
 }
 
-export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {}): { ok: boolean; reason?: string } {
+export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {}): { ok: boolean; reason?: string; rule?: string } {
   try {
     const content = fs.readFileSync(filePath, 'utf8')
     const contentLower = content.toLowerCase()
@@ -37,14 +37,14 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     if ((fm['aprobado'] && fm['aprobado'].toLowerCase() === 'true') || contentLower.includes('estado: aprobado') || contentLower.includes('aprobado: true')) {
       const reason = 'aprobación explícita'
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason, rule: 'explicit-approval' }) } catch (e) {}
-      return { ok: true, reason }
+      return { ok: true, reason, rule: 'explicit-approval' }
     }
 
     // Explicit auto-approve marker
     if ((fm['auto-approve'] && ['yes', 'true', 'si'].includes(fm['auto-approve'].toLowerCase())) || contentLower.includes('auto-approve:') || contentLower.includes('autoaprobar')) {
       const reason = 'marca automática'
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason, rule: 'explicit-mark' }) } catch(e) {}
-      return { ok: true, reason }
+      return { ok: true, reason, rule: 'explicit-mark' }
     }
 
     // Maintainer shortcut: autor en lista de maintainers y contenido pequeño
@@ -54,7 +54,7 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     if (author && maintainers.includes(author.toLowerCase()) && content.length <= maxSize) {
       const reason = 'autor es maintainer y cambio pequeño'
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason, rule: 'maintainer-shortcut' }) } catch(e) {}
-      return { ok: true, reason }
+      return { ok: true, reason, rule: 'maintainer-shortcut' }
     }
 
     // Long-term proposal auto-apply (conservador): muy antiguo y allowLongTermAuto
@@ -64,7 +64,7 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
         const days = Math.floor((Date.now() - stat.mtime.getTime()) / (1000 * 60 * 60 * 24))
         if (days >= opts.longTermDays && content.length < 2000) {
           try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'propuesta antigua y auto-allow', rule: 'long-term' }) } catch(e) {}
-          return { ok: true, reason: 'propuesta antigua y auto-allow' }
+          return { ok: true, reason: 'propuesta antigua y auto-allow', rule: 'long-term' }
         }
       } catch {
         // noop
@@ -74,7 +74,7 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     // Nueva heurística conservadora: confianza explícita en frontmatter (confianza: alta)
     if (fm['confianza'] && fm['confianza'].toLowerCase() === 'alta') {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'confianza alta en frontmatter', rule: 'frontmatter-confidence' }) } catch(e) {}
-      return { ok: true, reason: 'confianza alta en frontmatter' }
+      return { ok: true, reason: 'confianza alta en frontmatter', rule: 'frontmatter-confidence' }
     }
 
     // If maintainers option not passed, try to read from package.json maintainers
@@ -96,7 +96,7 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     // Reject package.json changes from auto-approve for safety
     if (baseName === 'package.json') {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'package.json no apto para auto-approve', rule: 'package-json' }) } catch(e) {}
-      return { ok: false, reason: 'package.json no apto para auto-approve' }
+      return { ok: false, reason: 'package.json no apto para auto-approve', rule: 'package-json' }
     }
 
     // Allow TypeScript index files that only contain re-exports (safe for auto-approve)
@@ -106,20 +106,20 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
         .every((l) => l.trim() === '' || /^export\s+(\*\s+from|(\{.*\})\s+from)\s+['"]\./.test(l) || /^\/\/|^\/\*/.test(l))
       if (onlyReExports) {
         try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'archivo índice re-export (auto-aprobado)', rule: 'index-reexport' }) } catch(e) {}
-        return { ok: true, reason: 'archivo índice re-export (auto-aprobado)' }
+        return { ok: true, reason: 'archivo índice re-export (auto-aprobado)', rule: 'index-reexport' }
       }
     }
 
     // - only allow auto-approve for content types that are non-code (md, propuesta, json, yml)
     if (!allowedExts.includes(ext)) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'extensión no segura para auto-approve', rule: 'extensión' }) } catch(e) {}
-      return { ok: false, reason: 'extensión no segura para auto-approve' }
+      return { ok: false, reason: 'extensión no segura para auto-approve', rule: 'extensión' }
     }
 
     // - avoid approving files containing code blocks
     if (content.includes('```')) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'contiene bloques de código', rule: 'code-block' }) } catch(e) {}
-      return { ok: false, reason: 'contiene bloques de código' }
+      return { ok: false, reason: 'contiene bloques de código', rule: 'code-block' }
     }
 
     // Nota: la regla "md corto" se desactivó por seguridad para evitar aprobar
@@ -130,13 +130,13 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     // - avoid approving files that look like source code (imports/exports)
     if (/^\s*(import|export|require)\s+/m.test(content)) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'archivo contiene código o imports/exports', rule: 'code-imports' }) } catch(e) {}
-      return { ok: false, reason: 'archivo contiene código o imports/exports' }
+      return { ok: false, reason: 'archivo contiene código o imports/exports', rule: 'code-imports' }
     }
 
     // Default: no auto-approve
     try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'no cumple heurísticas seguras', rule: 'default' }) } catch(e) {}
-    return { ok: false, reason: 'no cumple heurísticas seguras' }
+    return { ok: false, reason: 'no cumple heurísticas seguras', rule: 'default' }
   } catch (e) {
-    return { ok: false, reason: 'error al evaluar auto-approve' }
+    return { ok: false, reason: 'error al evaluar auto-approve', rule: 'error' }
   }
 }

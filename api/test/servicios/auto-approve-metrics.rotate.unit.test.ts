@@ -11,7 +11,9 @@ describe('telemetría - rotación de métricas', () => {
   let tmpDir: string
 
   beforeEach(() => {
-    tmpDir = OUT
+    tmpDir = path.join(process.cwd(), 'tmp', `metrics-test-rotate-${process.pid}`)
+    // use isolated metrics dir for test
+    process.env.AUTO_APPROVE_METRICS_DIR = tmpDir
     // cleanup
     try { fs.rmSync(tmpDir, { recursive: true, force: true }) } catch (_e) {}
   })

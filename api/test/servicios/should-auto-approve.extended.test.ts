@@ -18,6 +18,7 @@ describe('shouldAutoApprove - extended rules', () => {
     const res = shouldAutoApprove(file)
     expect(res.ok).toBe(false)
     expect(res.reason).toContain('package.json')
+    expect(res.rule).toBe('package-json')
   })
 
   it('approves index re-export files', () => {
@@ -27,16 +28,16 @@ export * from './otro'`
     fs.writeFileSync(file, content, 'utf8')
     const res = shouldAutoApprove(file)
     expect(res.ok).toBe(true)
-    expect(res.reason).toContain('index-reexport')
+    expect(res.rule).toBe('index-reexport')
   })
 
   it('rejects files containing imports/exports in proposal content', () => {
-    const file = path.join(tmpDir, 'prop.ts')
+    const file = path.join(tmpDir, 'prop.md')
     const content = `import fs from 'fs'\nexport const q = 1`
     fs.writeFileSync(file, content, 'utf8')
     const res = shouldAutoApprove(file)
     expect(res.ok).toBe(false)
-    expect(res.reason).toContain('imports/exports')
+    expect(res.rule).toBe('code-imports')
   })
 
   it('respects max size for maintainers', () => {
