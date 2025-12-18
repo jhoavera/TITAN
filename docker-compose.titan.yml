@@ -41,19 +41,29 @@ services:
       retries: 6
     restart: unless-stopped
 
-  dragonfly:
-    # usar latest como fallback para evitar tags no disponibles en Docker Hub
-    image: dragonflydb/dragonfly:latest
+  # dragonfly: (no disponible en algunos hosts) - si la imagen aparece en el futuro, reactivarla
+  #  dragonfly:
+  #    image: dragonflydb/dragonfly:latest
+  #    ports:
+  #      - "7379:7379"
+  #    command: ["--maxmemory=2GB","--proactor_threads=4"]
+  #    healthcheck:
+  #      test: ["CMD-SHELL", "dragonfly --version || exit 1"]
+  #      interval: 10s
+  #      timeout: 5s
+  #      retries: 5
+  #    volumes:
+  #      - dragonfly-data:/data
+  #    restart: unless-stopped
+
+  # Fallback temporal: usar KeyDB (compatible como cache/cola simple)
+  keydb:
+    image: eqalpha/keydb:6.3.5
     ports:
-      - "7379:7379"
-    command: ["--maxmemory=2GB","--proactor_threads=4"]
-    healthcheck:
-      test: ["CMD-SHELL", "dragonfly --version || exit 1"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      - "6378:6379"
+    command: ["keydb-server", "--appendonly", "yes"]
     volumes:
-      - dragonfly-data:/data
+      - keydb-data:/data
     restart: unless-stopped
 
   traefik:
