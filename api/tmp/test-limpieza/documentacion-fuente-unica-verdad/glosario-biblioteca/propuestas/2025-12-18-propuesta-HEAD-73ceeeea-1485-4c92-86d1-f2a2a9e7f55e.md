@@ -1,8 +1,0 @@
-# Propuesta de Glosario: HEAD
-
-**Autor:** tester
-**Fecha:** 2025-12-18T16:30:44.962Z
-
-## Definición propuesta
-
-Propuesta automática: sugerir traducción o reemplazo para 'HEAD'. Revisar contexto y aprobar manualmente.
