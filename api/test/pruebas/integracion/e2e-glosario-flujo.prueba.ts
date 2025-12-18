@@ -52,7 +52,9 @@ describe('E2E - Glosario: crear término que genera propuesta y aprobar', () => 
     const { validarYRegistrarNombre } = await import('@nucleo/servicios/servicio-validacion-creacion')
     const resVal = await validarYRegistrarNombre('create-service-template', 'glosario')
     expect(resVal.propuesta).toBeTruthy()
-    const existe = await fs.promises.stat(resVal.propuesta).then(() => true).catch(() => false)
+    const existe = resVal.propuesta
+      ? await fs.promises.stat(resVal.propuesta).then(() => true).catch(() => false)
+      : false
     expect(existe).toBe(true)
 
     // Aprobar término

@@ -58,7 +58,7 @@ ${data.decision}
     const datos = esquemaCreacionADR.parse(input);
     // Validar nombre/slug para detección de inglés y registrar propuestas si aplica
     try {
-      const { validarYRegistrarNombre } = await import('../../nucleo/servicios/servicio-validacion-creacion');
+      const { validarYRegistrarNombre } = await import('@nucleo/servicios/servicio-validacion-creacion');
       const slug = this.slug(datos.titulo);
       const res = await validarYRegistrarNombre(`adr-${slug}`, 'adr');
       if (res.hayIngles && !opts?.force) {

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": ["bun-types"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["api/src/*"],
+      "@nucleo/*": ["api/src/nucleo/*"],
+      "@modulos/*": ["api/src/modulos/*"],
+      "@api/*": ["api/src/api/*"],
+      "@compartido/*": ["api/src/compartido/*"],
+      "@tipos/*": ["api/src/tipos/*"],
+      "@utilidades/*": ["api/src/utilidades/*"],
+      "@rutas/*": ["api/src/rutas/*", "api/src/infraestructura/servidor/rutas/*"],
+      "@componentes/*": ["api/src/componentes/*"],
+      "@ganchos/*": ["api/src/ganchos/*"],
+      "@servicios/*": ["api/src/servicios/*"],
+      "@infraestructura/*": ["api/src/infraestructura/*"]
+    }
+  },
+  "include": ["api/src", "api/scripts", "scripts", "src"],
+  "exclude": ["node_modules", "dist", "build"]
+}

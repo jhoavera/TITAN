@@ -1,0 +1,13 @@
+metric,key,count
+total_files,,
+total_files,files_scanned,4
+by_tipo,unknown,4
+by_origen,integridad-idioma,3
+by_origen,unknown,1
+valido,true,0
+valido,false,0
+valido,missing,4
+hayIngles,true,0
+hayIngles,false,0
+hayIngles,missing,4
+duplicados_candidates,,0

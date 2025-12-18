@@ -16,7 +16,7 @@ export const crear = async (request: RequestLike, reply: ReplyLike) => {
   }
 
   // Hook de pre-creación: validar nombre antes de reservar
-  const { validarPreCreacion } = await import('../../../nucleo/hooks/validacion-precreacion')
+  const { validarPreCreacion } = await import('@nucleo/hooks/validacion-precreacion');
   // 'slug' no está presente en el esquema de creación; usar 'termino' como identificador
   const pre = await validarPreCreacion(body.termino ?? '', 'glosario')
   const identificadorInquilino = (request as any).identificadorInquilino as string; // middleware debe establecerlo
@@ -25,7 +25,7 @@ export const crear = async (request: RequestLike, reply: ReplyLike) => {
   // Preferir usar Drizzle/Repositorio si hay DATABASE_URL configurada; en caso contrario usar el servicio con persistencia JSON local
   if (process.env.DATABASE_URL) {
     const db = obtenerDb();
-    const repoModule = await import('../../repositorios/repositorio-glosario');
+    const repoModule = await import('@infraestructura/repositorios/repositorio-glosario');
     const creado = await repoModule.crearGlosario(db, body as any, identificadorInquilino, autorId);
     reply.code(201).send({ creado, preValidacion: pre });
     return;
@@ -42,7 +42,7 @@ export const listar = async (request: RequestLike, reply: ReplyLike) => {
 
   if (process.env.DATABASE_URL) {
     const db = obtenerDb();
-    const repoModule = await import('../../repositorios/repositorio-glosario');
+    const repoModule = await import('@infraestructura/repositorios/repositorio-glosario');
     const rows = await repoModule.obtenerListaGlosario(db, { query: query.q as string | undefined, estado: query.estado as string | undefined, limit: query.limit ? Number(query.limit) : undefined, offset: query.offset ? Number(query.offset) : undefined }, identificadorInquilino);
     reply.send(rows);
     return;
@@ -84,7 +84,7 @@ export const obtenerPorId = async (request: RequestLike, reply: ReplyLike) => {
 
   if (process.env.DATABASE_URL) {
     const db = obtenerDb();
-    const repoModule = await import('../../repositorios/repositorio-glosario');
+    const repoModule = await import('@infraestructura/repositorios/repositorio-glosario');
     const row = await repoModule.obtenerTerminoPorId(db, id, identificadorInquilino);
     if (!row) return reply.code(404).send({ error: 'Término no encontrado' });
     reply.send(row);
@@ -104,7 +104,7 @@ export const actualizar = async (request: RequestLike, reply: ReplyLike) => {
 
   if (process.env.DATABASE_URL) {
     const db = obtenerDb();
-    const repoModule = await import('../../repositorios/repositorio-glosario');
+    const repoModule = await import('@infraestructura/repositorios/repositorio-glosario');
     const actualizado = await repoModule.actualizarGlosario(db, id, body as any, identificadorInquilino);
     reply.send(actualizado);
     return;
@@ -122,7 +122,7 @@ export const eliminar = async (request: RequestLike, reply: ReplyLike) => {
 
   if (process.env.DATABASE_URL) {
     const db = obtenerDb();
-    const repoModule = await import('../../repositorios/repositorio-glosario');
+    const repoModule = await import('@infraestructura/repositorios/repositorio-glosario');
     await repoModule.eliminarGlosario(db, id, identificadorInquilino);
     reply.code(204).send();
     return;

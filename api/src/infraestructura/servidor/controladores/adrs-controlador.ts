@@ -8,14 +8,14 @@ import { obtenerDb } from '@infraestructura/base-de-datos/cliente';
 export const crear = async (request: RequestLike, reply: ReplyLike) => {
   const body = await esquemaCrearADR.parseAsync(request.body);
   // Hook de pre-creación: validar nombre/slug antes de reservar
-  const { validarPreCreacion } = await import('../../../nucleo/hooks/validacion-precreacion')
+  const { validarPreCreacion } = await import('@nucleo/hooks/validacion-precreacion');
   const slug = body.slug ?? (body.archivo_markdown ?? 'adr-' + (body.numero ?? '0000'))
   const pre = await validarPreCreacion(slug, 'adr')
   const identificadorInquilino = (request as any).identificadorInquilino as string;
   const autorId = (request as any).usuario?.id as string || 'UNKNOWN';
   let db: any;
   try { db = obtenerDb(); } catch (_err) { db = {}; }
-  const repoModule = await import('../../repositorios/repositorio-adrs');
+  const repoModule = await import('@infraestructura/repositorios/repositorio-adrs');
   const creado = await repoModule.crearADR(db, body as any, identificadorInquilino, autorId);
   reply.code(201).send({ creado, preValidacion: pre });
 };
@@ -25,7 +25,7 @@ export const listar = async (request: RequestLike, reply: ReplyLike) => {
   const identificadorInquilino = request.identificadorInquilino as string;
   let db: any;
   try { db = obtenerDb(); } catch (_err) { db = {}; }
-  const repoModule = await import('../../repositorios/repositorio-adrs');
+  const repoModule = await import('@infraestructura/repositorios/repositorio-adrs');
   const rows = await repoModule.obtenerListaADRs(db, { estado: query.estado, limit: query.limit ? Number(query.limit) : undefined, offset: query.offset ? Number(query.offset) : undefined }, identificadorInquilino);
   reply.send(rows);
 };
@@ -35,7 +35,7 @@ export const obtenerPorId = async (request: RequestLike, reply: ReplyLike) => {
   const identificadorInquilino = request.identificadorInquilino as string;
   let db: any;
   try { db = obtenerDb(); } catch (_err) { db = {}; }
-  const repoModule = await import('../../repositorios/repositorio-adrs');
+  const repoModule = await import('@infraestructura/repositorios/repositorio-adrs');
   const row = await repoModule.obtenerADRPorId(db, id, identificadorInquilino);
   if (!row) return reply.code(404).send({ error: 'ADR no encontrado' });
   reply.send(row);
@@ -50,7 +50,7 @@ export const actualizar = async (request: RequestLike, reply: ReplyLike) => {
   const identificadorInquilino = (request as any).identificadorInquilino as string;
   let db: any;
   try { db = obtenerDb(); } catch (_err) { db = {}; }
-  const repoModule = await import('../../repositorios/repositorio-adrs');
+  const repoModule = await import('@infraestructura/repositorios/repositorio-adrs');
   const actualizado = await repoModule.actualizarADR(db, id, payload as any, identificadorInquilino);
   reply.send(actualizado);
 };

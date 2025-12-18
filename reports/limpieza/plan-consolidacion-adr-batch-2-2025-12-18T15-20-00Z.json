@@ -1,0 +1,607 @@
+{
+  "pattern": "adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+  "canonical": "2025-12-18T06-50-14-403Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+  "count": 100,
+  "actions": [
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-747Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-747Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-746Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-746Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-745Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-745Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-744Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-744Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-743Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-743Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-742Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-742Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-741Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-741Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-740Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-740Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-739Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-739Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-738Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-738Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-737Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-737Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-736Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-736Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-735Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-735Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-734Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-734Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-732Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-732Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-731Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-731Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-730Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-730Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-729Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-729Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-728Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-728Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-727Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-727Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-726Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-726Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T06-50-12-724Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T06-50-12-724Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-544Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-544Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-542Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-542Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-474Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-474Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-473Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-473Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-472Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-472Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-471Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-471Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-470Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-470Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-463Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-463Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-460Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-460Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-456Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-456Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-453Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-453Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-444Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-444Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-441Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-441Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-438Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-438Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-431Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-431Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-428Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-428Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-425Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-425Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-422Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-422Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-414Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-414Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-411Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-411Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-408Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-408Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-396Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-396Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-393Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-393Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-390Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-390Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-382Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-382Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-379Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-379Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-377Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-377Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-374Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-374Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-366Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-366Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-363Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-363Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-360Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-360Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-351Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-351Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-347Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-347Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-335Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-335Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-332Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-332Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-329Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-329Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-325Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-325Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-317Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-317Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-315Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-315Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-312Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-312Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-309Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-309Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-302Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-302Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-299Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-299Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-296Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-296Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-287Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-287Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-284Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-284Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-281Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-281Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-279Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-279Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-276Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-276Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-270Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-270Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-267Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-267Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-264Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-264Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-262Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-262Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-254Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-254Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-252Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-252Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-249Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-249Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-22-243Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-22-243Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-855Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-855Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-852Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-852Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-849Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-849Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-842Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-842Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-839Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-839Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-825Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-825Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-822Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-822Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-820Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-820Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-811Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-811Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-808Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-808Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-805Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-805Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-801Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-801Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-791Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-791Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-779Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-779Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-775Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-775Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-772Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-772Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-769Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-769Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-763Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-763Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-760Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-760Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-757Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-757Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    },
+    {
+      "action": "move_to_aplicadas",
+      "from": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18T04-40-21-754Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "to": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/aplicadas/2025-12-18T04-40-21-754Z-adr-adr-propuesta-normalizar-ruta-t\u00e9rmino-detectado.md",
+      "reason": "duplicado_consolidar"
+    }
+  ]
+}

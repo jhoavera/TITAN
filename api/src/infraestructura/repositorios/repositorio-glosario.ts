@@ -24,7 +24,7 @@ export const crearGlosario = async (db: DB, datos: z.infer<any>, identificadorIn
     // Validar nombre/slug antes de crear
     try {
       // @ts-ignore: dependencia opcional en tiempo de ejecución; en entornos sin el paquete no debe romper la compilación
-      const mod = await import('../../../nucleo/servicios/servicio-validacion-creacion').catch(() => ({ validarYRegistrarNombre: async () => { /* noop */ } }));
+      const mod = await import('@nucleo/servicios/servicio-validacion-creacion').catch(() => ({ validarYRegistrarNombre: async () => { /* noop */ } }));
       const { validarYRegistrarNombre } = mod;
       await validarYRegistrarNombre(datos.slug ?? datos.termino);
     } catch (_err) {

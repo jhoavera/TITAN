@@ -23,6 +23,7 @@
     "limpiar-repo:apply": "bun ./scripts/servicios/limpieza-repo.ts --apply",
     "limpieza:avanzada": "bun ./scripts/servicios/limpieza-avanzada.ts",
     "limpieza:avanzada:apply": "bun ./scripts/servicios/limpieza-avanzada.ts --apply",
+    "limpieza:trazable": "bun ./scripts/servicios/limpieza-trazable.ts",
     "check:imports-relative": "bun ./scripts/checks/check-relative-imports.ts",
     "proponer:imports": "bun ./scripts/proponer-refactor-imports.ts --dry-run",
     "proponer:imports:apply": "bun ./scripts/proponer-refactor-imports.ts --apply-changes",

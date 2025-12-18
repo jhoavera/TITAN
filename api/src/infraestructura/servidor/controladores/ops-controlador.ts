@@ -1,7 +1,7 @@
 import type { RequestLike, ReplyLike } from '@infraestructura/servidor/types/handler'
 import fs from 'fs'
 import path from 'path'
-import { esquemaRenombrado } from '@nucleo/validadores/validador-ops.ts'
+import { esquemaRenombrado } from '@nucleo/validadores/validador-ops'
 // importar servicio dinámicamente dentro del handler para evitar problemas de resolución en test env
 
 export async function renombrarPorADR(req: RequestLike, reply: ReplyLike) {
@@ -33,9 +33,7 @@ export async function renombrarPorADR(req: RequestLike, reply: ReplyLike) {
     const raizOverride = body?.raiz
     const allowOverride = process.env.TITAN_ALLOW_RENAME_ROOT_OVERRIDE === '1'
     const raiz = allowOverride && raizOverride ? raizOverride : process.cwd()
-    const pathMod = require('path')
-    const svcPath = pathMod.resolve(__dirname, '../../../nucleo/servicios/servicio-automatizacion-renombrados.ts')
-    const { ejecutarRenombrados } = await import(svcPath)
+    const { ejecutarRenombrados } = await import('@nucleo/servicios/servicio-automatizacion-renombrados')
     try {
       const res = await ejecutarRenombrados(raiz, ops, { mensaje: body?.mensaje })
       reply.send({ ok: true, detalle: res })

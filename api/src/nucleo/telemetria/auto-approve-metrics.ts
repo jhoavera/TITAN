@@ -12,14 +12,28 @@ export type AutoApproveMetric = {
   extra?: Record<string, unknown>
 }
 
-const OUT = path.resolve(process.cwd(), 'tmp', 'metrics')
-const FILE = path.join(OUT, 'auto-approve-metrics.jsonl')
+function getMetricsPaths() {
+  const envDir = process.env.AUTO_APPROVE_METRICS_DIR
+  if (envDir && envDir.trim() !== '') {
+    const out = path.resolve(envDir)
+    const file = path.join(out, 'auto-approve-metrics.jsonl')
+    return { out, file }
+  }
+
+  const testMode = process.env.BUN_TEST === '1' || process.env.BUN_TEST === 'true' || process.env.VITEST === 'true' || process.env.VITEST_WORKER_ID !== undefined || process.env.NODE_ENV === 'test'
+  const out = testMode
+    ? path.resolve(process.cwd(), 'tmp', `metrics-test-${process.pid}`)
+    : path.resolve(process.cwd(), 'tmp', 'metrics')
+  const file = path.join(out, 'auto-approve-metrics.jsonl')
+  return { out, file }
+}
 
 export function recordAutoApproveMetric(event: AutoApproveMetric) {
   try {
-    fs.mkdirSync(OUT, { recursive: true })
+    const { out, file } = getMetricsPaths()
+    fs.mkdirSync(out, { recursive: true })
     const line = JSON.stringify(event) + '\n'
-    fs.appendFileSync(FILE, line, 'utf8')
+    fs.appendFileSync(file, line, 'utf8')
   } catch (e) {
     // non-fatal: ensure we don't throw from metrics
     console.error('[metrics] failed to write metric', e instanceof Error ? e.message : String(e))
@@ -28,8 +42,9 @@ export function recordAutoApproveMetric(event: AutoApproveMetric) {
 
 export function readAutoApproveMetrics(): AutoApproveMetric[] {
   try {
-    if (!fs.existsSync(FILE)) return []
-    const buf = fs.readFileSync(FILE, 'utf8')
+    const { file } = getMetricsPaths()
+    if (!fs.existsSync(file)) return []
+    const buf = fs.readFileSync(file, 'utf8')
     return buf
       .split('\n')
       .filter(Boolean)
@@ -88,8 +103,9 @@ export function summarizeAutoApproveMetrics(opts?: { since?: string; until?: str
  */
 export function rotateAutoApproveMetrics(maxAgeDays = 30): { rotated: number; archivePath?: string } {
   try {
-    if (!fs.existsSync(FILE)) return { rotated: 0 }
-    const lines = fs.readFileSync(FILE, 'utf8').split('\n').filter(Boolean)
+    const { out, file } = getMetricsPaths()
+    if (!fs.existsSync(file)) return { rotated: 0 }
+    const lines = fs.readFileSync(file, 'utf8').split('\n').filter(Boolean)
     if (lines.length === 0) return { rotated: 0 }
 
     const cutoff = Date.now() - maxAgeDays * 24 * 60 * 60 * 1000
@@ -110,9 +126,9 @@ export function rotateAutoApproveMetrics(maxAgeDays = 30): { rotated: number; ar
 
     if (rot.length === 0) return { rotated: 0 }
 
-    const archiveName = path.join(OUT, `auto-approve-archive-${new Date().toISOString().slice(0,10)}.jsonl`)
+    const archiveName = path.join(out, `auto-approve-archive-${new Date().toISOString().slice(0,10)}.jsonl`)
     fs.appendFileSync(archiveName, rot.join('\n') + '\n', 'utf8')
-    fs.writeFileSync(FILE, keep.join('\n') + (keep.length ? '\n' : ''), 'utf8')
+    fs.writeFileSync(file, keep.join('\n') + (keep.length ? '\n' : ''), 'utf8')
     return { rotated: rot.length, archivePath: archiveName }
   } catch (e) {
     console.error('[metrics] rotate failed', e instanceof Error ? e.message : String(e))

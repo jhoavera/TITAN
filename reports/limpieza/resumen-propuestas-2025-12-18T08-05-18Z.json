@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "generated_at": "2025-12-18T08-05-18Z",
+    "files_scanned": 4
+  },
+  "stats": {
+    "total_files": 4,
+    "by_tipo": {
+      "unknown": 4
+    },
+    "by_origen": {
+      "integridad-idioma": 3,
+      "unknown": 1
+    },
+    "valido": {
+      "true": 0,
+      "false": 0,
+      "missing": 4
+    },
+    "hayIngles": {
+      "true": 0,
+      "false": 0,
+      "missing": 4
+    },
+    "razones": {},
+    "duplicados_candidates": 0
+  }
+}
