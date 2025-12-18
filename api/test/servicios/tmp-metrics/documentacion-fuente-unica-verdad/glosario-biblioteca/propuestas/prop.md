@@ -1,2 +1,0 @@
-# Propuesta
-Contenido

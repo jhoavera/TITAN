@@ -32,6 +32,8 @@ export default defineConfig({
     environment: 'node',
     globals: false,
     passWithNoTests: false,
+    // Setup global para aislamiento de temporales entre tests (evita contaminación y flakiness)
+    setupFiles: [path.join(raizTest, 'setup', 'isolado.ts')],
   },
   resolve: {
     alias,

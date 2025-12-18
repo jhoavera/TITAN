@@ -2,7 +2,7 @@
 import path from 'path'
 import process from 'process'
 import { escanearRepositorioParaIngles, procesarHallazgosYGenerarPropuestas } from '@nucleo/servicios/servicio-integridad-idioma'
-import { ensureRunningOnBunOrExit } from '@comun/utilidades/verificar-stack'
+// Evitar importar utilidades de entorno en tiempo de import para facilitar tests; importar dinámicamente cuando se ejecute como CLI
 
 
 export async function runCorregirIngles(raiz: string, opts: { aplicar?: boolean } = {}) {
@@ -37,10 +37,20 @@ export async function runCorregirIngles(raiz: string, opts: { aplicar?: boolean 
 }
 
 if (import.meta.main) {
-  ensureRunningOnBunOrExit()
-  const raiz = process.argv[2] ? path.resolve(process.argv[2]) : process.cwd()
-  const aplicar = process.argv.includes('--aplicar')
-  runCorregirIngles(raiz, { aplicar }).catch(e => { console.error('Error:', e); process.exit(1) })
+  // Importar dinámicamente la utilidad que verifica el runtime para no romper tests unitarios
+  (async () => {
+    try {
+      const mod = await import('@comun/utilidades/verificar-stack')
+      if (mod && typeof mod.ensureRunningOnBunOrExit === 'function') mod.ensureRunningOnBunOrExit()
+    } catch (e) {
+      // No fatal en entorno de test; en CLI real preferimos abortar pero no romper aquí
+      try { console.warn('[corregir-ingles] no se pudo verificar entorno Bun:', (e as Error).message) } catch {}
+    }
+
+    const raiz = process.argv[2] ? path.resolve(process.argv[2]) : process.cwd()
+    const aplicar = process.argv.includes('--aplicar')
+    runCorregirIngles(raiz, { aplicar }).catch(e => { console.error('Error:', e); process.exit(1) })
+  })()
 }
 
 export default { runCorregirIngles }

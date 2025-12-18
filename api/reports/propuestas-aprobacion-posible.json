@@ -1,11 +1,11 @@
 {
-  "fecha": "2025-12-18T19:21:54.316Z",
+  "fecha": "2025-12-18T19:47:41.348Z",
   "propuestas": [
     {
-      "termino": "clave-e2e",
+      "termino": "migraciones",
       "valido": true,
       "razones": [],
-      "sugerenciaCanonical": "clave-e2e",
+      "sugerenciaCanonical": "migraciones",
       "semScore": 0.95,
       "semExplicacion": "ok"
     }

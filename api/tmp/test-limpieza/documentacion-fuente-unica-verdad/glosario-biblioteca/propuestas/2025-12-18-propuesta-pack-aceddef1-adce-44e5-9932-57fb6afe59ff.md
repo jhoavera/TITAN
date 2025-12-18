@@ -1,0 +1,8 @@
+# Propuesta de Glosario: pack
+
+**Autor:** tester
+**Fecha:** 2025-12-18T19:21:56.964Z
+
+## Definición propuesta
+
+Propuesta automática: sugerir traducción o reemplazo para 'pack'. Revisar contexto y aprobar manualmente.
