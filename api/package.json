@@ -31,6 +31,8 @@
     "indexar-aliases": "bun ./scripts/indexar-aliases.ts",
     "metrics:auto-approve": "bun ./scripts/metrics/consultar-auto-approve.ts",
     "metrics:auto-approve:summary": "bun ./scripts/metrics/sumar-auto-approve.ts --json --write-summary",
+    "crear-adr:cli": "bun ./scripts/servicios/crear-adr-cli.ts",
+    "crear-termino:cli": "bun ./scripts/servicios/crear-glosario-cli.ts",
     "check-stack": "bun ./scripts/check-stack.ts",
     "check-stack:bun": "bun ./scripts/check-stack.ts",
     "prepush": "bun run check-stack",
