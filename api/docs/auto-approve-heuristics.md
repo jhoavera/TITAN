@@ -7,6 +7,9 @@ Se aplican las siguientes reglas conservadoras para decidir auto‑aplicar cambi
 - Índices `index.ts` / `indice.ts` que solo re-exportan → permiten.
 - Se rechaza cualquier `package.json` de forma segura.
 - Se rechazan archivos con bloques de código o que contienen `import`/`export`.
+- Se permiten archivos Markdown muy cortos (`md-small`) y archivos JSON pequeños con formato de glosario (`json-small`).
+- Propuestas de glosario antiguas (`glossary-proposal`) pueden ser auto-aprobadas si `allowLongTermAuto` está habilitado y superan el umbral de antigüedad.
+- Documentación corta dentro de `documentacion-fuente-unica-verdad` se permite (`doc-only`).
 - Las decisiones quedan registradas en `tmp/metrics/auto-approve-metrics.jsonl` con `rule` y `reason`.
 
 Uso:

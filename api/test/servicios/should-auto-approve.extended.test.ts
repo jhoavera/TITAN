@@ -47,4 +47,47 @@ export * from './otro'`
     const res = shouldAutoApprove(file, { maintainers: ['titan-admin'], maxSizeForMaintainer: 200 })
     expect(res.ok).toBe(true)
   })
+
+  it('approves short markdown (md-small)', () => {
+    const file = path.join(tmpDir, 'short.md')
+    const content = `# Nota\n\nCambio menor en el documento de estado.`
+    fs.writeFileSync(file, content, 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('md-small')
+  })
+
+  it('approves small json glosario-like files (json-small)', () => {
+    const dir = path.join(tmpDir, 'data')
+    fs.mkdirSync(dir, { recursive: true })
+    const file = path.join(dir, 'termino.json')
+    const content = JSON.stringify({ termino: 'prueba', definicion: 'Definición para pruebas' })
+    fs.writeFileSync(file, content, 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('json-small')
+  })
+
+  it('auto-approves old glossary proposals when allowLongTermAuto is enabled (glossary-proposal)', () => {
+    const pdir = path.join(tmpDir, 'documentacion-fuente-unica-verdad', 'glosario-biblioteca', 'propuestas')
+    fs.mkdirSync(pdir, { recursive: true })
+    const file = path.join(pdir, 'propuesta-antigua.md')
+    fs.writeFileSync(file, '# Propuesta de Glosario: antigua\nContenido', 'utf8')
+    // force mtime in the past
+    const old = Date.now() - 1000 * 60 * 60 * 24 * 365
+    fs.utimesSync(file, old / 1000, old / 1000)
+    const res = shouldAutoApprove(file, { allowLongTermAuto: true, longTermDays: 30 })
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('glossary-proposal')
+  })
+
+  it('approves short docs inside documentacion (doc-only)', () => {
+    const pdir = path.join(tmpDir, 'documentacion-fuente-unica-verdad')
+    fs.mkdirSync(pdir, { recursive: true })
+    const file = path.join(pdir, 'nota.md')
+    fs.writeFileSync(file, '# Notas\nContenido de documentación corto y sin código', 'utf8')
+    const res = shouldAutoApprove(file)
+    expect(res.ok).toBe(true)
+    expect(res.rule).toBe('doc-only')
+  })
 })
