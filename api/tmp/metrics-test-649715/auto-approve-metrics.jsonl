@@ -1,8 +1,0 @@
-{"ts":"2025-12-18T19:54:06.954Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/confianza.md","ok":true,"reason":"confianza alta en frontmatter","rule":"frontmatter-confidence"}
-{"ts":"2025-12-18T19:54:06.955Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/short.md","ok":false,"reason":"markdown corto pero sin marca explícita","rule":"md-small-no-mark"}
-{"ts":"2025-12-18T19:54:06.955Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/short.md","ok":false,"reason":"no cumple heurísticas seguras","rule":"default"}
-{"ts":"2025-12-18T19:54:06.956Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/data/termino.json","ok":true,"reason":"json pequeño parecido a término","rule":"json-small"}
-{"ts":"2025-12-18T19:54:06.956Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/prop.md","ok":true,"reason":"propuesta de glosario antigua y auto-allow","rule":"glossary-proposal"}
-{"ts":"2025-12-18T19:54:06.957Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/documentacion-fuente-unica-verdad/nota.md","ok":false,"reason":"markdown corto pero sin marca explícita","rule":"md-small-no-mark"}
-{"ts":"2025-12-18T19:54:06.957Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-metrics/documentacion-fuente-unica-verdad/nota.md","ok":true,"reason":"documento (doc-only) seguro y corto","rule":"doc-only"}
-{"ts":"2025-12-18T19:54:07.736Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/fixtures/metrics/doc.md","ok":false,"reason":"contiene bloques de código","rule":"code-block"}

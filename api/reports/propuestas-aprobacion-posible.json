@@ -1,13 +1,13 @@
 {
-  "fecha": "2025-12-18T19:54:19.389Z",
+  "fecha": "2025-12-18T19:56:18.014Z",
   "propuestas": [
     {
-      "termino": "clave-e2e",
+      "termino": "migraciones",
       "valido": true,
       "razones": [],
-      "sugerenciaCanonical": "clave-e2e",
+      "sugerenciaCanonical": "migraciones",
       "semScore": 0.95,
-      "semExplicacion": "ok"
+      "semExplicacion": "Evaluación semántica: coincidencia exacta entre 'migraciones' y 'migraciones'"
     }
   ]
 }

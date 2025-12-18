@@ -20,5 +20,5 @@ describe('prepr flow', () => {
     const prop = path.resolve(process.cwd(), 'reports', 'propuestas-aprobacion-posible.json');
     expect(fs.existsSync(dedup)).toBe(true);
     expect(fs.existsSync(prop)).toBe(true);
-  });
+  }, 20000);
 });

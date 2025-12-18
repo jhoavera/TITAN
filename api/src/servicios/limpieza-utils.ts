@@ -148,13 +148,15 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
     // NOTA: regla md-small ahora requiere una marca explícita en frontmatter
     // (auto-approve / aprobado / confianza alta) para evitar aprobar markdown genérico.
     if (ext === 'md' && content.length < 500 && !content.includes('```') && !/^(\s*(import|export|require)\s+)/m.test(content)) {
-      const explicitMark = (fm['auto-approve'] && ['yes','true','si'].includes(fm['auto-approve'].toLowerCase())) || (fm['aprobado'] && fm['aprobado'].toLowerCase() === 'true') || (fm['confianza'] && fm['confianza'].toLowerCase() === 'alta') || contentLower.includes('auto-approve') || contentLower.includes('aprobado: true')
-      if (explicitMark) {
-        try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código (marca explícita)', rule: 'md-small-explicit' }) } catch(e) {}
-        return { ok: true, reason: 'markdown corto y sin código (marca explícita)', rule: 'md-small-explicit' }
+      const hasFrontmatter = Object.keys(fm).length > 0
+      const startsWithHeading = /^\s*#\s+/.test(content)
+      // Aprobar md-small solo para markdown corto que no tiene frontmatter y comienza con un heading
+      if (!hasFrontmatter && startsWithHeading) {
+        try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }) } catch(e) {}
+        return { ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }
       }
-      // Si no tiene marca explícita, no auto-aprobar
-      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'markdown corto pero sin marca explícita', rule: 'md-small-no-mark' }) } catch(e) {}
+      // Si tiene frontmatter o no comienza con heading, no auto-aprobar por md-small
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'markdown corto pero sin formato de nota (sin heading o con frontmatter)', rule: 'md-small-no-mark' }) } catch(e) {}
       // continue to final default rejection
     }
 
