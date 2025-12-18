@@ -1,5 +1,5 @@
-{"ts":"2025-12-18T06:50:12.912Z","file":"a.md","ok":true,"rule":"explicit-mark","reason":"marca automática"}
-{"ts":"2025-12-18T06:50:12.912Z","file":"b.md","ok":false,"rule":"code-block","reason":"contiene bloques de código"}
-{"ts":"2025-12-18T06:50:12.912Z","file":"c.ts","ok":false,"rule":"extensión","reason":"extensión no segura"}
-{"ts":"2025-11-08T06:50:12.912Z","file":"old.md","ok":false,"rule":"old-rule","reason":"old"}
-{"ts":"2025-12-18T06:50:12.912Z","file":"new.md","ok":true,"rule":"new-rule","reason":"new"}
+{"ts":"2025-12-18T07:00:02.937Z","file":"a.md","ok":true,"rule":"explicit-mark","reason":"marca automática"}
+{"ts":"2025-12-18T07:00:02.937Z","file":"b.md","ok":false,"rule":"code-block","reason":"contiene bloques de código"}
+{"ts":"2025-12-18T07:00:02.937Z","file":"c.ts","ok":false,"rule":"extensión","reason":"extensión no segura"}
+{"ts":"2025-11-08T07:00:02.938Z","file":"old.md","ok":false,"rule":"old-rule","reason":"old"}
+{"ts":"2025-12-18T07:00:02.938Z","file":"new.md","ok":true,"rule":"new-rule","reason":"new"}
