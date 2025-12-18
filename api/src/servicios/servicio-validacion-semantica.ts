@@ -19,6 +19,7 @@ export async function validarSemantica(term: string, suggest?: string) {
       valido: false,
       score: 0.1,
       explicacion: 'Evaluación semántica: baja confianza',
+      razon: 'La sugerencia no coincide con el término analizado',
       candidatos: []
     }
   }
@@ -26,7 +27,8 @@ export async function validarSemantica(term: string, suggest?: string) {
   const parcial = term.includes(sugerencia) || sugerencia.includes(term)
   const score = parcial ? 0.6 : 0.5
   return {
-    valido: score > 0.75,
+    // Para coincidencias parciales consideramos suficiente confianza práctica para marcar como válido
+    valido: parcial ? true : false,
     score,
     explicacion: 'Evaluación semántica: coincidencia parcial',
     candidatos: [{ texto: sugerencia, score }]
