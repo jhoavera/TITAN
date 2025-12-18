@@ -116,6 +116,45 @@ export function shouldAutoApprove(filePath: string, opts: AutoApproveOptions = {
       return { ok: false, reason: 'extensión no segura para auto-approve', rule: 'extensión' }
     }
 
+    // Heurística: markdown corto (no code blocks, no imports) — segura para auto-approve si es muy pequeña
+    if (ext === 'md' && content.length < 500 && !content.includes('```') && !/^(\s*(import|export|require)\s+)/m.test(content)) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }) } catch(e) {}
+      return { ok: true, reason: 'markdown corto y sin código', rule: 'md-small' }
+    }
+
+    // Heurística: JSON pequeño que parece propuesta/termino de glosario
+    if (ext === 'json') {
+      try {
+        const parsed = JSON.parse(content)
+        const keys = Object.keys(parsed || {})
+        const isGlosarioLike = keys.some((k) => ['termino', 'definicion', 'categoria'].includes(k.toLowerCase()))
+        if (isGlosarioLike && content.length < 1200) {
+          try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'json pequeño parecido a término', rule: 'json-small' }) } catch(e) {}
+          return { ok: true, reason: 'json pequeño parecido a término', rule: 'json-small' }
+        }
+      } catch (e) {
+        // no-op: JSON inválido => no auto-approve
+      }
+    }
+
+    // Heurística: propuestas de glosario muy antiguas con allowLongTermAuto
+    if (filePath.includes(path.join('glosario-biblioteca', 'propuestas')) && opts.allowLongTermAuto && typeof opts.longTermDays === 'number') {
+      try {
+        const stat = fs.statSync(filePath)
+        const days = Math.floor((Date.now() - stat.mtime.getTime()) / (1000 * 60 * 60 * 24))
+        if (days >= opts.longTermDays && content.length < 2000) {
+          try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'propuesta de glosario antigua y auto-allow', rule: 'glossary-proposal' }) } catch(e) {}
+          return { ok: true, reason: 'propuesta de glosario antigua y auto-allow', rule: 'glossary-proposal' }
+        }
+      } catch {}
+    }
+
+    // Heurística: documentos de documentación pura (documentacion-fuente-unica-verdad), si son cortos, pueden revisarse automáticamente
+    if (filePath.includes('documentacion-fuente-unica-verdad') && ext === 'md' && content.length < 2000 && !content.includes('```')) {
+      try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: true, reason: 'documento (doc-only) seguro y corto', rule: 'doc-only' }) } catch(e) {}
+      return { ok: true, reason: 'documento (doc-only) seguro y corto', rule: 'doc-only' }
+    }
+
     // - avoid approving files containing code blocks
     if (content.includes('```')) {
       try { recordAutoApproveMetric({ ts: new Date().toISOString(), file: filePath, ok: false, reason: 'contiene bloques de código', rule: 'code-block' }) } catch(e) {}

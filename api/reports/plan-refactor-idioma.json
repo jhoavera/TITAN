@@ -1,59 +1,12 @@
 {
-  "fecha": "2025-12-18T06:49:51.428Z",
+  "fecha": "2025-12-18T16:30:33.383Z",
   "plan": [
-    {
-      "termino": "migraciones",
-      "archivos": [
-        "/home/jhoavera/Documentos/TITAN/api/docs/servicios/limpieza.md",
-        "/home/jhoavera/Documentos/TITAN/api/docs/ci-local.md",
-        "/home/jhoavera/Documentos/TITAN/api/docs/politicas/ADR-POLITICA.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/crud-glosario-adrs.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-usage.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/ci-local-db.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-index.md",
-        "/home/jhoavera/Documentos/TITAN/api/src/nucleo/servicios/servicio-integridad-idioma.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/validar-nombres.ts"
-      ],
-      "totalArchivos": 93,
-      "sugerenciaCanonical": "migración / migraciones",
-      "adrExistente": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-16-proponer-traduccion-migraciones.md",
-      "accionPropuesta": "revisar_adr_existente"
-    },
-    {
-      "termino": "migrate",
-      "archivos": [
-        "/home/jhoavera/Documentos/TITAN/api/docs/ci-local.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/ci-local-db.md",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/validar-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-deduplicacion-propuestas.ts",
-        "/home/jhoavera/Documentos/TITAN/api/tests/ci/convertir-scripts-a-bun.test.ts",
-        "/home/jhoavera/Documentos/TITAN/api/tests/ci/generar-reporte-migracion.test.ts",
-        "/home/jhoavera/Documentos/TITAN/api/tests/ci/validacion-semantica.test.ts",
-        "/home/jhoavera/Documentos/TITAN/api/tests/ci/deduplicar-propuestas.test.ts",
-        "/home/jhoavera/Documentos/TITAN/api/tests/ci/adr-indice.test.ts"
-      ],
-      "totalArchivos": 14,
-      "sugerenciaCanonical": "migrar",
-      "adrExistente": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrate.md",
-      "accionPropuesta": "revisar_adr_existente"
-    },
     {
       "termino": "migrations",
       "archivos": [
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-usage.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-index.md",
-        "/home/jhoavera/Documentos/TITAN/api/src/nucleo/servicios/servicio-integridad-idioma.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/nucleo/utilidades/validar-nombre-archivo.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/validar-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-deduplicacion-propuestas.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/limpieza/servicio-limpieza.ts",
-        "/home/jhoavera/Documentos/TITAN/api/PULL_REQUEST_FINAL.md",
-        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-a4c46917-d4e1-4b9d-8015-9ab547f81841.md"
+        "/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-revisar-idioma/doc.md"
       ],
-      "totalArchivos": 47,
+      "totalArchivos": 1,
       "sugerenciaCanonical": "migración / migraciones",
       "adrExistente": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrations.md",
       "accionPropuesta": "revisar_adr_existente"
@@ -61,18 +14,9 @@
     {
       "termino": "migration",
       "archivos": [
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-usage.md",
-        "/home/jhoavera/Documentos/TITAN/api/doc/specs/servicios-index.md",
-        "/home/jhoavera/Documentos/TITAN/api/src/nucleo/servicios/servicio-integridad-idioma.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/nucleo/utilidades/validar-nombre-archivo.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-validacion-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/validar-nombres.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/servicio-deduplicacion-propuestas.ts",
-        "/home/jhoavera/Documentos/TITAN/api/src/servicios/limpieza/servicio-limpieza.ts",
-        "/home/jhoavera/Documentos/TITAN/api/PULL_REQUEST_FINAL.md",
-        "/home/jhoavera/Documentos/TITAN/api/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-migrations-a4c46917-d4e1-4b9d-8015-9ab547f81841.md"
+        "/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-revisar-idioma/doc.md"
       ],
-      "totalArchivos": 53,
+      "totalArchivos": 1,
       "sugerenciaCanonical": "migración / migraciones",
       "adrExistente": "/home/jhoavera/Documentos/TITAN/documentacion-fuente-unica-verdad/ad-rs/2025-12-17-proponer-traduccion-migrations.md",
       "accionPropuesta": "revisar_adr_existente"
