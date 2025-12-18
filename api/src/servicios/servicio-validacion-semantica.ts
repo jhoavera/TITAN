@@ -1,0 +1,1 @@
+export async function validarSemantica(_term:string,_suggest?:string){ return { valido:true, score:0.95, explicacion:'ok', razon: null } }
