@@ -1,10 +1,9 @@
 {
   "grupos": [
     {
-      "clave": "archivo-duplicado",
+      "clave": "migraciones",
       "archivos": [
-        "/tmp/a",
-        "/tmp/b"
+        "falso"
       ]
     }
   ]
