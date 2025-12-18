@@ -5,3 +5,9 @@ api/reports/*.json
 api/tmp/
 api/api/tmp/
 .tmp_metrics/
+
+# Ignore proposal directories and api-generated test docs
+**/propuestas/
+api/documentacion-fuente-unica-verdad/ad-rs/*propuesta*
+api/documentacion-fuente-unica-verdad/**2025-12-18*
+
