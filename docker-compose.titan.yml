@@ -153,3 +153,4 @@ volumes:
   victoria-data:
   loki-data:
   minio-data:
+  keydb-data:
