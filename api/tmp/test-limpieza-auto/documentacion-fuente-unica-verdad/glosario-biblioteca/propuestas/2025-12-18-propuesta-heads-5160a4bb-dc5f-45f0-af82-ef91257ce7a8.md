@@ -1,0 +1,8 @@
+# Propuesta de Glosario: heads
+
+**Autor:** tester
+**Fecha:** 2025-12-18T19:20:51.374Z
+
+## Definición propuesta
+
+Propuesta automática: sugerir traducción o reemplazo para 'heads'. Revisar contexto y aprobar manualmente.

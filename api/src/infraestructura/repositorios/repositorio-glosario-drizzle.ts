@@ -14,14 +14,16 @@ export class RepositorioGlosarioDrizzle implements RepositorioGlosario {
     if (!databaseUrl) throw new Error('DATABASE_URL requerida para usar RepositorioGlosarioDrizzle');
     // lazy load para evitar errores cuando dependencia no está instalada
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const { drizzle } = require('drizzle-orm');
+    const drizzleMod = require('drizzle-orm');
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { Pool } = require('pg');
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { glosarioTabla } = require('@infraestructura/base-de-datos/esquemas/esquema-glosario');
 
     const pool = new Pool({ connectionString: databaseUrl });
-    this.db = drizzle(pool);
+    const drizzleFn = (drizzleMod && (drizzleMod.drizzle ?? drizzleMod.default ?? drizzleMod));
+    if (typeof drizzleFn !== 'function') throw new Error('No se pudo cargar la función drizzle desde drizzle-orm');
+    this.db = drizzleFn(pool);
     this.glosario = glosarioTabla;
   }
 
