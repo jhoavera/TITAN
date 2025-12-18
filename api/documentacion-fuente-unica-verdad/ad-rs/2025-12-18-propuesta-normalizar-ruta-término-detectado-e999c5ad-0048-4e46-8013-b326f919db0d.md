@@ -1,0 +1,23 @@
+# ADR e999c5ad-0048-4e46-8013-b326f919db0d - Propuesta: normalizar ruta / término detectado
+
+**Autor:** tester
+**Fecha:** 2025-12-18T16:32:47.356Z
+**Estado:** pendiente
+
+## Contexto
+
+
+
+## Objetivo
+
+Normalización de nombres y traducción a español técnico
+
+## Decisión
+
+Se propone revisar y normalizar el término detectado: Encontrado término en inglés o no estándar en ruta: /home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza/.git/hooks/fsmonitor-watchman.sample
+
+Propuesta glosario: /home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-18-propuesta-fsmonitor-watchman-sample-5a26c146-ac42-4c95-9c4f-cf94a9416c4d.md
+
+## Consecuencias
+
+- 
