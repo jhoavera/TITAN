@@ -1,0 +1,8 @@
+# Propuesta de Glosario: 35
+
+**Autor:** tester
+**Fecha:** 2025-12-18T19:19:13.538Z
+
+## Definición propuesta
+
+Propuesta automática: sugerir traducción o reemplazo para '35'. Revisar contexto y aprobar manualmente.

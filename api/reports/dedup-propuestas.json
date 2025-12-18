@@ -1,9 +1,10 @@
 {
   "grupos": [
     {
-      "clave": "clave-e2e",
+      "clave": "archivo-duplicado",
       "archivos": [
-        "falso"
+        "/tmp/a",
+        "/tmp/b"
       ]
     }
   ]

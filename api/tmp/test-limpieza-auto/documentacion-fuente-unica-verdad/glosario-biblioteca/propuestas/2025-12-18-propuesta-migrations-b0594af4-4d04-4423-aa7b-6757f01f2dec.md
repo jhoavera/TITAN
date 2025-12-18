@@ -1,8 +1,0 @@
-# Propuesta de Glosario: migrations
-
-**Autor:** tester
-**Fecha:** 2025-12-18T16:32:47.216Z
-
-## Definición propuesta
-
-Propuesta automática: sugerir traducción o reemplazo para 'migrations'. Revisar contexto y aprobar manualmente.

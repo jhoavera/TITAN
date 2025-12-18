@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "id": "1766072722775-w5cueq",
+    "termino": "migrations",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:45:22.775Z"
+  },
+  {
+    "id": "1766072722776-9mt881",
+    "termino": "migration",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:45:22.776Z"
+  },
+  {
+    "id": "1766072722776-05easd",
+    "termino": "migrate",
+    "definicion": "Propuesta: migrar",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:45:22.776Z"
+  },
+  {
+    "id": "1766072722776-be4pu5",
+    "termino": "migraciones",
+    "definicion": "Propuesta: revisar traducción",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:45:22.776Z"
+  },
+  {
+    "id": "1766072919988-nm7f4z",
+    "termino": "migrations",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:48:39.988Z"
+  },
+  {
+    "id": "1766072919988-mzu3dg",
+    "termino": "migration",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:48:39.988Z"
+  },
+  {
+    "id": "1766072919988-2tkv2o",
+    "termino": "migrate",
+    "definicion": "Propuesta: migrar",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:48:39.988Z"
+  },
+  {
+    "id": "1766072919989-xid350",
+    "termino": "migraciones",
+    "definicion": "Propuesta: revisar traducción",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:48:39.989Z"
+  },
+  {
+    "id": "1766073148561-nliog4",
+    "termino": "migrations",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:52:28.561Z"
+  },
+  {
+    "id": "1766073148562-sxi5bj",
+    "termino": "migration",
+    "definicion": "Propuesta: migración / migraciones",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:52:28.562Z"
+  },
+  {
+    "id": "1766073148562-x866ao",
+    "termino": "migrate",
+    "definicion": "Propuesta: migrar",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:52:28.562Z"
+  },
+  {
+    "id": "1766073148562-0okk1u",
+    "termino": "migraciones",
+    "definicion": "Propuesta: revisar traducción",
+    "autor": "revisar-idioma",
+    "estado": "pendiente",
+    "creadoEn": "2025-12-18T15:52:28.562Z"
+  }
+]

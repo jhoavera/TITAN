@@ -1,0 +1,4 @@
+{"ts":"2025-12-18T15:37:01.111Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-auto-approve-extended/package.json","ok":false,"reason":"package.json no apto para auto-approve","rule":"package-json"}
+{"ts":"2025-12-18T15:37:01.112Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-auto-approve-extended/index.ts","ok":true,"reason":"archivo índice re-export (auto-aprobado)","rule":"index-reexport"}
+{"ts":"2025-12-18T15:37:01.113Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-auto-approve-extended/prop.ts","ok":false,"reason":"extensión no segura para auto-approve","rule":"extensión"}
+{"ts":"2025-12-18T15:37:01.113Z","file":"/home/jhoavera/Documentos/TITAN/api/test/servicios/tmp-auto-approve-extended/small.md","ok":true,"reason":"autor es maintainer y cambio pequeño","rule":"maintainer-shortcut"}
