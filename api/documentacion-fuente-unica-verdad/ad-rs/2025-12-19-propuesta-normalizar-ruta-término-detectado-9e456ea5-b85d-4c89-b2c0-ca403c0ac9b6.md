@@ -1,0 +1,23 @@
+# ADR 9e456ea5-b85d-4c89-b2c0-ca403c0ac9b6 - Propuesta: normalizar ruta / término detectado
+
+**Autor:** tester
+**Fecha:** 2025-12-19T01:12:34.989Z
+**Estado:** pendiente
+
+## Contexto
+
+
+
+## Objetivo
+
+Normalización de nombres y traducción a español técnico
+
+## Decisión
+
+Se propone revisar y normalizar el término detectado: Encontrado término en inglés o no estándar en ruta: /home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza/.git/COMMIT_EDITMSG
+
+Propuesta glosario: /home/jhoavera/Documentos/TITAN/api/tmp/test-limpieza/documentacion-fuente-unica-verdad/glosario-biblioteca/propuestas/2025-12-19-propuesta-COMMIT-EDITMSG-4b9397df-d92d-403d-a7e7-62f63caa133e.md
+
+## Consecuencias
+
+- 
