@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-12-18T18:13:38.588Z",
+  "generatedAt": "2025-12-19T01:11:02.412Z",
   "report": {
     "doc/specs/crud-glosario-adrs.md": 1,
     "src/nucleo/middleware/middleware-contexto-inquilino.ts": 4,
@@ -10,6 +10,7 @@
     "src/infraestructura/servidor/rutas/auditoria.ts": 7,
     "src/infraestructura/servidor/rutas/glosario.ts": 9,
     "src/infraestructura/servidor/types/handler.ts": 2,
+    "src/infraestructura/servidor/adaptadores/indice.ts": 1,
     "src/infraestructura/servidor/adaptadores/hono-handler.ts": 1,
     "src/infraestructura/servidor/controladores/ops-controlador.ts": 1,
     "src/infraestructura/servidor/app.ts": 4,
@@ -17,7 +18,7 @@
     "test/documentacion-fuente-unica-verdad/ad-rs/000X-proponer-traduccion-spec-2025-12-17.md": 1,
     "scripts/migracion/detectar-fastify.ts": 4,
     "reports/PR_DRAFT_MIGRACION_FASTIFY_A_HONO.md": 30,
-    "reports/fastify-deteccion.json": 5,
+    "reports/fastify-deteccion.json": 3,
     "reports/PR_DRAFT_FINAL_MIGRACION_FASTIFY_A_HONO.md": 27,
     "reports/plan-migracion-fastify.json": 1,
     "package-lock.json": 2
